@@ -9,5 +9,3 @@ module.exports = {
     disableHostCheck: true
   }
 }
-
-//Sam making a commit to test push!

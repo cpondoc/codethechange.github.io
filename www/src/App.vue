@@ -9,13 +9,13 @@
 </template>
 <script>
 import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+
 export default {
   name: 'App'
 }
 </script>
-
-<style>
+<style lang="scss">
+@import './theme.scss';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

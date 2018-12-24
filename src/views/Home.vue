@@ -2,7 +2,6 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    For example, you can type in here @Sam!
   </div>
 </template>
 

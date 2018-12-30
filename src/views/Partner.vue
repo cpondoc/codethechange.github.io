@@ -30,7 +30,7 @@
             <label for="name" class="col-6 col-form-label">Proposal upload</label>
             <div class="col-4">
               <label class="btn upload-button">
-                Browse <input type="file" style="display: none;">
+                ADD FILE <input type="file" style="display: none;">
               </label>
             </div>
             <div class="col-2" id="optional">

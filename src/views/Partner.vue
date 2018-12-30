@@ -1,45 +1,47 @@
 <template>
-  <div class="page">
+  <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1> Talk to us about building impactful software together.</h1>
+        <h1 id="hook"> Talk to us about building impactful software together.</h1>
       </div>
     </div>
+    <br />
+    <br />
     <div class="row">
       <div class="col-7">
         <form id="form">
           <div class="form-group row">
-            <label for="name" class="col-6 col-form-label">Your name</label>
-            <div class="col-6">
+            <label for="name" class="col-4 col-form-label">Your name</label>
+            <div class="col-8">
               <input type="text" class="form-control input" id="name" placeholder="Johnny Appleseed">
             </div>
           </div>
           <div class="form-group row">
-            <label for="email" class="col-6 col-form-label">Your email</label>
-            <div class="col-6">
+            <label for="email" class="col-4 col-form-label">Your email</label>
+            <div class="col-8">
               <input type="text" class="form-control input" id="email" placeholder="name@example.com">
             </div>
           </div>
           <div class="form-group row">
-            <label for="name" class="col-6 col-form-label">Company site</label>
-            <div class="col-6">
+            <label for="name" class="col-4 col-form-label">Company site</label>
+            <div class="col-8">
               <input type="text" class="form-control input" id="name" placeholder="https://yoururl.com">
             </div>
           </div>
           <div class="form-group row">
-            <label for="name" class="col-6 col-form-label">Proposal upload</label>
+            <label for="name" class="col-4 col-form-label">Proposal upload</label>
             <div class="col-4">
               <label class="btn upload-button">
                 ADD FILE <input type="file" style="display: none;">
               </label>
             </div>
-            <div class="col-2" id="optional">
+            <div class="col-4" id="optional">
               *Optional
             </div>
           </div>
           <div class="form-group row">
-            <label for="name" class="col-6 col-form-label">Project summary</label>
-            <div class="col-6">
+            <label for="name" class="col-4 col-form-label">Project summary</label>
+            <div class="col-8">
               <textarea id="summary-text" class="form-control input" name="summary" placeholder="Describe the project here." cols="40" rows="7"></textarea>
             </div>
           </div>
@@ -53,8 +55,21 @@
       </div>
       <div class="col-5">
         <div class="row">
-          <div class="col-12">
-
+          <div class="header col-12">Eligibility</div>
+        </div>
+        <div class="row">
+          <div class="col-12 paragraph">
+            You must be a nonprofit or low-resourced social venture that needs volunteer support for an impactful computer science project.
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="header col-12">What we offer</div>
+        </div>
+        <div class="row">
+          <div class="col-12 paragraph">
+            Technical leadership and support from Stanford student volunteers dedicating 5 to 10 hours per week on the project free of cost.
           </div>
         </div>
       </div>
@@ -73,7 +88,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $take-action: #aff8e8;
 $text-color: #d8d8d8;
 
@@ -164,10 +179,14 @@ input[type="text"]:focus, textarea:focus {
 
 #form {
   border-radius: 8px;
-  margin: 50px;
   padding: 40px;
   box-shadow: 0 4px 25px 0 rgba(41, 41, 41, 0.5);
   background-color: #292929;
+}
+
+.container {
+  align-content: stretch;
+  justify-items: stretch;
 }
 
 #optional {
@@ -180,5 +199,48 @@ input[type="text"]:focus, textarea:focus {
   letter-spacing: normal;
   text-align: center;
   color: #c8c8c8;
+}
+
+.header {
+  width: 373px;
+  height: 38px;
+  font-family: Comfortaa;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  color: #d1d1d1;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#hook {
+  height: 38px;
+  font-family: Comfortaa;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.paragraph {
+  font-family: OpenSans;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #919191;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 </style>

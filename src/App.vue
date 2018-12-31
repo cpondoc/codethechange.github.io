@@ -1,9 +1,13 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/partner">Partner</router-link>
+    <div class="nav-container">
+      <router-link id="logo" to="/">LOGO</router-link>
+      <div id="links">
+        <router-link class="link-text" to="/people">people</router-link>
+        <router-link class="link-text" to="/projects">projects</router-link>
+        <router-link class="link-text" to="/partner">partner</router-link>
+        <router-link class="link-text" to="/join" id="join-link">join</router-link>
+      </div>
     </div>
     <router-view/>
   </div>
@@ -25,16 +29,39 @@ export default {
   color: #ffffff;
   background-color: #3b3b3b;
 }
-#nav {
-  padding: 30px;
+
+.nav-container {
+  padding: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
 }
 
-#nav a {
+#join-link {
+  color: $accent-light !important;
+}
+
+#logo {
+  margin-left: 100px;
+}
+
+.link-text {
+  font-family: Comfortaa;
+  font-size: 24px;
   font-weight: bold;
-  color: #2c3e50;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff !important;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+#links {
+  margin-right: 80px;
+  width: 570px;
+  display: flex;
+  justify-content: space-around
 }
+
 </style>

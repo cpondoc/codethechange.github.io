@@ -143,9 +143,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$take-action: #aff8e8;
-$text-color: #d8d8d8;
-
+@import '../theme.scss';
 .header {
   height: 38px;
   font-family: Comfortaa;

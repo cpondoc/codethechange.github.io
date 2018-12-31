@@ -8,8 +8,23 @@
     <br />
     <br />
     <div class="row">
-      <div class="col-7">
-        <form id="form" @submit.prevent="onSubmit" enctype="multipart/form-data">
+      <div class="col-7" id="form">
+        <div v-if="submitted" class="row">
+          <div class="col-12">
+            <h1> {{ finishedTitle }} </h1>
+          </div>
+        </div>
+        <div v-if="submitted" class="row">
+          <div class="col-12">
+            <h4> {{ finishedMessage }} </h4>
+          </div>
+        </div>
+        <div v-if="submitted" class="row">
+          <div class="col-12">
+            <button id="submit" @click="submitted = false" class="btn btn-default"> RETRY </button>
+          </div>
+        </div>
+        <form v-if="!submitted" @submit.prevent="onSubmit" enctype="multipart/form-data">
           <div class="form-group row">
             <label for="name" class="col-4 col-form-label">Your name</label>
             <div class="col-8">
@@ -86,7 +101,9 @@ export default {
       file: null,
       name: null,
       summary: null,
-      email: null
+      email: null,
+      submitted: false,
+      finishedMessage: ''
     }
   },
   methods: {
@@ -108,10 +125,15 @@ export default {
       formData.append('summary', this.summary)
       axios.post('https://guarded-ravine-42139.herokuapp.com/partner-form', formData)
         .then(res => {
-          alert('request success!')
+          this.submitted = true
+          this.finishedTitle = 'Form Submitted!'
+          this.finishedMessage = 'Thank you for reaching out. We will get back to you if we think your project is a good fit.'
         })
         .catch(err => {
-          alert('we have an error' + err.message)
+          console.error(err)
+          this.submitted = true
+          this.finishedTitle = 'Form Submission Error. '
+          this.finishedMessage = 'Unfortunately, we\'ve encountered some server error. Please email drewgreg [at] stanford [dot] edu with your form contents.'
         })
     }
   },

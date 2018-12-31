@@ -9,23 +9,23 @@
     <br />
     <div class="row">
       <div class="col-7">
-        <form id="form" action="https://guarded-ravine-42139.herokuapp.com/partner-form" method="POST" enctype="multipart/form-data">
+        <form id="form" @submit.prevent="onSubmit" enctype="multipart/form-data">
           <div class="form-group row">
             <label for="name" class="col-4 col-form-label">Your name</label>
             <div class="col-8">
-              <input type="text" class="form-control input" name="name" id="name" placeholder="Johnny Appleseed">
+              <input type="text" v-model="name" class="form-control input" name="name" placeholder="Johnny Appleseed">
             </div>
           </div>
           <div class="form-group row">
             <label for="email" class="col-4 col-form-label">Your email</label>
             <div class="col-8">
-              <input type="text" class="form-control input" name="email" id="email" placeholder="name@example.com">
+              <input type="text" v-model="email" class="form-control input" name="email" placeholder="name@example.com">
             </div>
           </div>
           <div class="form-group row">
-            <label for="name" class="col-4 col-form-label">Company site</label>
+            <label for="name" class="col-4 col-form-label">Organization site</label>
             <div class="col-8">
-              <input type="text" class="form-control input" name="site" id="name" placeholder="https://yoururl.com">
+              <input type="text" v-model="site" class="form-control input" name="site" placeholder="https://yoururl.com">
             </div>
           </div>
           <div class="form-group row">
@@ -42,7 +42,7 @@
           <div class="form-group row">
             <label for="name" class="col-4 col-form-label">Project summary</label>
             <div class="col-8">
-              <textarea id="summary-text" class="form-control input" name="summary" placeholder="Describe the project here." cols="40" rows="7"></textarea>
+              <textarea id="summary-text" v-model="summary" class="form-control input" name="summary" placeholder="Describe the project here." cols="40" rows="7"></textarea>
             </div>
           </div>
           <div class="form-group row">
@@ -77,10 +77,16 @@
   </div>
 </template>
 <script>
+import axios from 'axios'
+
 export default {
   data: function () {
     return {
-      filename: 'ADD FILE'
+      filename: 'ADD FILE',
+      file: null,
+      name: null,
+      summary: null,
+      email: null
     }
   },
   methods: {
@@ -88,9 +94,25 @@ export default {
       if (event.target.files.length === 1) {
         const name = event.target.files[0].name
         this.filename = name.substr(0, 15) + (name.length > 15 ? '... ' : '')
+        this.file = event.target.files[0]
       } else {
         this.filename = 'ADD FILE'
+        this.file = null
       }
+    },
+    onSubmit () {
+      const formData = new FormData()
+      formData.append('proposal', this.file, this.filename)
+      formData.append('name', this.name)
+      formData.append('email', this.email)
+      formData.append('summary', this.summary)
+      axios.post('https://guarded-ravine-42139.herokuapp.com/partner-form', formData)
+        .then(res => {
+          alert('request success!')
+        })
+        .catch(err => {
+          alert('we have an error' + err.message)
+        })
     }
   },
   name: 'Partner',

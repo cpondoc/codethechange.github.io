@@ -9,7 +9,7 @@
     <br />
     <div class="row">
       <div class="col-7">
-        <form id="form" action="http://localhost:5000/partner-form" method="POST" enctype="multipart/form-data">
+        <form id="form" action="https://guarded-ravine-42139.herokuapp.com/partner-form" method="POST" enctype="multipart/form-data">
           <div class="form-group row">
             <label for="name" class="col-4 col-form-label">Your name</label>
             <div class="col-8">
@@ -32,7 +32,7 @@
             <label for="name" class="col-4 col-form-label">Proposal upload</label>
             <div class="col-4">
               <label class="btn upload-button">
-                ADD FILE <input type="file" name="proposal" style="display: none;">
+                {{ filename }} <input type="file" @change="fileUpload" name="proposal" style="display: none;">
               </label>
             </div>
             <div class="col-4" id="optional">
@@ -80,7 +80,17 @@
 export default {
   data: function () {
     return {
-      myString: 'happy times'
+      filename: 'ADD FILE'
+    }
+  },
+  methods: {
+    fileUpload (event) {
+      if (event.target.files.length === 1) {
+        const name = event.target.files[0].name
+        this.filename = name.substr(0, 15) + (name.length > 15 ? '... ' : '')
+      } else {
+        this.filename = 'ADD FILE'
+      }
     }
   },
   name: 'Partner',

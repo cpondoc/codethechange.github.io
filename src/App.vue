@@ -3,10 +3,10 @@
     <div class="nav-container">
       <router-link id="logo" to="/">LOGO</router-link>
       <div id="links">
-        <router-link class="link-text" to="/people">people</router-link>
-        <router-link class="link-text" to="/projects">projects</router-link>
-        <router-link class="link-text" to="/partner">partner</router-link>
-        <router-link class="link-text" to="/join" id="join-link">join</router-link>
+        <router-link class="underline-text link-text" to="/people">people</router-link>
+        <router-link class="underline-text link-text" to="/projects">projects</router-link>
+        <router-link class="underline-text link-text" to="/partner">partner</router-link>
+        <router-link id="join-link" class="underline-text link-text" to="/join" >join</router-link>
       </div>
     </div>
     <router-view/>
@@ -14,17 +14,17 @@
       <div class="link-list">
         <p class="link-header">for students</p>
         <hr class="link-line" />
-        <router-link class="small-link-text" to="/people">people</router-link>
+        <router-link class="underline-text small-link-text" to="/people">people</router-link>
         <br /> <br />
-        <router-link class="small-link-text" to="/projects">projects</router-link>
+        <router-link class="underline-text small-link-text" to="/projects">projects</router-link>
         <br /> <br />
-        <router-link class="small-link-text" to="/join" id="join-link">join</router-link>
+        <router-link class="underline-text small-link-text" to="/join" id="join-link">join</router-link>
         <br /> <br />
       </div>
       <div class="link-list">
         <p class="link-header">for organizations</p>
         <hr class="link-line" />
-        <router-link class="small-link-text" to="/partner">partner</router-link>
+        <router-link class="underline-text small-link-text" to="/partner">partner</router-link>
         <br /> <br />
       </div>
     </div>
@@ -39,6 +39,35 @@ export default {
 </script>
 <style lang="scss">
 @import './theme.scss';
+
+.underline-text {
+    position: relative;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: $accent-medium !important;
+      &:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $accent-medium;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -97,7 +126,7 @@ export default {
 }
 
 #join-link {
-  color: $accent-light !important;
+  color: $accent-light;
 }
 
 #logo {

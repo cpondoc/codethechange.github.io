@@ -9,30 +9,30 @@
     <br />
     <div class="row">
       <div class="col-7">
-        <form id="form">
+        <form id="form" action="http://localhost:5000/partner-form" method="POST" enctype="multipart/form-data">
           <div class="form-group row">
             <label for="name" class="col-4 col-form-label">Your name</label>
             <div class="col-8">
-              <input type="text" class="form-control input" id="name" placeholder="Johnny Appleseed">
+              <input type="text" class="form-control input" name="name" id="name" placeholder="Johnny Appleseed">
             </div>
           </div>
           <div class="form-group row">
             <label for="email" class="col-4 col-form-label">Your email</label>
             <div class="col-8">
-              <input type="text" class="form-control input" id="email" placeholder="name@example.com">
+              <input type="text" class="form-control input" name="email" id="email" placeholder="name@example.com">
             </div>
           </div>
           <div class="form-group row">
             <label for="name" class="col-4 col-form-label">Company site</label>
             <div class="col-8">
-              <input type="text" class="form-control input" id="name" placeholder="https://yoururl.com">
+              <input type="text" class="form-control input" name="site" id="name" placeholder="https://yoururl.com">
             </div>
           </div>
           <div class="form-group row">
             <label for="name" class="col-4 col-form-label">Proposal upload</label>
             <div class="col-4">
               <label class="btn upload-button">
-                ADD FILE <input type="file" style="display: none;">
+                ADD FILE <input type="file" name="proposal" style="display: none;">
               </label>
             </div>
             <div class="col-4" id="optional">
@@ -48,7 +48,7 @@
           <div class="form-group row">
             <div class="col-9"></div>
             <div class="col-3">
-              <button type="submit" id="submit" class="btn btn-default">Submit</button>
+              <button type="submit" id="submit" class="btn btn-default">SUBMIT</button>
             </div>
           </div>
         </form>
@@ -182,11 +182,6 @@ input[type="text"]:focus, textarea:focus {
   padding: 40px;
   box-shadow: 0 4px 25px 0 rgba(41, 41, 41, 0.5);
   background-color: #292929;
-}
-
-.container {
-  align-content: stretch;
-  justify-items: stretch;
 }
 
 #optional {

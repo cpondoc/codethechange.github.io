@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Partner from './views/Partner.vue'
+import Projects from './views/Projects.vue'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/partner',
       name: 'partner',
       component: Partner
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: Projects
     }
   ]
 })

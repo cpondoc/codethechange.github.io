@@ -126,14 +126,14 @@ export default {
       axios.post('https://guarded-ravine-42139.herokuapp.com/partner-form', formData)
         .then(res => {
           this.submitted = true
-          this.finishedTitle = 'Form Submitted!'
-          this.finishedMessage = 'Thank you for reaching out. We will get back to you if we think your project is a good fit.'
-        })
-        .catch(err => {
-          console.error(err)
-          this.submitted = true
-          this.finishedTitle = 'Form Submission Error. '
-          this.finishedMessage = 'Unfortunately, we\'ve encountered some server error. Please email drewgreg [at] stanford [dot] edu with your form contents.'
+          if (res.error) {
+            console.error(res.error)
+            this.finishedTitle = 'Form Submission Error. '
+            this.finishedMessage = 'Unfortunately, we\'ve encountered some server error. Please email drewgreg [at] stanford [dot] edu with your form contents.'
+          } else {
+            this.finishedTitle = 'Form Submitted!'
+            this.finishedMessage = 'Thank you for reaching out. We will get back to you if we think your project is a good fit.'
+          }
         })
     }
   },

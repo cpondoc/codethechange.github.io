@@ -126,7 +126,7 @@ export default {
 }
 
 #join-link {
-  color: $accent-light;
+  color: $accent-light !important;
 }
 
 #logo {
@@ -142,7 +142,7 @@ export default {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 #links {

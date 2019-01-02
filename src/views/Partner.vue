@@ -102,6 +102,7 @@ export default {
       name: null,
       summary: null,
       email: null,
+      site: null,
       submitted: false,
       finishedMessage: ''
     }
@@ -123,6 +124,7 @@ export default {
       formData.append('name', this.name)
       formData.append('email', this.email)
       formData.append('summary', this.summary)
+      formData.append('site', this.site)
       axios.post('https://guarded-ravine-42139.herokuapp.com/partner-form', formData)
         .then(res => {
           this.submitted = true

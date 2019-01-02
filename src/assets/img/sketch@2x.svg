@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="647" height="514" viewBox="0 0 647 514">
+  <defs>
+    <rect id="sketch@2x-b" width="597" height="464" rx="8"/>
+    <filter id="sketch@2x-a" width="113.2%" height="117%" x="-6.6%" y="-7.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.160784314   0 0 0 0 0.160784314   0 0 0 0 0.160784314  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" transform="translate(25 21)">
+    <use fill="#000" filter="url(#sketch@2x-a)" xlink:href="#sketch@2x-b"/>
+    <use fill="#292929" xlink:href="#sketch@2x-b"/>
+    <rect width="219" height="185" x="239" y="157" fill="#FFF" rx="8"/>
+    <path fill="#595959" d="M0,46 L98,46 L98,456 C98,460.418278 94.418278,464 90,464 L8,464 C3.581722,464 5.41083001e-16,460.418278 0,456 L0,46 Z"/>
+    <rect width="98" height="99" y="108" fill="#313131" rx="8"/>
+    <rect width="98" height="99" y="232" fill="#313131" rx="8"/>
+    <rect width="98" height="107" y="357" fill="#313131" rx="8"/>
+    <path fill="#444" d="M8,0 L589,0 C593.418278,-8.11624501e-16 597,3.581722 597,8 L597,38 C597,42.418278 593.418278,46 589,46 L0,46 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z"/>
+    <ellipse cx="402" cy="208" fill="#D5A5FF" rx="40" ry="39"/>
+    <polygon fill="#FFB44B" points="306 183 356 282 256 282"/>
+    <rect width="133" height="32" x="309" y="299" fill="#FF9A9A"/>
+    <rect width="35" height="21" x="80" y="11" fill="#595959" rx="8"/>
+    <rect width="35" height="21" x="25" y="11" fill="#595959" rx="8"/>
+  </g>
+</svg>

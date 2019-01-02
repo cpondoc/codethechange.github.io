@@ -45,7 +45,7 @@ export default {
     text-decoration: none;
     &:hover {
       text-decoration: none;
-      color: $accent-medium !important;
+      color: $accent-light !important;
       &:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
@@ -59,7 +59,7 @@ export default {
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: $accent-medium;
+      background-color: $accent-light;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);

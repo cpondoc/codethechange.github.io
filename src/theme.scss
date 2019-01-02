@@ -22,9 +22,6 @@ $bold-blue: #3190ff;
 $bold-purple: #9721ff;
 $bold-orange: #ff9d14;
 
-@font-face {
-  font-family: "Comfortaa";
-  src: url("/Users/drewgregory/Documents/CTC/website/src/assets/fonts/Comfortaa-Bold.ttf") format("tff");
-}
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans');
 
 @import "../node_modules/bootstrap/scss/bootstrap";

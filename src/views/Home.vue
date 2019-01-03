@@ -16,36 +16,60 @@
         <img id="stanford" src="@/assets/img/stanford@2x.png" />
       </div>
     </div>
-    <div class="row">
+    <div v-for="project in caseStudies" :key="project.name" class="row">
       <div class="center-horiz col-lg-5 col-sm-12">
         <div class="text-content">
           <div class="center-space">
-            <p class="year">2018</p>
-            <p class="org-name">Teach For America</p>
-            <p class="subtitle">We built a project matching platform that boosted engagement by 60%.</p>
+            <p class="year" :style="{ color: themeColors['light-'+project.color] }">{{ project.year }}</p>
+            <p class="org-name">{{ project.name}}</p>
+            <p class="subtitle">{{ project.subtitle }}</p>
             <br />
-            <button @click="TODO()" class="btn read-btn">READ</button>
+            <button @click="TODO()" :style="{ backgroundColor: themeColors['bold-'+project.color] }" class="btn read-btn">READ</button>
              <br />
             <br />
           </div>
         </div>
       </div>
-      <div class="col-lg-7 col-sm-12 image-holder">
-        <img class="image" src="@/assets/img/sketch@2x.png"/>
+      <div  :style="{ background: themeColors['tint-'+project.color] }" class="col-lg-7 col-sm-12 image-holder">
+        <img class="image" :src="baseUrl + project.background" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import Projects from '@/data/projects.json'
 
 export default {
   name: 'home',
   data () {
+    const colors = ['blue', 'yellow', 'purple']
+    let i = 0
+    let caseStudies = []
+    for (let x of Projects) {
+      if (x.featured) {
+        x.color = colors[i++ % colors.length]
+        caseStudies.push(x)
+      }
+    }
     return {
+      caseStudies: caseStudies,
       width: 0,
-      height: 0
+      height: 0,
+      baseUrl: process.env.BASE_URL,
+      themeColors: {
+        'light-purple': '#d5a5ff',
+        'light-yellow': 'fff469',
+        'light-blue': '#5ea9ff',
+        'tint-purple': 'rgba(213, 165, 255, 0.3)',
+        'tint-yellow': 'rgba(255, 244, 105, 0.3)',
+        'tint-blue': 'rgba(94, 169, 255, 0.3)',
+        'bold-blue': '#3190ff',
+        'bold-purple': '#9721ff',
+        'bold-orange': '#ff9d14',
+        'bold-yellow': '#fff469'
+      }
+
     }
   },
   mounted () {
@@ -83,7 +107,6 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,255,255, 0.5);
   transition: all .3s linear;
 }
 
@@ -150,7 +173,6 @@ export default {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #d5a5ff;
 }
 
 .container {

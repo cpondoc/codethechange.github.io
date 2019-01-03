@@ -4,7 +4,26 @@ $theme-colors: (
   "danger": #a2d0b8
 );
 
-$my-color: #dd33aa;
+$text-color: #d8d8d8;
 
 $take-action: #aff8e8;
+
+$accent-light: #aff8e8;
+$accent-medium: #327264;
+
+$main-medium: #383838;
+$main-dark: #3b3b3b;
+
+$secondary-light: #ffd6d6;
+$secondary-medium: #a25757;
+$secondary-heavy: #ff8585;
+
+$home-accent: #29ffd0;
+
+$bold-blue: #3190ff;
+$bold-purple: #9721ff;
+$bold-orange: #ff9d14;
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans');
+
 @import "../node_modules/bootstrap/scss/bootstrap";

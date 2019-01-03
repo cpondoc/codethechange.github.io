@@ -28,7 +28,7 @@
           <div class="form-group row">
             <label for="name" class="col-4 col-form-label">Your name</label>
             <div class="col-8">
-              <input type="text" v-model="name" class="form-control input" name="name" placeholder="Johnny Appleseed">
+              <input type="text" v-model="name" class="form-control input" name="name" placeholder="John Smith">
             </div>
           </div>
           <div class="form-group row">
@@ -102,6 +102,7 @@ export default {
       name: null,
       summary: null,
       email: null,
+      site: null,
       submitted: false,
       finishedMessage: ''
     }
@@ -123,6 +124,7 @@ export default {
       formData.append('name', this.name)
       formData.append('email', this.email)
       formData.append('summary', this.summary)
+      formData.append('site', this.site)
       axios.post('https://guarded-ravine-42139.herokuapp.com/partner-form', formData)
         .then(res => {
           this.submitted = true
@@ -143,9 +145,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$take-action: #aff8e8;
-$text-color: #d8d8d8;
-
+@import '../theme.scss';
 .header {
   height: 38px;
   font-family: Comfortaa;

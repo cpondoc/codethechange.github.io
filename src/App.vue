@@ -9,7 +9,8 @@
         <router-link id="join-link" class="underline-text link-text" to="/join" >join</router-link>
       </div>
     </div>
-    <router-view/>
+    <hr id="scroll-shadow" />
+    <router-view id="page"/>
     <div id="footer">
       <div class="link-list">
         <p class="link-header">for students</p>
@@ -40,6 +41,34 @@ export default {
 <style lang="scss">
 @import './theme.scss';
 
+*, *::before, *::after {
+  box-sizing:border-box
+}
+
+.nav-container {
+  position: sticky;
+  top: -16px;
+  z-index: 5;
+  background-color: $main-dark;
+  padding: 25px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* PSEUDO ELEMENTS to create drop-shadow */
+#scroll-shadow {
+  width: 100%;
+  height: 10px;
+  /* make pseudo elements sticky as well */
+  position: sticky;
+  top: 50px;
+  z-index: 1000;
+  box-shadow: 0 2px 19px 0 rgba(124, 124, 124, 0.5);
+  z-index: 3;
+  margin-top:-25px;
+}
+
 .underline-text {
     position: relative;
     text-decoration: none;
@@ -66,6 +95,10 @@ export default {
       -webkit-transition: all 0.3s ease-in-out 0s;
       transition: all 0.3s ease-in-out 0s;
     }
+}
+
+body {
+  background-color: $main-dark;
 }
 
 #app {
@@ -115,14 +148,6 @@ export default {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-}
-
-.nav-container {
-  background-color: $main-dark;
-  padding: 50px;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
 }
 
 #join-link {

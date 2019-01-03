@@ -3,10 +3,14 @@
     <div class="nav-container">
       <router-link id="logo" to="/">LOGO</router-link>
       <div id="links">
-        <router-link class="underline-text link-text" to="/people">people</router-link>
-        <router-link class="underline-text link-text" to="/projects">projects</router-link>
-        <router-link class="underline-text link-text" to="/partner">partner</router-link>
-        <router-link id="join-link" class="underline-text link-text" to="/join" >join</router-link>
+        <div class = "text-group">
+        <router-link class="hover-text link-text" to="/people">people</router-link>
+        <router-link class="hover-text link-text" to="/projects">projects</router-link>
+        <router-link class="hover-text link-text" to="/partner">partner</router-link>
+        </div>
+        <div class = "cta-group">
+        <router-link id="join-link" class="hover-text link-text" to="/join" >join</router-link>
+        </div>
       </div>
     </div>
     <hr id="scroll-shadow" />
@@ -15,17 +19,17 @@
       <div class="link-list">
         <p class="link-header">for students</p>
         <hr class="link-line" />
-        <router-link class="underline-text small-link-text" to="/people">people</router-link>
+        <router-link class="hover-text small-link-text" to="/people">people</router-link>
         <br /> <br />
-        <router-link class="underline-text small-link-text" to="/projects">projects</router-link>
+        <router-link class="hover-text small-link-text" to="/projects">projects</router-link>
         <br /> <br />
-        <router-link class="underline-text small-link-text" to="/join" id="join-link">join</router-link>
+        <router-link class="hover-text small-link-text" to="/join" id="join-small-link">join</router-link>
         <br /> <br />
       </div>
       <div class="link-list">
         <p class="link-header">for organizations</p>
         <hr class="link-line" />
-        <router-link class="underline-text small-link-text" to="/partner">partner</router-link>
+        <router-link class="hover-text small-link-text" to="/partner">partner</router-link>
         <br /> <br />
       </div>
     </div>
@@ -47,7 +51,7 @@ export default {
 
 .nav-container {
   position: sticky;
-  top: -16px;
+  top: -8px;
   z-index: 5;
   background-color: $main-dark;
   padding: 25px;
@@ -66,34 +70,15 @@ export default {
   z-index: 1000;
   box-shadow: 0 2px 19px 0 rgba(124, 124, 124, 0.5);
   z-index: 3;
-  margin-top:-20px;
+  margin-top: -25px;
 }
 
-.underline-text {
+.hover-text {
     position: relative;
     text-decoration: none;
     &:hover {
       text-decoration: none;
       color: $accent-light !important;
-      &:before {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-      }
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: $accent-light;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
     }
 }
 
@@ -151,7 +136,18 @@ body {
 }
 
 #join-link {
-  color: $accent-light !important;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: white;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+
+  &:hover{
+    border-color: $accent-light;
+}
 }
 
 #logo {
@@ -160,7 +156,7 @@ body {
 
 .link-text {
   font-family: Comfortaa;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -168,13 +164,18 @@ body {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  padding-right:3em;
+
 }
 
 #links {
   margin-right: 80px;
-  width: 570px;
+  width: 800px;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
+.text-group{
+  padding-left: 20em;
+}
 </style>

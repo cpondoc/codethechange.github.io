@@ -1,16 +1,25 @@
 <template>
-  <div class="container">
-    <div id="text">
-      <br />
-      <h1 id="hook">Code from day one, with impact.</h1>
-      <hr id="line" />
-      <p id="subtitle">Welcome to a passionate club of engineers and makers.</p>
-      <br />
-      <br />
-      <router-link id="view-text" to="/projects">View our work</router-link>
-      <br />
+  <div>
+    <div class="row">
+      <div class="container">
+        <div id="text">
+          <br />
+          <h1 id="hook">Code from day one, with impact.</h1>
+          <hr id="line" />
+          <p id="subtitle">Welcome to a passionate club of engineers and makers.</p>
+          <br />
+          <br />
+          <router-link id="view-text" to="/projects">View our work</router-link>
+          <br />
+        </div>
+        <img id="stanford" src="@/assets/img/stanford@2x.png" />
+      </div>
     </div>
-    <img id="stanford" src="@/assets/img/stanford@2x.png" />
+    <div class="row">
+      <div class="col-12">
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -31,6 +40,12 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0px;
+}
+
+.row {
+  margin:0px;
+  width: 100vw;
 }
 
 #text {

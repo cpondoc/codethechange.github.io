@@ -66,7 +66,7 @@ export default {
   height: 10px;
   /* make pseudo elements sticky as well */
   position: sticky;
-  top: 50px;
+  top: 45px;
   z-index: 1000;
   box-shadow: 0 2px 19px 0 rgba(124, 124, 124, 0.5);
   z-index: 3;

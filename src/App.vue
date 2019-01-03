@@ -3,10 +3,14 @@
     <div class="nav-container">
       <router-link id="logo" to="/">LOGO</router-link>
       <div id="links">
+        <div class = "text-group">
         <router-link class="underline-text link-text" to="/people">people</router-link>
         <router-link class="underline-text link-text" to="/projects">projects</router-link>
         <router-link class="underline-text link-text" to="/partner">partner</router-link>
+        </div>
+        <div class = "cta-group">
         <router-link id="join-link" class="underline-text link-text" to="/join" >join</router-link>
+        </div>
       </div>
     </div>
     <hr id="scroll-shadow" />
@@ -19,7 +23,7 @@
         <br /> <br />
         <router-link class="underline-text small-link-text" to="/projects">projects</router-link>
         <br /> <br />
-        <router-link class="underline-text small-link-text" to="/join" id="join-link">join</router-link>
+        <router-link class="underline-text small-link-text" to="/join" id="join-small-link">join</router-link>
         <br /> <br />
       </div>
       <div class="link-list">
@@ -77,8 +81,8 @@ export default {
       color: $accent-light !important;
       &:before {
         visibility: visible;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
+       /* -webkit-transform: scaleX(1);
+        transform: scaleX(1); */
       }
     }
     &:before {
@@ -151,7 +155,18 @@ body {
 }
 
 #join-link {
-  color: $accent-light !important;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: white;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+
+  &:hover{
+    border-color: $accent-light;
+}
 }
 
 #logo {
@@ -160,7 +175,7 @@ body {
 
 .link-text {
   font-family: Comfortaa;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -168,13 +183,20 @@ body {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  padding-right:3em;
+
 }
 
 #links {
   margin-right: 80px;
-  width: 570px;
+  width: 800px;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
+}
+.text-group{
+  padding-left: 20em;
 }
 
+.cta-group{
+}
 </style>

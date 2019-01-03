@@ -11,12 +11,13 @@
           <br />
           <router-link id="view-text" to="/projects">View our work</router-link>
           <br />
+          <br />
         </div>
-        <img v-if="width > 1000" id="stanford" src="@/assets/img/stanford@2x.png" />
+        <img id="stanford" src="@/assets/img/stanford@2x.png" />
       </div>
     </div>
     <div class="row">
-      <div class="center-horiz col-5 col-xs-12">
+      <div class="center-horiz col-lg-5 col-sm-12">
         <div class="text-content">
           <div class="center-space">
             <p class="year">2018</p>
@@ -24,10 +25,12 @@
             <p class="subtitle">We built a project matching platform that boosted engagement by 60%.</p>
             <br />
             <button @click="TODO()" class="btn read-btn">READ</button>
+             <br />
+            <br />
           </div>
         </div>
       </div>
-      <div class="col-7 col-xs-12 image-holder">
+      <div class="col-lg-7 col-sm-12 image-holder">
         <img class="image" src="@/assets/img/sketch@2x.png"/>
       </div>
     </div>
@@ -69,6 +72,7 @@ export default {
 
 .image {
   height: 100%;
+  width: 100%;
 }
 
 .image-holder:before {
@@ -158,7 +162,7 @@ export default {
 
 .row {
   margin:0px;
-  height: calc(100vh - 75px);
+  min-height: calc(100vh - 75px);
 }
 
 #text {

@@ -60,7 +60,7 @@ export default {
   justify-content: space-between;
 }
 
-/* PSEUDO ELEMENTS to create drop-shadow */
+/* Heavily inspired from https://stijndewitt.com/2018/06/12/pure-css-drop-shadow-on-scroll/ */
 #scroll-shadow {
   width: 100%;
   height: 10px;

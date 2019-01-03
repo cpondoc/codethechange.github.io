@@ -9,7 +9,7 @@
           <p id="subtitle">Welcome to a passionate club of engineers and makers.</p>
           <br />
           <br />
-          <router-link id="view-text" to="/projects">View our work</router-link>
+          <a href="#" v-scroll-to="'.text-content'" @click="scrollToProjects" id="view-text">View our work</a>
           <br />
           <br />
         </div>
@@ -83,6 +83,9 @@ export default {
     handleResize () {
       this.width = window.innerWidth
       this.height = window.innerHeight
+    },
+    scrollToProjects () {
+
     }
   },
   components: {

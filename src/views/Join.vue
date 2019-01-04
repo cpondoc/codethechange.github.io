@@ -35,17 +35,20 @@
     </div>
 
     <div class = "container-right">
+
+         <div class = "cr-image">
+         <img id="family" src="@/assets/img/family@2x.png" > 
+         </div>
+
         <div class = "cr-text">
             <h2 id = "family-h2" >You’re joining a family</h2>
             <p id = "family-p">We built a project matching platform that boosted engagement by 60%.   We’re Code the Change, a club at Stanford University that builds useful software for high-impact nonprofits.  </p>
         </div>
-        <img id="family" src="@/assets/img/family@2x.png" />
-
     </div>
 
     <div class = "cta">
         <h1> Ready to jump in?  Apply today. </h1>
-        <div class = "cta-button"> 
+        <div class = "cta-button" id ="footer-cta"> 
                     <h3> Apply </h3>
                      <div id = "button-arrow">
                     </div>
@@ -67,7 +70,7 @@ export default {
 }
 
 .header-container{
-    width: 100%;
+  width: 100%;
   height: 55vh;
   background-color: $secondary-light;
 
@@ -77,21 +80,23 @@ export default {
   font-family: OpenSans;
   padding-left: 10em;
   padding-right: 10em;
-  padding-top: 5em;
+  padding-top: 8em;
+  padding-bottom: 10em;
+
 }
 
 .header-title{
   font-family: Comfortaa;
-  font-size: 4em;
+  font-size: 3.5em;
     font-weight: bold;
   line-height: 1.39;
   letter-spacing: normal;
   color: $secondary-medium;
 }
 .cta-button{
-    margin-top: 5em;
-width: 349px;
-  height: 73px;
+  margin-top: 4em;
+  width: 21vw;
+  height: 7.5vh;
   border-radius: 8px;
   box-shadow: 0 4px 25px 0 rgba(252, 85, 85, 0.5);
   background-color: $secondary-heavy;
@@ -99,14 +104,18 @@ width: 349px;
 
 .cta-button h3{
     font-family: "Open Sans";
-  font-size: 21px;
-  font-weight: 800;
+  font-size: 1.3em;
+  font-weight: 1000;
   font-style: normal;
   font-stretch: normal;
-  line-height: 3.57;
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-transform: uppercase;
+line-height: 7.5vh;
+box-sizing: border-box;
 }
 
 #button-arrow{
@@ -118,18 +127,20 @@ width: 349px;
     flex-direction: row;
     padding-bottom: 7em;
     width: 100%;
+    margin-left: 2vw;
+    margin-right: 2vw;
 
 }
 
 .cr-image{
         flex: 50%;    
-        padding-top: 10em;
+        padding-top: 7em;
 
 }
 .cr-text{
     flex: 50%;
     text-align: left;
-    padding-top: 20em;
+    padding-top: 15em;
     padding-left: 6em;
 
 }
@@ -137,8 +148,10 @@ width: 349px;
 h2{
       font-family: Comfortaa;
       font-weight: 800;
-          font-size: 2.4em;
-          padding-bottom: 1vh;
+        font-size: 2.2em;
+        padding-bottom: 1vh;
+        width: 40vw;
+
 }
 
 p{
@@ -148,6 +161,8 @@ p{
   font-stretch: normal;
   line-height: 2.14;
   letter-spacing: normal;
+    width: 35vw;
+
 
 }
 
@@ -177,10 +192,15 @@ width: 49vw;
 
 .cl-text{
     flex: 50%;
-    text-align: center;
+    text-align: left;
     color: black;
     padding-top: 15em;
     padding-left: 6em;
+
+}
+
+.cl-text p{
+      color: #696969;
 
 }
 
@@ -200,8 +220,33 @@ width: 49vw;
 
 .content-left{
    
-     display: flex;
+    display: flex;
     flex-direction: row;
+
+}
+
+#family{
+    width: 45vw;
+    height: 70vh;
+}
+
+.cta{
+    width:100%;
+      background-color: #252525;
+    text-align: center;
+    padding: 10em;
+}
+
+#footer-cta{
+    display: inline-block;
+    text-align:center;
+    margin-left: auto;
+        margin-right: auto;
+
+}
+
+.cta h1{
+        color: $secondary-light;
 
 }
 

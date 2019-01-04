@@ -100,6 +100,11 @@ export default {
   border-radius: 8px;
   box-shadow: 0 4px 25px 0 rgba(252, 85, 85, 0.5);
   background-color: $secondary-heavy;
+
+
+  &:hover{
+    background-color: #CF6969;
+  }
 }
 
 .cta-button h3{

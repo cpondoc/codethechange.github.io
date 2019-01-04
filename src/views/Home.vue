@@ -25,7 +25,7 @@
             <p class="subtitle">{{ project.subtitle }}</p>
             <br />
             <button @click="TODO()" :style="{ backgroundColor: themeColors['bold-'+project.color] }" class="btn read-btn">READ</button>
-             <br />
+            <br />
             <br />
           </div>
         </div>
@@ -54,8 +54,6 @@ export default {
     }
     return {
       caseStudies: caseStudies,
-      width: 0,
-      height: 0,
       baseUrl: process.env.BASE_URL,
       themeColors: {
         'light-purple': '#d5a5ff',
@@ -69,27 +67,7 @@ export default {
         'bold-orange': '#ff9d14',
         'bold-yellow': '#fff469'
       }
-
     }
-  },
-  mounted () {
-    window.addEventListener('resize', this.handleResize)
-    this.handleResize()
-  },
-  destroyed () {
-    window.removeEventListener('resize', this.handleResize)
-  },
-  methods: {
-    handleResize () {
-      this.width = window.innerWidth
-      this.height = window.innerHeight
-    },
-    scrollToProjects () {
-
-    }
-  },
-  components: {
-
   }
 }
 </script>

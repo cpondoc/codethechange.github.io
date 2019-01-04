@@ -13,7 +13,7 @@
 
     <div class = "container-right">
         <div class = "cr-image">
-         <img id="code-img" src="@/assets/img/code@2x.png" > 
+            <img id="code-img" src="@/assets/img/code@2x.png"> </img>
          </div>
         <div class = "cr-text">
             <h2 id = "code-h2">Make code your superpower…</h2>
@@ -35,9 +35,8 @@
     </div>
 
     <div class = "container-right">
-
          <div class = "cr-image">
-         <img id="family" src="@/assets/img/family@2x.png" > 
+            <img id="family" src="@/assets/img/family@2x.png" > 
          </div>
 
         <div class = "cr-text">
@@ -99,16 +98,21 @@ export default {
   height: 7.5vh;
   border-radius: 8px;
   box-shadow: 0 4px 25px 0 rgba(252, 85, 85, 0.5);
-  background-color: $secondary-heavy;
-
-
+  background-color: $secondary-heavy; 
   &:hover{
     background-color: #CF6969;
+
+ 
+    cursor: pointer;
+  -webkit-box-shadow: 0 2px 9px 0 rgba(0,0,0,.2);
+  box-shadow: 0 4px 45px 0 rgba(252, 85, 85, 0.5);
+  -webkit-transform: translateY(-1px) scale(1.01);
+  transform: translateY(-1px) scale(1.01);
   }
 }
 
 .cta-button h3{
-    font-family: "Open Sans";
+  font-family: "Open Sans";
   font-size: 1.3em;
   font-weight: 1000;
   font-style: normal;
@@ -119,8 +123,8 @@ export default {
   margin-top: auto;
   margin-bottom: auto;
   text-transform: uppercase;
-line-height: 7.5vh;
-box-sizing: border-box;
+  line-height: 7.5vh;
+  box-sizing: border-box;
 }
 
 #button-arrow{
@@ -151,8 +155,8 @@ box-sizing: border-box;
 }
 
 h2{
-      font-family: Comfortaa;
-      font-weight: 800;
+        font-family: Comfortaa;
+        font-weight: 800;
         font-size: 2.2em;
         padding-bottom: 1vh;
         width: 40vw;
@@ -172,14 +176,13 @@ p{
 }
 
 #code-h2{
-        color:white;
+    color:white;
 
 }
 #code-p{
-        color: #bfbfbf;
+    color: #bfbfbf;
 
 }
-
 
 #code-img{
 height: 60vh;
@@ -206,7 +209,7 @@ width: 49vw;
 }
 
 .cl-text p{
-      color: #696969;
+    color: #696969;
 
 }
 
@@ -217,7 +220,6 @@ width: 49vw;
 }
 #design{
     position: absolute;
-
     width: 45vw;
     height: 70vh;
     top: 12%;
@@ -238,7 +240,7 @@ width: 49vw;
 
 .cta{
     width:100%;
-      background-color: #252525;
+    background-color: #252525;
     text-align: center;
     padding: 10em;
 }
@@ -247,12 +249,12 @@ width: 49vw;
     display: inline-block;
     text-align:center;
     margin-left: auto;
-        margin-right: auto;
+    margin-right: auto;
 
 }
 
 .cta h1{
-        color: $secondary-light;
+    color: $secondary-light;
 
 }
 

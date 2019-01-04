@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="695" height="504" viewBox="0 0 695 504">
   <defs>
-    <rect id="group-2@2x-b" width="645" height="454" rx="8"/>
-    <filter id="group-2@2x-a" width="112.2%" height="117.4%" x="-6.1%" y="-7.8%" filterUnits="objectBoundingBox">
+    <rect id="code@2x-b" width="645" height="454" rx="8"/>
+    <filter id="code@2x-a" width="112.2%" height="117.4%" x="-6.1%" y="-7.8%" filterUnits="objectBoundingBox">
       <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
       <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12.5"/>
       <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.160784314   0 0 0 0 0.160784314   0 0 0 0 0.160784314  0 0 0 0.5 0"/>
@@ -9,32 +9,32 @@
   </defs>
   <g fill="none" fill-rule="evenodd" transform="translate(25 21)">
     <g fill-rule="nonzero">
-      <use fill="#000" filter="url(#group-2@2x-a)" xlink:href="#group-2@2x-b"/>
-      <use fill="#292929" xlink:href="#group-2@2x-b"/>
+      <use fill="#000" filter="url(#code@2x-a)" xlink:href="#code@2x-b"/>
+      <use fill="#292929" xlink:href="#code@2x-b"/>
     </g>
     <text fill="#3190FF" font-family="Menlo-Regular, Menlo" font-size="16">
       <tspan x="105" y="59">&lt;body&gt;</tspan>
     </text>
     <text font-family="Menlo-Regular, Menlo" font-size="16">
-      <tspan x="105" y="98" fill="#3190FF">&lt;div </tspan> <tspan x="153.164" y="98" fill="#D5A5FF">class</tspan> <tspan x="201.328" y="98" fill="#D5A5FF"> = </tspan> <tspan x="230.227" y="98" fill="#FFB44B">“ctc-container”</tspan> <tspan x="374.719" y="98" fill="#3190FF">&gt;</tspan>
+      <tspan x="118" y="98" fill="#3190FF">&lt;div </tspan> <tspan x="166.164" y="98" fill="#D5A5FF">class</tspan> <tspan x="214.328" y="98" fill="#D5A5FF"> = </tspan> <tspan x="243.227" y="98" fill="#FFB44B">“ctc-container”</tspan> <tspan x="387.719" y="98" fill="#3190FF">&gt;</tspan>
     </text>
     <text font-family="Menlo-Regular, Menlo" font-size="16">
-      <tspan x="125" y="148" fill="#3190FF">&lt;div </tspan> <tspan x="173.164" y="148" fill="#D5A5FF">class</tspan> <tspan x="221.328" y="148" fill="#D5A5FF"> = </tspan> <tspan x="250.227" y="148" fill="#FFB44B">“ctc-intro”</tspan> <tspan x="356.188" y="148" fill="#3190FF">&gt;</tspan>
+      <tspan x="138" y="148" fill="#3190FF">&lt;div </tspan> <tspan x="186.164" y="148" fill="#D5A5FF">class</tspan> <tspan x="234.328" y="148" fill="#D5A5FF"> = </tspan> <tspan x="263.227" y="148" fill="#FFB44B">“ctc-intro”</tspan> <tspan x="369.188" y="148" fill="#3190FF">&gt;</tspan>
     </text>
     <text fill="#3190FF" font-family="Menlo-Regular, Menlo" font-size="16">
-      <tspan x="105" y="398">&lt;/body&gt;</tspan>
+      <tspan x="95" y="398">&lt;/body&gt;</tspan>
     </text>
     <text fill="#3190FF" font-family="Menlo-Regular, Menlo" font-size="16">
-      <tspan x="130" y="296">&lt;/div&gt;</tspan>
+      <tspan x="138" y="298">&lt;/div&gt;</tspan>
     </text>
     <text fill="#3190FF" font-family="Menlo-Regular, Menlo" font-size="16">
-      <tspan x="105" y="346">&lt;/div&gt;</tspan>
+      <tspan x="110" y="348">&lt;/div&gt;</tspan>
     </text>
     <text fill="#9A9A9A" font-family="Menlo-Bold, Menlo" font-size="16" font-weight="bold">
       <tspan x="56" y="48">1</tspan>
     </text>
     <text font-family="Menlo-Regular, Menlo" font-size="16">
-      <tspan x="154" y="198" fill="#3190FF">&lt;h1&gt;</tspan> <tspan x="192.531" y="198" fill="#9A9A9A"> </tspan> <tspan x="202.164" y="198" fill="#FFF">Code from day one</tspan> <tspan x="365.922" y="198" fill="#9A9A9A"> </tspan> <tspan x="375.555" y="198" fill="#3190FF">&lt;/h1&gt;</tspan> <tspan x="423.719" y="198" fill="#FFB44B"> </tspan>
+      <tspan x="176" y="198" fill="#3190FF">&lt;h1&gt;</tspan> <tspan x="214.531" y="198" fill="#9A9A9A"> </tspan> <tspan x="224.164" y="198" fill="#FFF">Code from day one</tspan> <tspan x="387.922" y="198" fill="#9A9A9A"> </tspan> <tspan x="397.555" y="198" fill="#3190FF">&lt;/h1&gt;</tspan> <tspan x="445.719" y="198" fill="#FFB44B"> </tspan>
     </text>
     <text font-family="Menlo-Regular, Menlo" font-size="16">
       <tspan x="176" y="244" fill="#3190FF">&lt;h3&gt;</tspan> <tspan x="214.531" y="244" fill="#9A9A9A"> </tspan> <tspan x="224.164" y="244" fill="#FFF">Even if you don’t have experience!</tspan> <tspan x="551.68" y="244" fill="#9A9A9A"> </tspan> <tspan x="561.313" y="244" fill="#3190FF">&lt;/h3&gt; </tspan>

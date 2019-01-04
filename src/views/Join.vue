@@ -182,7 +182,8 @@ width: 49vw;
 }
 
 .container-left{
-    background-color: white;   
+    background-color: white;  
+    overflow: hidden; 
 }
 
 .cl-image{

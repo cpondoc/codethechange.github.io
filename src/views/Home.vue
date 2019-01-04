@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home-content">
     <div class="row">
       <div class="container">
         <div id="text">
@@ -9,7 +9,19 @@
           <p id="subtitle">Welcome to a passionate club of engineers and makers.</p>
           <br />
           <br />
-          <a href="#" v-scroll-to="'.text-content'" @click="scrollToProjects" id="view-text">View our work</a>
+          <a href="#" v-scroll-to="{
+            el: '.center-horiz',
+            duration: 500,
+            easing: 'linear',
+            offset: -80,
+            force: true,
+            cancelable: true,
+            onStart: onStart,
+            onDone: onDone,
+            onCancel: onCancel,
+            x: false,
+            y: true
+          }" id="view-text">View our work</a>
           <br />
           <br />
         </div>
@@ -91,6 +103,10 @@ export default {
   transition: all .3s linear;
 }
 
+.image-holder {
+  height: calc(100vh - 85px);
+}
+
 .read-btn {
   width: 281px;
   height: 95px;
@@ -165,7 +181,7 @@ export default {
 
 .row {
   margin:0px;
-  min-height: calc(100vh - 75px);
+  min-height: calc(100vh - 85px);
 }
 
 #text {

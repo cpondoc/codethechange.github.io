@@ -1,22 +1,81 @@
 <template>
-    <div >
-        <img id="profile-photo" :src="imageSrc"/>
+    <div>
+        <figure class="tint">
+            <img id="profile-photo" :src="imageSrc"/>
+            <div class="links">
+                <a :href="social.link" :key="social.link" class="hvr-glow link-button" v-for="social in socials">
+                    <img class="social-icon" :src="social.image" />
+                </a>
+            </div>
+        </figure>
         <p id="name">{{ name }}</p>
         <p id="position"> {{ position.toUpperCase() }} </p>
     </div>
 </template>
 <script>
+import github from '@/assets/img/github-icon.png'
+import email from '@/assets/img/email.png'
+import linkedin from '@/assets/img/linkedin-icon.png'
+
 export default {
   name: 'profileCard',
-  props: ['imageSrc', 'name', 'position']
+  props: ['imageSrc', 'name', 'position', 'links'],
+  data: function () {
+    let socials = []
+    for (let link in this.links) {
+      let image = ''
+      if (link === 'github') {
+        image = github
+      } else if (link === 'linkedin') {
+        image = linkedin
+      } else if (link === 'email') {
+        image = email
+      }
+      socials.push({ link: this.links[link], image: image })
+    }
+    return {
+      socials: socials
+    }
+  }
 }
 </script>
 <style scoped lang="scss">
+
 @import '../theme.scss';
 
-#profile-photo:before {
-  content: "asdfasdf;lkajsdfkl;";
-  z-index: 100;
+/* Glow FROM HOVER.CSS */
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+$icon-size: 30px;
+
+.links{
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    left: 0;
+    justify-content: space-around;
+}
+
+.tint > .links  { display:none; }
+.tint:hover > .links { display:flex; }
+
+.tint:hover:before {
+  content: "";
   width: 200px;
   height: 200px;
   display: block;
@@ -25,12 +84,31 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,255,255, 0.5);
+  background: $tint-orange;
   transition: all .3s linear;
 }
 
-#profile-photo:hover:before {
-  background: none;
+.social-icon {
+  width: $icon-size;
+  height: $icon-size;
+}
+
+.link-button {
+  background-color: $bold-orange;
+  padding: 10px;
+}
+
+.tint {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  position:relative;
+}
+
+#profile-photo {
+  width: 200px;
+  height: 200px;
 }
 
 #name {
@@ -56,13 +134,6 @@ export default {
   letter-spacing: normal;
   text-align: left;
   color: #545454;
-}
-
-#profile-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 8px;
-  position:relative;
 }
 
 </style>

@@ -9,7 +9,7 @@
       <h1 class="margin-top title" style="color: #ffaf40">Leadership</h1>
     </div>
     <div class="profile-container row white-bg">
-      <profile-card id="card" v-for="person in leadership" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" />
+      <profile-card id="card" v-for="person in leadership" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" :links="person.links" />
     </div>
     <div v-for="team in projectTeams" :key="team.name" class="white-bg">
       <div class="row">
@@ -19,7 +19,7 @@
         <h1 class="title" style="color: #ffaf40">{{ team.name }}</h1>
       </div>
       <div class="profile-container row">
-        <profile-card id="card" v-for="person in team.people" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" />
+        <profile-card id="card" v-for="person in team.people" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" :links="person.links" />
       </div>
     </div>
   </div>

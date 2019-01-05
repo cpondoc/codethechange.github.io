@@ -13,7 +13,7 @@
 
     <div class = "container-right">
         <div class = "cr-image">
-            <img id="code-img" src="@/assets/img/code@2x.png" />
+            <img id="code-img" src="@/assets/img/code@2x.png"/>
          </div>
         <div class = "cr-text">
             <h2 id = "code-h2">Make code your superpower…</h2>
@@ -49,11 +49,8 @@
         <h1> Ready to jump in?  Apply today. </h1>
         <div class = "cta-button" id ="footer-cta">
             <h3> Apply </h3>
-                <div id = "button-arrow">
-            </div>
         </div>
     </div>
-
 </div>
 
 </template>

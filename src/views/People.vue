@@ -19,7 +19,7 @@
         <h1 class="title" style="color: #ffaf40">{{ team.name }}</h1>
       </div>
       <div class="profile-container row">
-        <profile-card id="card" v-for="person in team.team" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" />
+        <profile-card id="card" v-for="person in team.people" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" />
       </div>
     </div>
   </div>
@@ -36,11 +36,11 @@ export default {
     const projectTeams = []
     for (let project of projects) {
       if (project.wip) {
-        let team = []
+        let teamPeople = []
         for (let person of project.team) {
-          team.push(people[person])
+          teamPeople.push(people[person])
         }
-        project.team = team
+        project.people = teamPeople
         projectTeams.push(project)
       }
     }

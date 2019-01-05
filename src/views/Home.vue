@@ -48,34 +48,24 @@
 
 <script>
 import Projects from '@/data/projects.json'
+import colors from '@/data/colors.json'
 
 export default {
   name: 'home',
   data () {
-    const colors = ['blue', 'yellow', 'purple']
+    const selColors = ['blue', 'orange', 'purple']
     let i = 0
     let caseStudies = []
     for (let x of Projects) {
       if (x.featured) {
-        x.color = colors[i++ % colors.length]
+        x.color = selColors[i++ % selColors.length]
         caseStudies.push(x)
       }
     }
     return {
       caseStudies: caseStudies,
       baseUrl: process.env.BASE_URL,
-      themeColors: {
-        'light-purple': '#d5a5ff',
-        'light-yellow': 'fff469',
-        'light-blue': '#5ea9ff',
-        'tint-purple': 'rgba(213, 165, 255, 0.3)',
-        'tint-yellow': 'rgba(255, 244, 105, 0.3)',
-        'tint-blue': 'rgba(94, 169, 255, 0.3)',
-        'bold-blue': '#3190ff',
-        'bold-purple': '#9721ff',
-        'bold-orange': '#ff9d14',
-        'bold-yellow': '#fff469'
-      }
+      themeColors: colors
     }
   }
 }

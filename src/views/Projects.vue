@@ -85,6 +85,9 @@ export default {
     return {
     }
   },
+  computed: {
+
+  },
   methods: {
   },
   name: 'Projects',

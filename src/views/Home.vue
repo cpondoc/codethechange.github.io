@@ -16,9 +16,6 @@
             offset: -80,
             force: true,
             cancelable: true,
-            onStart: onStart,
-            onDone: onDone,
-            onCancel: onCancel,
             x: false,
             y: true
           }" id="view-text">View our work</a>

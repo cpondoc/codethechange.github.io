@@ -5,15 +5,21 @@
         <h1 id="margins">We’re a supportive team that emphasizes growth above all.</h1>
       </div>
     </div>
-    <div class="row  white-bg">
-      <h1 class="title" style="color: #ffaf40">Leadership</h1>
+    <div class="row white-bg">
+      <h1 class="margin-top title" style="color: #ffaf40">Leadership</h1>
     </div>
     <div class="profile-container row white-bg">
-        <profile-card id="card" v-for="person in leadership" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" />
+      <profile-card id="card" v-for="person in leadership" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" />
     </div>
-    <div v-for="team in projectTeams" :key="team.name">
-      <div class="row white-bg">
-        <h3 class="project-team">PROJECT TEAM:</h3>
+    <div v-for="team in projectTeams" :key="team.name" class="white-bg">
+      <div class="row">
+        <h3 class="margin-top project-team">PROJECT TEAM:</h3>
+      </div>
+      <div class="row">
+        <h1 class="title" style="color: #ffaf40">{{ team.name }}</h1>
+      </div>
+      <div class="profile-container row">
+        <profile-card id="card" v-for="person in team.team" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" />
       </div>
     </div>
   </div>
@@ -30,11 +36,16 @@ export default {
     const projectTeams = []
     for (let project of projects) {
       if (project.wip) {
+        let team = []
+        for (let person of project.team) {
+          team.push(people[person])
+        }
+        project.team = team
         projectTeams.push(project)
       }
     }
     return {
-      leadership: [ people['drew'], people['yuguan'], people['han'] ],
+      leadership: [ people['drew'], people['yuguan'], people['han'], people['samgorman'] ],
       projectTeams: projectTeams
     }
   }
@@ -42,8 +53,14 @@ export default {
 </script>
 <style scoped lang="scss">
 @import '../theme.scss';
+$people-left-margin: 75px;
+
+.margin-top{
+  margin-top: 75px;
+}
 
 .project-team {
+  margin-left: $people-left-margin;
   font-family: 'Open Sans';
   font-size: 10px;
   font-weight: 800;
@@ -55,7 +72,7 @@ export default {
 }
 
 #card {
-  margin-left:75px;
+  margin-left: $people-left-margin;
 }
 
 .profile-container {
@@ -79,8 +96,7 @@ export default {
 }
 
 .title {
-  margin-top: 30px;
-  margin-left: 75px;
+  margin-left: $people-left-margin;
   font-family: Comfortaa;
   font-size: 48px;
   font-weight: bold;

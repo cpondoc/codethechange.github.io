@@ -29,25 +29,37 @@
     },
     "austinryanchow": {
         "imageSrc": "./assets/austinchow.jpg",
-        "links": {   "email": "archow@stanford.edu",
-                     "github": "https://github.com/austinrchow",
-                     "linkedin": "https://www.linkedin.com/in/austinrchow/"
-                },
+        "links": {   
+            "email": "archow@stanford.edu",
+            "github": "https://github.com/austinrchow",
+            "linkedin": "https://www.linkedin.com/in/austinrchow/"
+        },
         "name": "Austin Ryan Chow",
-        "role": "Developer"},
-    "dylancunningham": {   "imageSrc": "./assets/dylan_cunningham.jpg",
-            "links": {"email": "dcunningham@stanford.edu"},
-            "name": "Dylan Cunningham",
-            "role": "Developer"},
-    "harisowrirajan": {   "imageSrc": "./assets/Hari_Sowrirajan_Photo.jpg",
-            "links": {"email": "hsowrira@stanford.edu"},
-            "name": "Hari Sowrirajan",
-            "role": "Developer"},
-    "hectoramador": {   "imageSrc": "./assets/hector_a_amador_picture.jpg",
-        "links": {   "email": "amhector@stanford.edu",
-                    "github": "https://github.com/ImplyingICheck"},
+        "role": "Developer"
+    },
+    "dylancunningham": {   
+        "imageSrc": "./assets/dylan_cunningham.jpg",
+        "links": {
+            "email": "dcunningham@stanford.edu"
+        },
+        "name": "Dylan Cunningham",
+        "role": "Developer"
+    },
+    "harisowrirajan": {  
+        "imageSrc": "./assets/Hari_Sowrirajan_Photo.jpg",
+        "links": {"email": "hsowrira@stanford.edu"},
+        "name": "Hari Sowrirajan",
+        "role": "Developer"
+    },
+    "hectoramador": {
+        "imageSrc": "./assets/hector_a_amador_picture.jpg",
+        "links": {   
+            "email": "amhector@stanford.edu",
+            "github": "https://github.com/ImplyingICheck"
+        },
         "name": "Hector Amador",
-        "role": "Developer"},
+        "role": "Developer"
+    },
     "jasonzhao": {   "imageSrc": "./assets/jason_zhao_photo.JPG",
     "links": {   "email": "jzhao23@stanford.edu",
                     "github": "https://github.com/jzhao23",
@@ -114,5 +126,16 @@
                     "links": {   "email": "ruben1@stanford.edu",
                                 "linkedin": "https://www.linkedin.com/in/ruben-krueger/"},
                     "name": "Ruben Krueger",
-                    "role": "Developer"}
+                    "role": "Developer"
+                },
+    "samgorman": {
+        "name": "Sam Gorman",
+        "role": "Lead Designer",
+        "imageSrc": "./assets/sam_photo.jpg",
+        "links": {            
+            "email": "mailto:sgorman@stanford.edu",
+            "github": "https://github.com/samjgorman/",
+            "linkedin": "https://www.linkedin.com/in/gormansam/"
+        }
+    }           
 }

@@ -1,7 +1,6 @@
 <template>
     <div >
         <img id="profile-photo" :src="imageSrc"/>
-        <br />
         <p id="name">{{ name }}</p>
         <p id="position"> {{ position.toUpperCase() }} </p>
     </div>
@@ -14,6 +13,25 @@ export default {
 </script>
 <style scoped lang="scss">
 @import '../theme.scss';
+
+#profile-photo:before {
+  content: "asdfasdf;lkajsdfkl;";
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,255,255, 0.5);
+  transition: all .3s linear;
+}
+
+#profile-photo:hover:before {
+  background: none;
+}
 
 #name {
   font-family: 'Open Sans';
@@ -44,6 +62,7 @@ export default {
   width: 200px;
   height: 200px;
   border-radius: 8px;
+  position:relative;
 }
 
 </style>

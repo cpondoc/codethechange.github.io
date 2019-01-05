@@ -8,9 +8,9 @@
       </p>
     </div>
     <div class="row" id="case-studies">
-      <div class="col-sm card case-card">
+      <div v-for="project in projects" class="col-sm card case-card">
         <div class="case-card-text">
-          <h6>TEACH FOR AMERICA</h6>
+          <h6>{{ project.name}}</h6>
           <p>How we built a scalable donor matching plaform.</p>
         </div>
         <img
@@ -79,10 +79,16 @@
 </template>
 
 <script>
-
+import projects from '@/data/projects.json'
 export default {
   data: function () {
+    let caseStudies = []
+
+    if (project.featured) {
+
+    }
     return {
+      projects: projects
     }
   },
   methods: {

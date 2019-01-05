@@ -1,8 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import People from './views/People.vue'
 import Partner from './views/Partner.vue'
+<<<<<<< HEAD
 import Projects from './views/Projects.vue'
+=======
+import Join from './views/Join.vue'
+>>>>>>> origin/people
 
 Vue.use(Router)
 
@@ -14,22 +19,26 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    },
-    {
       path: '/partner',
       name: 'partner',
       component: Partner
     },
     {
+<<<<<<< HEAD
       path: '/projects',
       name: 'projects',
       component: Projects
+=======
+      path: '/people',
+      name: 'people',
+      component: People
+    },
+    {
+      path: '/join',
+      name: 'join',
+      component: Join
+>>>>>>> origin/people
     }
+
   ]
 })

@@ -1,0 +1,9 @@
+[
+    {
+        "name": "U.S. Copyright Office",
+        "featured": true,
+        "background": "./assets/copyright-office.svg",
+        "year": 2016,
+        "subtitle": "We prototyped an image licensing application to address the needs of photographers."
+    }
+]

@@ -31,7 +31,7 @@
           <div class="center-space">
             <p class="year" :style="{ color: themeColors['light-'+project.color] }">{{ project.year }}</p>
             <p class="org-name">{{ project.name}}</p>
-            <p class="subtitle">{{ project.subtitle }}</p>
+            <p class="subtitle">{{ project.summary }}</p>
             <br />
             <button @click="TODO()" :style="{ backgroundColor: themeColors['bold-'+project.color] }" class="btn read-btn">READ</button>
             <br />

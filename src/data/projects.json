@@ -56,5 +56,6 @@
         ],
         "description": "<h3> Organization Description </h3><p> The mission of Project Homeless Connect ​is to connect San Franciscans experiencing homelessness with the care they need to move forward. Project Homeless Connect is a nonprofit organization that strengthens and utilizes collaborations with city agencies, businesses, organizations, and the community to provide comprehensive services through Community Day of Service events and in house continued care for those who are at risk of becoming homeless, are currently experiencing homelessness, or are transitioning from homelessness to housing. </p><p> </p><h3> Our Role </h3><p> At Project Homeless Connect Team, we helped modify data storage schema before events, and worked on a admin platform for doing so dynamically. We manage the codebase for the web app which is used in Project Homeless Connect’s one-stop shop quarterly event, in which 1000+ homeless access 100+ resources, such as haircuts and DMV registrations. The web app is written in React+Redux and uses Salesforce as the data storage system. </p>",
         "wip": false
+
     }
 ]

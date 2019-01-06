@@ -5,7 +5,7 @@
         <div class = "header-group">
             <h1 class = "header-title">Change the world and build projects with us.</h1>
             <div class = "cta-button">
-                <h3> APPLY </h3>
+                <a href="https://codethechange.typeform.com/to/w7qJSt" target="_blank"><h3> APPLY </h3></a>
                 <div id = "button-arrow">  </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
     <div class = "cta">
         <h1> Ready to jump in?  Apply today. </h1>
         <div class = "cta-button" id ="footer-cta">
-            <h3> Apply </h3>
+             <a href="https://codethechange.typeform.com/to/w7qJSt" target="_blank"><h3> Apply </h3></a>
         </div>
     </div>
 </div>
@@ -61,6 +61,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '../theme.scss';
+
+a {
+    text-decoration: none;
+}
 
 .header-container{
   width: 100%;
@@ -118,6 +122,7 @@ export default {
   text-transform: uppercase;
   line-height: 7.5vh;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .container-right{

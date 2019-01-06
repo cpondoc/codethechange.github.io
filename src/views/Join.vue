@@ -4,7 +4,7 @@
     <div class = "header-container">
         <div class = "header-group">
             <h1 class = "header-title">Change the world and build projects with us.</h1>
-            <div class = "cta-button"> 
+            <div class = "cta-button">
                 <h3> APPLY </h3>
                 <div id = "button-arrow">  </div>
             </div>
@@ -13,7 +13,7 @@
 
     <div class = "container-right">
         <div class = "cr-image">
-            <img id="code-img" src="@/assets/img/code@2x.png"> </img>
+            <img id="code-img" src="@/assets/img/code@2x.png"/>
          </div>
         <div class = "cr-text">
             <h2 id = "code-h2">Make code your superpower…</h2>
@@ -29,14 +29,14 @@
         </div>
         <div class = "cl-image">
         <img id="design" src="@/assets/img/sketch@2x.png" />
-         <img id="bg" src="@/assets/img/ctc-background@2x.png" />
+        <img id="bg" src="@/assets/img/ctc-background@2x.png" />
         </div>
         </div>
     </div>
 
     <div class = "container-right">
          <div class = "cr-image">
-            <img id="family" src="@/assets/img/family@2x.png" > 
+            <img id="family" src="@/assets/img/family@2x.png" >
          </div>
 
         <div class = "cr-text">
@@ -47,13 +47,10 @@
 
     <div class = "cta">
         <h1> Ready to jump in?  Apply today. </h1>
-        <div class = "cta-button" id ="footer-cta"> 
-                    <h3> Apply </h3>
-                     <div id = "button-arrow">
-                    </div>
+        <div class = "cta-button" id ="footer-cta">
+            <h3> Apply </h3>
         </div>
     </div>
-
 </div>
 
 </template>
@@ -64,9 +61,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../theme.scss';
-
-.page{
-}
 
 .header-container{
   width: 100%;
@@ -98,11 +92,10 @@ export default {
   height: 7.5vh;
   border-radius: 8px;
   box-shadow: 0 4px 25px 0 rgba(252, 85, 85, 0.5);
-  background-color: $secondary-heavy; 
+  background-color: $secondary-heavy;
   &:hover{
     background-color: #CF6969;
 
- 
     cursor: pointer;
   -webkit-box-shadow: 0 2px 9px 0 rgba(0,0,0,.2);
   box-shadow: 0 4px 45px 0 rgba(252, 85, 85, 0.5);
@@ -127,10 +120,6 @@ export default {
   box-sizing: border-box;
 }
 
-#button-arrow{
-
-}
-
 .container-right{
     display: flex;
     flex-direction: row;
@@ -142,7 +131,7 @@ export default {
 }
 
 .cr-image{
-        flex: 50%;    
+        flex: 50%;
         padding-top: 7em;
 
 }
@@ -151,34 +140,31 @@ export default {
     text-align: left;
     padding-top: 15em;
     padding-left: 6em;
-
 }
 
 h2{
-        font-family: Comfortaa;
-        font-weight: 800;
-        font-size: 2.2em;
-        padding-bottom: 1vh;
-        width: 40vw;
-
+    font-family: Comfortaa;
+    font-weight: 800;
+    font-size: 2.2em;
+    padding-bottom: 1vh;
+    width: 40vw;
 }
 
 p{
-     font-size: 1.1em;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.14;
-  letter-spacing: normal;
+    font-size: 1.1em;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
     width: 35vw;
-
-
 }
 
 #code-h2{
     color:white;
 
 }
+
 #code-p{
     color: #bfbfbf;
 
@@ -190,8 +176,8 @@ width: 49vw;
 }
 
 .container-left{
-    background-color: white;  
-    overflow: hidden; 
+    background-color: white;
+    overflow: hidden;
 }
 
 .cl-image{
@@ -210,14 +196,13 @@ width: 49vw;
 
 .cl-text p{
     color: #696969;
-
 }
 
 #bg{
-
     width: 55vw;
     height: 85vh;
 }
+
 #design{
     position: absolute;
     width: 45vw;
@@ -227,7 +212,6 @@ width: 49vw;
 }
 
 .content-left{
-   
     display: flex;
     flex-direction: row;
 
@@ -255,7 +239,6 @@ width: 49vw;
 
 .cta h1{
     color: $secondary-light;
-
 }
 
 </style>

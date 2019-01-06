@@ -280,7 +280,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 .paragraph {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 21px;
   font-weight: normal;
   font-style: normal;

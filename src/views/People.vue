@@ -9,17 +9,17 @@
       <h1 class="margin-top title" style="color: #ffaf40">Leadership</h1>
     </div>
     <div class="profile-container row white-bg">
-      <profile-card id="card" v-for="person in leadership" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" :links="person.links" />
+      <profile-card id="card" :color="'orange'" v-for="person in leadership" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" :links="person.links" />
     </div>
     <div v-for="team in projectTeams" :key="team.name" class="white-bg">
       <div class="row">
-        <h3 class="margin-top project-team">PROJECT TEAM:</h3>
+        <h3 class="margin-top project-team" :style="{ color: colors['bold-' + team.color] }">PROJECT TEAM:</h3>
       </div>
       <div class="row">
-        <h1 class="title" style="color: #ffaf40">{{ team.name }}</h1>
+        <h1 class="title" :style="{ color: colors['bold-' + team.color] }">{{ team.name }}</h1>
       </div>
       <div class="profile-container row">
-        <profile-card id="card" v-for="person in team.people" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" :links="person.links" />
+        <profile-card id="card" v-for="person in team.people" :color="team.color" :key="person.name" :name="person.name" :imageSrc="person.imageSrc" :position="person.role" :links="person.links" />
       </div>
     </div>
   </div>
@@ -28,11 +28,14 @@
 import ProfileCard from '@/components/ProfileCard.vue'
 import people from '@/data/people.json'
 import projects from '@/data/projects.json'
+import colors from '@/data/colors.json'
 
 export default {
   name: 'people',
   components: { ProfileCard },
   data () {
+    const selColors = ['purple', 'blue', 'orange']
+    let i = 0
     const projectTeams = []
     for (let project of projects) {
       if (project.wip) {
@@ -41,12 +44,14 @@ export default {
           teamPeople.push(people[person])
         }
         project.people = teamPeople
+        project.color = selColors[i++ % selColors.length]
         projectTeams.push(project)
       }
     }
     return {
       leadership: [ people['drew'], people['yuguan'], people['han'], people['samgorman'] ],
-      projectTeams: projectTeams
+      projectTeams: projectTeams,
+      colors: colors
     }
   }
 }
@@ -68,7 +73,6 @@ $people-left-margin: 75px;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.2px;
-  color: $bold-purple !important;
 }
 
 #card {

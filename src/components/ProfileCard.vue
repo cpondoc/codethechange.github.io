@@ -1,9 +1,9 @@
 <template>
     <div>
-        <figure class="tint">
+        <figure class="tint" :style="{ '--gradient': colors['tint-'+color]}">
             <img id="profile-photo" :src="imageSrc"/>
             <div class="links">
-                <a :href="social.link" :key="social.link" class="hvr-glow link-button" v-for="social in socials">
+                <a :href="social.link" :key="social.link" class="hvr-glow link-button" v-for="social in socials" :style="{ 'background-color': colors['bold-'+color]}">
                     <img class="social-icon" :src="social.image" />
                 </a>
             </div>
@@ -16,10 +16,11 @@
 import github from '@/assets/img/github-icon.png'
 import email from '@/assets/img/email.png'
 import linkedin from '@/assets/img/linkedin-icon.png'
+import colors from '@/data/colors.json'
 
 export default {
   name: 'profileCard',
-  props: ['imageSrc', 'name', 'position', 'links'],
+  props: ['imageSrc', 'name', 'position', 'links', 'color'],
   data: function () {
     let socials = []
     for (let link in this.links) {
@@ -34,8 +35,19 @@ export default {
       socials.push({ link: this.links[link], image: image })
     }
     return {
-      socials: socials
+      socials: socials,
+      colors: colors
     }
+  },
+  mounted () {
+    const css = 'table td:hover{ background-color: #00ff00 }'
+    const style = document.createElement('style')
+    if (style.styleSheet) {
+      style.styleSheet.cssText = css
+    } else {
+      style.appendChild(document.createTextNode(css))
+    }
+    document.getElementsByTagName('head')[0].appendChild(style)
   }
 }
 </script>
@@ -74,18 +86,21 @@ $icon-size: 30px;
 .tint > .links  { display:none; }
 .tint:hover > .links { display:flex; }
 
-.tint:hover:before {
-  content: "";
-  width: 200px;
-  height: 200px;
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: $tint-orange;
-  transition: all .3s linear;
+.tint:hover{
+  --gradient: black;
+  &::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s linear;
+    background: var(--gradient);
+  }
 }
 
 .social-icon {
@@ -94,7 +109,6 @@ $icon-size: 30px;
 }
 
 .link-button {
-  background-color: $bold-orange;
   padding: 10px;
 }
 

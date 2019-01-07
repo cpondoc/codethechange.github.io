@@ -7,6 +7,20 @@
         "summary": "We prototyped an image licensing application to address the needs of photographers."
     },
     {
+        "name": "Project Homeless Connect",
+        "featured": true,
+        "background": "./assets/copyright-office.svg",
+        "year": 2016,
+        "summary": "We prototyped an image licensing application to address the needs of photographers."
+    },
+    {
+        "name": "Project Homeless Connect",
+        "featured": true,
+        "background": "./assets/copyright-office.svg",
+        "year": 2016,
+        "summary": "We prototyped an image licensing application to address the needs of photographers."
+    },
+    {
         "name": "CultureMesh",
         "background": "./assets/culturemesh_logo.jpg",
         "summary":"Our Android and FFB apps help CultureMesh foster cultural communities for migrating populations.",

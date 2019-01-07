@@ -3,11 +3,8 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import People from './views/People.vue'
 import Partner from './views/Partner.vue'
-<<<<<<< HEAD
 import Projects from './views/Projects.vue'
-=======
 import Join from './views/Join.vue'
->>>>>>> origin/people
 
 Vue.use(Router)
 
@@ -24,11 +21,11 @@ export default new Router({
       component: Partner
     },
     {
-<<<<<<< HEAD
       path: '/projects',
       name: 'projects',
       component: Projects
-=======
+    },
+    {
       path: '/people',
       name: 'people',
       component: People
@@ -37,7 +34,6 @@ export default new Router({
       path: '/join',
       name: 'join',
       component: Join
->>>>>>> origin/people
     }
 
   ]

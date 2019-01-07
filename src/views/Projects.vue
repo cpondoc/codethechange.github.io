@@ -79,19 +79,26 @@
 </template>
 
 <script>
+// import ProjectCard from '@/components/ProjectCard.vue'
+import projects from '@/data/projects.json'
 
 export default {
   data: function () {
-    return {
+    const projects = []
+    for (let project of projects) {
+
     }
   },
   computed: {
-
+    featured: function() {
+      
+    }
   },
   methods: {
   },
   name: 'Projects',
-  components: { }
+  components: {
+  }
 }
 </script>
 

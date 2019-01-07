@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="nav-container">
-      <router-link id="logo" to="/">LOGO</router-link>
+      <router-link id="logo" to="/"><img id = "logo-styling" src="@/assets/img/logo@2x.png"/></router-link>
       <div id="links">
         <div class = "text-group">
         <router-link class="hover-text link-text" to="/people">people</router-link>
@@ -152,6 +152,12 @@ body {
 
 #logo {
   margin-left: 100px;
+  
+}
+
+#logo-styling{
+  height: 2.1em;
+  width: 2.1em;
 }
 
 .link-text {
@@ -173,6 +179,7 @@ body {
   width: 800px;
   display: flex;
   justify-content: space-around;
+  margin-top: 0.6em;
 }
 
 .text-group{

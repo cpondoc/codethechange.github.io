@@ -129,7 +129,6 @@ export default {
         .then(res => {
           this.submitted = true
           if (res.error) {
-            console.error(res.error)
             this.finishedTitle = 'Form Submission Error. '
             this.finishedMessage = 'Unfortunately, we\'ve encountered some server error. Please email drewgreg [at] stanford [dot] edu with your form contents.'
           } else {

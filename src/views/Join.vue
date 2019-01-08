@@ -17,7 +17,7 @@
          </div>
         <div class = "cr-text">
             <h2 id = "code-h2">Make code your superpower…</h2>
-            <p  id = "code-p"> Technical leadership and support from Stanford student volunteers dedicating 5 to 10 hours per week on the project free of cost. </p>
+            <p  id = "code-p">Improve your software development skills while improving the world, one project at a time.</p>
         </div>
     </div>
 
@@ -25,7 +25,7 @@
         <div class = "content-left">
         <div class = "cl-text">
             <h2>unless your superpower is design.</h2>
-            <p>Technical leadership and support from Stanford student volunteers dedicating 5 to 10 hours per week on the project free of cost. </p>
+            <p>Improve your design skills while ensuring that our projects are impactful, useful, and delightful.</p>
         </div>
         <div class = "cl-image">
         <img id="design" src="@/assets/img/sketch@2x.png" />
@@ -41,7 +41,7 @@
 
         <div class = "cr-text">
             <h2 id = "family-h2" >You’re joining a family</h2>
-            <p id = "family-p">We built a project matching platform that boosted engagement by 60%.   We’re Code the Change, a club at Stanford University that builds useful software for high-impact nonprofits.  </p>
+            <p id = "family-p">Learn and grow in a supportive community with workshops and project mentors.</p>
         </div>
     </div>
 
@@ -64,6 +64,11 @@ export default {
 
 a {
     text-decoration: none;
+}
+
+.row {
+    margin: 0px;
+    padding: 0px;
 }
 
 .header-container{
@@ -130,9 +135,6 @@ a {
     flex-direction: row;
     padding-bottom: 7em;
     width: 100%;
-    margin-left: 2vw;
-    margin-right: 2vw;
-
 }
 
 .cr-image{

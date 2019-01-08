@@ -1,6 +1,6 @@
 module.exports = {
-  baseUrl: '/website/',
-  configureWebpack: {
+  baseUrl: '/website/'
+  /*configureWebpack: {
     // other webpack options to merge in ...
   },
   // devServer Options don't belong into `configureWebpack`
@@ -8,5 +8,5 @@ module.exports = {
     host: '0.0.0.0',
     hot: true,
     disableHostCheck: true
-  }
+  }*/
 }

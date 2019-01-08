@@ -1,13 +1,7 @@
-# www
-
-## Project setup
+## After cloning, to run dev server
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
+yarn
+yarn serve
 ```
 
 ### Compiles and minifies for production

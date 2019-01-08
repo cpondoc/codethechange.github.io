@@ -3,7 +3,9 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import People from './views/People.vue'
 import Partner from './views/Partner.vue'
+import Projects from './views/Projects.vue'
 import Join from './views/Join.vue'
+import ProjectProfile from './views/ProjectProfile.vue'
 
 Vue.use(Router)
 
@@ -20,6 +22,11 @@ export default new Router({
       component: Partner
     },
     {
+      path: '/projects',
+      name: 'projects',
+      component: Projects
+    },
+    {
       path: '/people',
       name: 'people',
       component: People
@@ -28,7 +35,11 @@ export default new Router({
       path: '/join',
       name: 'join',
       component: Join
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: ProjectProfile
     }
-
   ]
 })

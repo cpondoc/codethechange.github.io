@@ -33,13 +33,13 @@
             <p class="org-name">{{ project.name}}</p>
             <p class="subtitle">{{ project.summary }}</p>
             <br />
-            <button @click="TODO()" :style="{ backgroundColor: themeColors['bold-'+project.color] }" class="btn read-btn">READ</button>
+            <button @click="goToProfile(project.name)" :style="{ backgroundColor: themeColors['bold-'+project.color] }" class="btn read-btn">READ</button>
             <br />
             <br />
           </div>
         </div>
       </div>
-      <div  :style="{ background: themeColors['tint-'+project.color] }" class="col-lg-7 col-sm-12 image-holder">
+      <div class="col-lg-7 col-sm-12 image-holder">
         <img class="image" :src="baseUrl + project.background" />
       </div>
     </div>
@@ -67,6 +67,11 @@ export default {
       baseUrl: process.env.BASE_URL,
       themeColors: colors
     }
+  },
+  methods: {
+    goToProfile (name) {
+      this.$router.push({ path: 'profile', query: { name: name } })
+    }
   }
 }
 </script>
@@ -76,6 +81,8 @@ export default {
 
 .image {
   height: 100%;
+  background-color: #ffffff;
+  padding: 10px;
   width: 100%;
 }
 
@@ -91,6 +98,7 @@ export default {
 }
 
 .image-holder {
+  margin-top: 10px;
   height: calc(100vh - 85px);
 }
 

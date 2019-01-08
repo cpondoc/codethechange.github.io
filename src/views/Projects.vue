@@ -3,8 +3,8 @@
     <div class="intro">
       <h1 id="hook">Case Studies</h1>
       <p>
-        Since 2014, we've helped create software for 30+ nonprofits <br />
-        and impact groups. Here's three of our favorites.
+        Since 2014, we've helped create software for 15+ nonprofits <br />
+        and impact groups. Here's two of our favorites.
       </p>
     </div>
     <div class="row" id="case-studies">
@@ -15,21 +15,21 @@
         </div>
         <img
           alt="social good image"
+          :style="{'--tint': themeColors['tint-'+project.color]}"
           :src="project.background">
-        <h6 class="link-case"><a href="#" id="link-1">READ CASE</a></h6>
+        <h6 class="link-case"><a @click="goToProfile(project.name)" id="link-1" :style="{ color: themeColors['bold-' + project.color]}" class="hvr-bounce-in">READ CASE</a></h6>
       </div>
     </div>
     <div class="intro" id="current-intro">
       <h1 id="hook">Current projects</h1>
       <p>
-        Since 2014, we've helped create software for 30+ nonprofits <br />
-        and impact groups. Here's three of our favorites.
+        Here are our current projects for the  <br />
+        2018-19 academic year.
       </p>
     </div>
     <div class="row" id="current-projects">
       <div v-for="project in currentProjects" :key="project.name" class="col-sm card project-card">
         <img
-          alt="Mannabase companion image"
           :src="project.background">
         <div class="case-card-text">
           <h6>{{ project.name }}</h6>
@@ -43,13 +43,17 @@
 <script>
 // import ProjectCard from '@/components/ProjectCard.vue'
 import projects from '@/data/projects.json'
+import themeColors from '@/data/colors.json'
 
 export default {
   data: function () {
+    const colors = ['orange', 'yellow', 'blue']
+    let i = 0
     const caseStudies = []
     const currentProjects = []
     for (let project of projects) {
       if (project.featured) {
+        project.color = colors[i++ % colors.length]
         caseStudies.push(project)
       }
       if (project.wip) {
@@ -58,12 +62,16 @@ export default {
     }
     return {
       currentProjects: currentProjects,
-      caseStudies: caseStudies
+      caseStudies: caseStudies,
+      themeColors: themeColors
     }
   },
   computed: {
   },
   methods: {
+    goToProfile (name) {
+      this.$router.push({ path: 'profile', query: { name: name } })
+    }
   },
   name: 'Projects',
   components: {
@@ -89,18 +97,43 @@ export default {
 #case-studies {
   background-color: #424242;
   padding: 0 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
 }
 
 .card {
   margin: 2em;
   padding: 1em 0;
+  max-width: 400px;
   .case-card-text {
     margin: 0.7em;
   }
   img {
+    --tint: black;
     width: 100%;
-    height: auto;
     margin: 0.5em auto 1em;
+    background-color: #ffffff;
+    float: left;
+    padding: 4px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all .3s linear;
+      background: var(--tint);
+    }
   }
 }
 
@@ -143,4 +176,20 @@ export default {
   padding: 0 50px;
 }
 
+/* HOVER-CSS Bounce Out */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
 </style>

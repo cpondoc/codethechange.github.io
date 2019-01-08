@@ -5,6 +5,7 @@ import People from './views/People.vue'
 import Partner from './views/Partner.vue'
 import Projects from './views/Projects.vue'
 import Join from './views/Join.vue'
+import ProjectProfile from './views/ProjectProfile.vue'
 
 Vue.use(Router)
 
@@ -34,7 +35,11 @@ export default new Router({
       path: '/join',
       name: 'join',
       component: Join
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: ProjectProfile
     }
-
   ]
 })

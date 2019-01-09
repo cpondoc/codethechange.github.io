@@ -86,8 +86,10 @@ export default {
 }
 
 #margins {
-  max-width: 600px;
-  padding: 40px;
+  padding: 100px;
+  padding-left: 20vw;
+    padding-right: 20vw;
+
 }
 
 #cool {
@@ -99,18 +101,23 @@ export default {
     line-height: 1.43;
     letter-spacing: 0.5px;
     color: $accent-medium;
+    padding-top: 5vh;
+        padding-bottom: 5vh;
+        text-align: center;
+
 }
 
 #header-text-content {
   background-color: #262626;
   font-family: Comfortaa;
-  font-size: 72px;
+  font-size: 1.5em;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.42;
   letter-spacing: normal;
   color: #ffffff;
+  text-align: center;
 }
 
 #error404 {

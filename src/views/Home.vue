@@ -172,6 +172,7 @@ export default {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0px;
+  margin-top: 10vh;
 }
 
 .row {
@@ -184,6 +185,8 @@ export default {
 }
 
 #line {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   width: 125px;
   height: 2px;
   background-color: $home-accent;
@@ -191,8 +194,8 @@ export default {
 }
 
 #subtitle {
-  font-family: Comfortaa;
-  font-size: 30px;
+  font-family: 'Open Sans';
+  font-size: 26px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -207,14 +210,17 @@ export default {
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: normal;
+  line-height: 9vh;
   letter-spacing: normal;
   color: #ffffff;
+    width: 24vw;
+    flex: 20;
+
 }
 
 #view-text {
   font-family: Comfortaa;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;

@@ -146,15 +146,22 @@ export default {
 <style lang="scss" scoped>
 @import '../theme.scss';
 .header {
-  height: 38px;
+    width: 373px;
+    padding-left: 8vw;
+
   font-family: Comfortaa;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.06;
   letter-spacing: normal;
   color: #ffffff;
+
+}
+
+.container{
+ margin-top: 10vh;
 }
 
 #summary-text {
@@ -162,7 +169,7 @@ export default {
 }
 
 #submit {
-  font-family: AvenirNext;
+  font-family: 'Open Sans';
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
@@ -183,7 +190,7 @@ export default {
   filter: alpha(opacity=0);
   border-radius: 8px;
   background-color: #3a3a3a;
-  font-family: AvenirNext;
+  font-family: 'Open Sans';
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -238,7 +245,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 #optional {
-  font-family: AvenirNext;
+  font-family: 'Open Sans';
   height: 45px;
   font-size: 16px;
   font-weight: bold;
@@ -248,23 +255,6 @@ input[type="text"]:focus, textarea:focus {
   text-align: center;
   color: #c8c8c8;
 }
-
-.header {
-  width: 373px;
-  height: 38px;
-  font-family: Comfortaa;
-  font-size: 36px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.06;
-  letter-spacing: normal;
-  color: #d1d1d1;
-  text-align: left;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
 #hook {
   height: 38px;
   font-family: Comfortaa;
@@ -281,6 +271,8 @@ input[type="text"]:focus, textarea:focus {
 .paragraph {
   font-family: 'Open Sans';
   font-size: 21px;
+    padding-left: 8vw;
+
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -288,7 +280,6 @@ input[type="text"]:focus, textarea:focus {
   letter-spacing: normal;
   color: #919191;
   text-align: left;
-  padding-left: 100px;
   padding-right: 100px;
 }
 </style>

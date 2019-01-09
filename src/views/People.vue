@@ -2,7 +2,7 @@
   <div id="about-content">
     <div id="header-text-content" class="row">
       <div class="col-12">
-        <h1 id="margins">We’re a supportive team that emphasizes growth above all.</h1>
+        <h1 class = "header" id="margins">We’re a supportive team that emphasizes growth above all.</h1>
       </div>
     </div>
     <div class="row white-bg">
@@ -111,6 +111,7 @@ $people-left-margin: 75px;
   text-align: center;
   color: #ffb44b;
   display:block;
+  margin-bottom: 5vh;
 }
 
 .row {
@@ -118,7 +119,17 @@ $people-left-margin: 75px;
 }
 
 #margins {
-  max-width: 600px;
+  max-width: 650px;
   margin: 40px;
+  margin-top: 15vh;
+
+  margin-bottom: 15vh;
+}
+
+.header{
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.42;
+
 }
 </style>

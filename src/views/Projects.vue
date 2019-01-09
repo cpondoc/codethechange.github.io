@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="intro">
       <h1 id="hook">Case Studies</h1>
-      <p>
+      <p class = 'hook-sub'>
         Since 2014, we've helped create software for 15+ nonprofits <br />
         and impact groups. Here's two of our favorites.
       </p>
@@ -22,9 +22,8 @@
     </div>
     <div class="intro" id="current-intro">
       <h1 id="hook">Current projects</h1>
-      <p>
-        Here are our current projects for the  <br />
-        2018-19 academic year.
+      <p class ='hook-sub'>
+        Here are our current projects for the 2018-19 academic year.
       </p>
     </div>
     <div class="row" id="current-projects">
@@ -88,12 +87,25 @@ export default {
 
 .intro {
   height: 20em;
-  padding: 50px 50px 50px 150px;
+  padding: 50px 50px 50px 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+#hook{
+  font-size: 5em;
+}
+
+h6{
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.hook-sub{
+  font-size: 1.2em;
+  padding-top: 2.5vh;
+}
 #case-studies {
   background-color: #424242;
   padding: 0 50px;

@@ -1,7 +1,5 @@
 module.exports = {
-  baseUrl: process.env.NODE_ENV === 'production'
-    ? '/website/'
-    : '/',
+  baseUrl: '/',
   configureWebpack: {
     // other webpack options to merge in ...
   },

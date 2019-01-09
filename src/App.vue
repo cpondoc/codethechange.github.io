@@ -32,7 +32,11 @@
         <router-link class="hover-text small-link-text" to="/partner">partner</router-link>
         <br /> <br />
       </div>
+      
     </div>
+     <div class = "info">
+        <h6> Stanford Code the Change ©️2019 </h6>
+        </div>
   </div>
 </template>
 <script>
@@ -114,7 +118,9 @@ body {
 
 #footer {
   width: 100vw;
-  padding-top: 50px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+
   display: flex;
   background-color: $main-dark;
 }
@@ -183,5 +189,16 @@ body {
 
 .text-group{
   padding-left: 20em;
+}
+
+.info{
+background-color: $main-medium;
+margin-bottom: 0;
+padding: 30px;
+}
+
+h6{
+  padding-left: 50px;
+
 }
 </style>

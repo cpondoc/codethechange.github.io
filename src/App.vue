@@ -152,7 +152,6 @@ body {
 
 #logo {
   margin-left: 100px;
-  
 }
 
 #logo-styling{

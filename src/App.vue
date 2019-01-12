@@ -32,7 +32,6 @@
         <router-link class="hover-text small-link-text" to="/partner">partner</router-link>
         <br /> <br />
       </div>
-      
     </div>
      <div class = "info">
         <h6> Stanford Code the Change ©️2019 </h6>

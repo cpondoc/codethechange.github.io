@@ -49,7 +49,7 @@ export default {
       }
     }
     return {
-      leadership: [ people['drew'], people['yuguan'], people['han'], people['samgorman'] ],
+      leadership: [ people['drew'], people['yuguan'], people['han'], people['samgorman'], people['kevintran'], people['samsilverstein'] ],
       projectTeams: projectTeams,
       colors: colors
     }

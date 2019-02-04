@@ -27,11 +27,11 @@
       </p>
     </div>
     <div class="row" id="current-projects">
-      <div v-for="project in currentProjects" :key="project.name" class="col-sm card project-card">
+      <div v-for="project in currentProjects" :key="project.name" class="project-card">
         <img
           :src="project.background">
         <div class="case-card-text">
-          <h6>{{ project.name }}</h6>
+          <h5>{{ project.name }}</h5>
           <p>{{ project.summary }}</p>
         </div>
       </div>
@@ -97,6 +97,12 @@ export default {
   font-size: 5em;
 }
 
+h5 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1em
+}
+
 h6{
   text-transform: uppercase;
   font-weight: 800;
@@ -122,9 +128,6 @@ h6{
   margin: 2em;
   padding: 1em 0;
   max-width: 400px;
-  .case-card-text {
-    margin: 0.7em;
-  }
   img {
     --tint: black;
     width: 100%;
@@ -176,6 +179,13 @@ h6{
 .project-card {
   color: #000000;
   border: none;
+  width: 200px;
+  margin-left: 30px;
+  margin-top: 30px;
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 #current-intro {
@@ -186,6 +196,8 @@ h6{
 #current-projects {
   background-color: #ffffff;
   padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* HOVER-CSS Bounce Out */

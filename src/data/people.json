@@ -210,7 +210,7 @@
         "role": "Developer"
     },
     "justintinker": {
-        "imageSrc": "./assets/justin_tinker_photo.JPG",
+        "imageSrc": "./assets/justin_tinker_photo.jpg",
         "links": {
             "email": "justin.tinker@stanford.edu",
             "github": "http://github.com/tintinker",
@@ -240,7 +240,7 @@
         "role": "Developer"
     },
     "kevintran": {
-        "imageSrc": "./assets/KevinTranPic.JPG",
+        "imageSrc": "./assets/KevinTranPic.jpg",
         "links": {
             "email": "kevtran2@stanford.edu",
             "github": "https://github.com/kevtran2",

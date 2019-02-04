@@ -128,7 +128,7 @@
             "linkedin": "https://www.linkedin.com/in/farzaankaiyom/"
         },
         "name": "Farzaan Kaiyom",
-        "role": "Developer"
+        "role": "Team Lead"
     },
     "gracehu": {
         "imageSrc": "./assets/grace_hu_photo.jpg",
@@ -144,7 +144,7 @@
         "imageSrc": "./assets/han_photo.png",
         "links": {},
         "name": "Han-Lin Aung",
-        "role": "Treasurer"
+        "role": "Treasurer/Team Lead"
     },
     "harisowrirajan": {
         "imageSrc": "./assets/Hari_Sowrirajan_Photo.jpg",
@@ -152,7 +152,7 @@
             "email": "hsowrira@stanford.edu"
         },
         "name": "Hari Sowrirajan",
-        "role": "Developer"
+        "role": "Team Lead"
     },
     "hectoramador": {
         "imageSrc": "./assets/hector_a_amador_picture.jpg",
@@ -237,7 +237,7 @@
             "linkedin": "https://linkedin.com/in/kendrickshen/"
         },
         "name": "Kendrick Shen",
-        "role": "Developer"
+        "role": "Team Lead"
     },
     "kevintran": {
         "imageSrc": "./assets/KevinTranPic.jpg",
@@ -352,7 +352,7 @@
             "linkedin": "www.linkedin.com/in/trinity-d-2022"
         },
         "name": "Trinity Donohugh",
-        "role": "Developer"
+        "role": "Team Lead"
     },
     "tylerhong": {
         "imageSrc": "./assets/TylerHongProfilePicture.jpg",

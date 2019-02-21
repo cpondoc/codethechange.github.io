@@ -32,7 +32,7 @@
       <div class="link-list">
         <p class="link-header">for organizations</p>
         <hr />
-        <router-link class="small-link-text color-change." to="/partner">partner</router-link>
+        <router-link class="small-link-text color-change" to="/partner">partner</router-link>
         <br /> <br />
       </div>
     </div>

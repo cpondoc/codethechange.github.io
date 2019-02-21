@@ -81,14 +81,17 @@ body {
       text-decoration: inherit;
       color: $accent-light;
     }
-    font-family: Comfortaa;
-    font-weight: bold;
-    color: #ffffff;
     &.link-text {
+      font-family: Comfortaa;
+      font-weight: bold;
       font-size: 18px;
+      color: #ffffff;
     }
     &.small-link-text {
+      font-family: Comfortaa;
+      font-weight: bold;
       font-size: 20px;
+      color: #ffffff;
     }
   }
 }

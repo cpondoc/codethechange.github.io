@@ -1,10 +1,6 @@
 <template>
   <div id="about-content">
-    <div id="header-text-content" class="row">
-      <div class="col-12">
-        <h1 class = "header" id="margins">We’re a supportive team that emphasizes growth above all.</h1>
-      </div>
-    </div>
+    <h3 id="margins">We’re a supportive team that emphasizes growth above all.</h3>
     <div class="row white-bg">
       <h1 class="margin-top title" style="color: #ffaf40">Leadership</h1>
     </div>
@@ -88,10 +84,7 @@ $people-left-margin: 75px;
   font-family: Comfortaa;
   font-size: 72px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.42;
-  letter-spacing: normal;
   color: #ffffff;
 }
 
@@ -102,16 +95,14 @@ $people-left-margin: 75px;
 .title {
   margin-left: $people-left-margin;
   font-family: Comfortaa;
-  font-size: 48px;
+  font-size: 3em;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #ffb44b;
-  display:block;
   margin-bottom: 5vh;
+  @media only screen and (max-width: 700px) {
+    font-size: 2em;
+  }
 }
 
 .row {
@@ -120,16 +111,11 @@ $people-left-margin: 75px;
 
 #margins {
   max-width: 650px;
-  margin: 40px;
+  margin: 60px;
   margin-top: 15vh;
-
   margin-bottom: 15vh;
-}
-
-.header{
-  font-size: 1em;
+  font-size: 2.5em;
   text-align: left;
   line-height: 1.42;
-
 }
 </style>

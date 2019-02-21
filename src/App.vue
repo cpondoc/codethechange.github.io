@@ -1,92 +1,71 @@
 <template>
   <div id="app">
-    <div class="nav-container">
-      <router-link id="logo" to="/"><img id = "logo-styling" src="@/assets/img/logo@2x.png"/></router-link>
+    <div :class="{ 'res': res }" id="nav-bar">
+      <router-link id="logo" to="/" @click.native="toggleRes(false)">
+        <img src="@/assets/img/logo@2x.png"/>
+      </router-link>
       <div id="links">
-        <div class = "text-group">
-        <router-link class="hover-text link-text" to="/people">people</router-link>
-        <router-link class="hover-text link-text" to="/projects">projects</router-link>
-        <router-link class="hover-text link-text" to="/partner">partner</router-link>
-        </div>
-        <div class = "cta-group">
-        <router-link id="join-link" class="hover-text link-text" to="/join" >join</router-link>
-        </div>
+        <span class="nav-links">
+          <router-link class="link-text nav-text" to="/people" @click.native="toggleRes(false)">people</router-link>
+          <router-link class="link-text nav-text" to="/projects" @click.native="toggleRes(false)">projects</router-link>
+          <router-link class="link-text nav-text" to="/partner" @click.native="toggleRes(false)">partner</router-link>
+          <router-link class="link-text" to="/join" id="join-link" @click.native="toggleRes(false)">join</router-link>
+        </span>
       </div>
+      <a href="javascript:void(0);" id="res-icon" @click="toggleRes(!res)">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
     <hr id="scroll-shadow" />
     <router-view id="page"/>
     <div id="footer">
       <div class="link-list">
         <p class="link-header">for students</p>
-        <hr class="link-line" />
-        <router-link class="hover-text small-link-text" to="/people">people</router-link>
+        <hr />
+        <router-link class="small-link-text" to="/people">people</router-link>
         <br /> <br />
-        <router-link class="hover-text small-link-text" to="/projects">projects</router-link>
+        <router-link class="small-link-text" to="/projects">projects</router-link>
         <br /> <br />
-        <router-link class="hover-text small-link-text" to="/join" id="join-small-link">join</router-link>
+        <router-link class="small-link-text" to="/join" id="join-small-link">join</router-link>
         <br /> <br />
       </div>
       <div class="link-list">
         <p class="link-header">for organizations</p>
-        <hr class="link-line" />
-        <router-link class="hover-text small-link-text" to="/partner">partner</router-link>
+        <hr />
+        <router-link class="small-link-text" to="/partner">partner</router-link>
         <br /> <br />
       </div>
     </div>
-     <div class = "info">
-        <h6> Stanford Code the Change ©️2019 </h6>
-        </div>
+    <div id="info">
+      <h6> Stanford Code the Change ©️2019 </h6>
+    </div>
   </div>
 </template>
+
 <script>
 import 'bootstrap'
 
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      res: false
+    }
+  },
+  methods: {
+    toggleRes (s) {
+      this.res = s
+    }
+  }
 }
 </script>
+
 <style lang="scss">
 @import './theme.scss';
 
-*, *::before, *::after {
-  box-sizing:border-box
-}
-
-.nav-container {
-  position: sticky;
-  top: -8px;
-  z-index: 5;
-  background-color: $main-dark;
-  padding: 25px;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Heavily inspired from https://stijndewitt.com/2018/06/12/pure-css-drop-shadow-on-scroll/ */
-#scroll-shadow {
-  width: 100%;
-  height: 10px;
-  /* make pseudo elements sticky as well */
-  position: sticky;
-  top: 50px;
-  z-index: 1000;
-  box-shadow: 0 2px 19px 0 rgba(124, 124, 124, 0.5);
-  z-index: 3;
-  margin-top: -25px;
-}
-
-.hover-text {
-    position: relative;
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
-      color: $accent-light !important;
-    }
-}
-
 body {
   background-color: $main-dark;
+  height: 100%;
 }
 
 #app {
@@ -96,108 +75,131 @@ body {
   text-align: left;
   color: #ffffff;
   background-color: $main-dark;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: inherit;
+      color: $accent-light;
+    }
+    font-family: Comfortaa;
+    font-weight: bold;
+    color: #ffffff;
+    &.link-text {
+      font-size: 18px;
+    }
+    &.small-link-text {
+      font-size: 20px;
+    }
+  }
 }
 
-.link-line {
-  background-color:$accent-light;
-  height: 2px;
+#nav-bar {
+  position: sticky;
+  top: -8px;
+  z-index: 5;
+  background-color: $main-dark;
+  padding: 25px 60px;
+  @media only screen and (max-width: 700px) {
+    padding: 15px 20px;
+  }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  #logo {
+    margin-right: auto;
+    img {
+      max-height: 2.1em;
+    }
+  }
+  #links {
+    .nav-text {
+      padding-right: 3em;
+    }
+    #join-link {
+      border: 2px solid white;
+      border-radius: 8px;
+      padding: 0.7em 1.3em;
+      &:hover{
+        border-color: $accent-light;
+      }
+    }
+  }
+  #res-icon {
+    display: none;
+  }
+  @media only screen and (max-width: 700px) {
+    .nav-links {
+      display: none;
+    }
+    #res-icon {
+      display: block;
+      font-size: 1.4em;
+    }
+    &.res {
+      #links {
+        order: 3;
+        flex-basis: 100%;
+        display: block;
+        .nav-links {
+          display: block;
+          > * {
+            padding: .5em 0;
+            display: block;
+          }
+          #join-link {
+            border: none;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
-.small-link-text {
-  font-family: Comfortaa;
-  font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
+/* Heavily inspired from https://stijndewitt.com/2018/06/12/pure-css-drop-shadow-on-scroll/ */
+#scroll-shadow {
+  width: 100%;
+  height: 10px;
+  position: sticky;
+  top: 50px;
+  z-index: 1000;
+  box-shadow: 0 2px 19px 0 rgba(124, 124, 124, 0.5);
+  z-index: 3;
+  margin-top: -25px;
 }
 
 #footer {
-  width: 100vw;
+  display: flex;
+  padding-left: 60px;
+  @media only screen and (max-width: 700px) {
+    padding-left: 20px;
+  }
   padding-top: 10vh;
   padding-bottom: 10vh;
-
-  display: flex;
-  background-color: $main-dark;
+  .link-list {
+    margin-right: 85px;
+    .link-header {
+      font-family: Comfortaa;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+    }
+  }
+  hr {
+    background-color:$accent-light;
+    height: 2px;
+  }
 }
 
-.link-list {
-  margin-left: 85px;
-}
-
-.link-header {
-  font-family: Comfortaa;
-  font-size: 24px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
-
-#join-link {
-  border-style: solid;
-  border-radius: 8px;
-  border-width: 2px;
-  border-color: white;
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
-  padding-left: 1.3em;
-  padding-right: 1.3em;
-
-  &:hover{
-    border-color: $accent-light;
-}
-}
-
-#logo {
-  margin-left: 100px;
-}
-
-#logo-styling{
-  height: 2.1em;
-  width: 2.1em;
-}
-
-.link-text {
-  font-family: Comfortaa;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  padding-right:3em;
-
-}
-
-#links {
-  margin-right: 80px;
-  width: 800px;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 0.6em;
-}
-
-.text-group{
-  padding-left: 20em;
-}
-
-.info{
-background-color: $main-medium;
-margin-bottom: 0;
-padding: 30px;
-}
-
-h6{
-  padding-left: 50px;
-
+#info {
+  background-color: $main-medium;
+  margin-bottom: 0;
+  padding: 30px;
+  padding-left: 60px;
+  @media only screen and (max-width: 700px) {
+    padding-left: 20px;
+  }
 }
 </style>

@@ -86,11 +86,10 @@ export default {
 }
 
 .intro {
-  height: 20em;
   padding: 50px 50px 50px 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @media only screen and (max-width: 700px) {
+    padding: 20px;
+  }
 }
 
 #hook{
@@ -150,6 +149,10 @@ h6{
       background: var(--tint);
     }
   }
+}
+
+.case-card-text {
+  padding: 1em;
 }
 
 .case-card {

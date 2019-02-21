@@ -6,10 +6,10 @@
       </router-link>
       <div id="links">
         <span class="nav-links">
-          <router-link class="link-text nav-text" to="/people" @click.native="toggleRes(false)">people</router-link>
-          <router-link class="link-text nav-text" to="/projects" @click.native="toggleRes(false)">projects</router-link>
-          <router-link class="link-text nav-text" to="/partner" @click.native="toggleRes(false)">partner</router-link>
-          <router-link class="link-text" to="/join" id="join-link" @click.native="toggleRes(false)">join</router-link>
+          <router-link class="link-text nav-text color-change" to="/people" @click.native="toggleRes(false)">people</router-link>
+          <router-link class="link-text nav-text color-change" to="/projects" @click.native="toggleRes(false)">projects</router-link>
+          <router-link class="link-text nav-text color-change" to="/partner" @click.native="toggleRes(false)">partner</router-link>
+          <router-link class="link-text color-change" to="/join" id="join-link" @click.native="toggleRes(false)">join</router-link>
         </span>
       </div>
       <a href="javascript:void(0);" id="res-icon" @click="toggleRes(!res)">
@@ -22,17 +22,17 @@
       <div class="link-list">
         <p class="link-header">for students</p>
         <hr />
-        <router-link class="small-link-text" to="/people">people</router-link>
+        <router-link class="small-link-text color-change" to="/people">people</router-link>
         <br /> <br />
-        <router-link class="small-link-text" to="/projects">projects</router-link>
+        <router-link class="small-link-text color-change" to="/projects">projects</router-link>
         <br /> <br />
-        <router-link class="small-link-text" to="/join" id="join-small-link">join</router-link>
+        <router-link class="small-link-text color-change" to="/join" id="join-small-link">join</router-link>
         <br /> <br />
       </div>
       <div class="link-list">
         <p class="link-header">for organizations</p>
         <hr />
-        <router-link class="small-link-text" to="/partner">partner</router-link>
+        <router-link class="small-link-text color-change" to="/partner">partner</router-link>
         <br /> <br />
       </div>
     </div>
@@ -77,21 +77,25 @@ body {
   background-color: $main-dark;
   a {
     text-decoration: none;
-    &:hover {
-      text-decoration: inherit;
-      color: $accent-light;
+    
+    &.color-change {
+      color: #ffffff;
+      &:hover {
+        text-decoration: inherit;
+        color: $accent-light;
+      }
     }
     &.link-text {
+      font-size: 18px;
       font-family: Comfortaa;
       font-weight: bold;
-      font-size: 18px;
-      color: #ffffff;
+      
     }
     &.small-link-text {
+      font-size: 20px;
       font-family: Comfortaa;
       font-weight: bold;
-      font-size: 20px;
-      color: #ffffff;
+    
     }
   }
 }

@@ -20,7 +20,7 @@
                     <br />
                     <br />
                     <h1 id="overview">Project Overview</h1>
-                    <div v-html="project.narrative"></div>
+                    <div id="narrative" v-html="project.narrative"></div>
                     <div v-for="asset in project.assets" :key="asset.src" class="asset">
                         <img :src="asset.src"/>
                         <p class="caption"> {{asset.caption}} </p>
@@ -102,8 +102,8 @@ export default {
     letter-spacing: 0.5px;
     color: $accent-medium;
     padding-top: 5vh;
-        padding-bottom: 5vh;
-        text-align: center;
+    padding-bottom: 5vh;
+    text-align: center;
 
 }
 
@@ -118,6 +118,12 @@ export default {
   letter-spacing: normal;
   color: #ffffff;
   text-align: center;
+}
+
+#narrative {
+    a {
+        color: blue;
+    }
 }
 
 #error404 {

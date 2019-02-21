@@ -1,46 +1,35 @@
 <template>
-  <div id="home-content">
-    <div class="row">
-      <div class="container">
-        <div id="text">
-          <br />
-          <h1 id="hook">Code from day one, with impact.</h1>
-          <hr id="line" />
-          <p id="subtitle">Welcome to a passionate club of engineers and makers.</p>
-          <br />
-          <br />
-          <a href="#" v-scroll-to="{
-            el: '.center-horiz',
-            duration: 500,
-            easing: 'linear',
-            offset: -80,
-            force: true,
-            cancelable: true,
-            x: false,
-            y: true
-          }" id="view-text">View our work</a>
-          <br />
-          <br />
-        </div>
+  <div class="container" id="home-content">
+    <div class="row" id="intro">
+      <div class="col-lg-5" id="text">
+        <br />
+        <h1 id="hook">Code from day one, with impact.</h1>
+        <hr id="line" />
+        <p id="subtitle">Welcome to a passionate club of engineers and makers.</p>
+        <a href="#" v-scroll-to="{
+          el: '.projects',
+          duration: 500,
+          easing: 'linear',
+          offset: -80,
+          force: true,
+          cancelable: true,
+          x: false,
+          y: true
+        }" id="view-text">View our work</a>
+      </div>
+      <div class="col-lg-7" id="stanford-wrapper">
         <img id="stanford" src="@/assets/img/stanford@2x.png" />
       </div>
     </div>
-    <div v-for="project in caseStudies" :key="project.name" class="row">
-      <div class="center-horiz col-lg-5 col-sm-12">
-        <div class="text-content">
-          <div class="center-space">
-            <p class="year" :style="{ color: themeColors['light-'+project.color] }">{{ project.year }}</p>
-            <p class="org-name">{{ project.name}}</p>
-            <p class="subtitle">{{ project.summary }}</p>
-            <br />
-            <button @click="goToProfile(project.name)" :style="{ backgroundColor: themeColors['bold-'+project.color] }" class="btn read-btn">READ</button>
-            <br />
-            <br />
-          </div>
-        </div>
+    <div v-for="project in caseStudies" :key="project.name" class="row projects">
+      <div class="col-lg-5">
+        <p class="year" :style="{ color: themeColors['light-'+project.color] }">{{ project.year }}</p>
+        <p class="org-name">{{ project.name}}</p>
+        <p class="summary">{{ project.summary }}</p>
+        <button @click="goToProfile(project.name)" :style="{ backgroundColor: themeColors['bold-'+project.color] }" class="btn read-btn">READ</button>
       </div>
-      <div class="col-lg-7 col-sm-12 image-holder">
-        <img class="image" :src="baseUrl + project.background" />
+      <div class="col-lg-7 image-holder">
+        <img :src="baseUrl + project.background" />
       </div>
     </div>
   </div>
@@ -79,158 +68,134 @@ export default {
 <style scoped lang="scss">
 @import '../theme.scss';
 
-.image {
-  height: 100%;
-  background-color: #ffffff;
-  padding: 10px;
-  width: 100%;
-}
-
-.image-holder:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: all .3s linear;
-}
-
-.image-holder {
-  margin-top: 10px;
-  height: calc(100vh - 85px);
-}
-
-.read-btn {
-  width: 281px;
-  height: 95px;
-  border-radius: 100px;
-  box-shadow: 0 2px 10px 0 rgba(151, 33, 255, 0.5);
-  background-color: $bold-purple;
-  font-family: 'Open Sans';
-  font-size: 24px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-
-.subtitle {
-  font-family: Comfortaa;
-  font-size: 25px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-
-.text-content {
-  width: 400px;
-  height: 100%;
-}
-
-.center-horiz {
-  display: flex;
-  justify-content: center;
-}
-
-.center-space {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-}
-
-.org-name {
-  font-family: Comfortaa;
-  font-size: 48px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-
-.year {
-  font-family: Comfortaa;
-  font-size: 32px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-}
-
 .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0px;
-  margin-top: 10vh;
+  padding: 0;
+  margin-left: 60px;
+  margin-right: 60px;
+  @media only screen and (max-width: 700px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  > * {
+    margin: 0;
+    padding: 0;
+    > * {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
-.row {
-  margin:0px;
-  min-height: calc(100vh - 85px);
+#intro {
+  margin-top: 5em;
+  margin-bottom: 4em;
+  @media only screen and (max-width: 700px) {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  #text {
+    #hook {
+      font-family: Comfortaa;
+      font-size: 3.6em;
+      font-weight: bold;
+      line-height: 9vh;
+      color: white;
+      width: 24vw;
+      @media only screen and (max-width: 700px) {
+        font-size: 2em;
+        line-height: inherit;
+      }
+    }
+
+    #line {
+      margin-top: 3vh;
+      margin-bottom: 3vh;
+      width: 50%;
+      height: 2px;
+      background-color: $home-accent;
+      margin-left: 0px;
+    }
+
+    #subtitle {
+      font-family: 'Open Sans';
+      font-size: 1.5em;
+      color: white;
+      margin-bottom: 2em;
+    }
+
+    #view-text {
+      font-family: Comfortaa;
+      font-size: 24px;
+      font-weight: bold;
+      color: $home-accent;
+    }
+  }
+
+  #stanford-wrapper {
+    text-align: right;
+    #stanford {
+      max-width: 30em;
+    }
+    @media only screen and (max-width: 700px) {
+      text-align: center;
+      #stanford {
+        max-width: 10em;
+      }
+    }
+  }
 }
 
-#text {
-  width: 500px;
-}
-
-#line {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  width: 125px;
-  height: 2px;
-  background-color: $home-accent;
-  margin-left: 0px;
-}
-
-#subtitle {
-  font-family: 'Open Sans';
-  font-size: 26px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-
-#hook {
+.projects {
   font-family: Comfortaa;
-  font-size: 60px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 9vh;
-  letter-spacing: normal;
-  color: #ffffff;
-    width: 24vw;
-    flex: 20;
+  margin-top: 6em;
 
-}
+  .year {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .org-name {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: white;
+  }
+  .summary {
+    font-size: 1.4em;
+    line-height: 1.5;
+    color: #ffffff;
+  }
 
-#view-text {
-  font-family: Comfortaa;
-  font-size: 24px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: $home-accent;
-}
+  .read-btn {
+    width: 25%;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px 0 rgba(151, 33, 255, 0.5);
+    background-color: $bold-purple;
+    font-family: 'Open Sans';
+    font-size: 1.2em;
+    font-weight: 800;
+    color: white;
+  }
 
-#stanford {
-  width: 30em;
-  height: 30em;
+  .image-holder {
+    margin-top: 10px;
+    text-align: center;
+
+    img {
+      background-color: white;
+      padding: 10px;
+      max-width: 45%;
+      border-radius: 8px;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all .3s linear;
+    }
+  }
 }
 </style>

@@ -13,7 +13,7 @@
         </span>
       </div>
       <a href="javascript:void(0);" id="res-icon" @click="toggleRes(!res)">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars color-change"></i>
       </a>
     </div>
     <hr id="scroll-shadow" />
@@ -32,7 +32,7 @@
       <div class="link-list">
         <p class="link-header">for organizations</p>
         <hr />
-        <router-link class="small-link-text color-change" to="/partner">partner</router-link>
+        <router-link class="small-link-text color-change." to="/partner">partner</router-link>
         <br /> <br />
       </div>
     </div>
@@ -68,6 +68,14 @@ body {
   height: 100%;
 }
 
+.color-change {
+  color: #ffffff;
+  &:hover {
+    text-decoration: inherit;
+    color: $accent-light;
+  }
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -77,25 +85,15 @@ body {
   background-color: $main-dark;
   a {
     text-decoration: none;
-    
-    &.color-change {
-      color: #ffffff;
-      &:hover {
-        text-decoration: inherit;
-        color: $accent-light;
-      }
-    }
     &.link-text {
       font-size: 18px;
       font-family: Comfortaa;
       font-weight: bold;
-      
     }
     &.small-link-text {
       font-size: 20px;
       font-family: Comfortaa;
       font-weight: bold;
-    
     }
   }
 }

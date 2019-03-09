@@ -95,7 +95,7 @@
         "name": "Konexio",
         "summary": "We are developing an application that assists refugees living in France by connecting them to mentors.",
         "background": "./assets/konexio.jpg",
-        "team": ["alexhurtado","amitagondi", "anthonyperez","farzaankaiyom","isabelgallegos","joannajo","tylerhong"],
+        "team": ["alexhurtado","amitagondi", "anthonyperez","ericzhou","farzaankaiyom","isabelgallegos","joannajo","tylerhong"],
         "wip": true
     },
     {

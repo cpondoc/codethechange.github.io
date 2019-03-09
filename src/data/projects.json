@@ -123,8 +123,9 @@
     },
     {
         "name": "Karuna",
-        "summary": "",
-        "team": ["charlespan", "jacksonparell", "sammymohammed", "sidhikabalachandar","tylerhong"],
-        "wip": false
+        "summary": "Karuna is a social venture that aims to amplify community in our society through leveraging philanthropic donations as the motivator for people to adopt healthier habits.",
+        "background": "",
+        "team": ["charlespan", "ericzhou", "jacksonparell", "sammymohammed", "sidhikabalachandar"],
+        "wip": true
     }
 ]

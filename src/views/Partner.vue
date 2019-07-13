@@ -63,7 +63,7 @@
           <div class="form-group row">
             <div class="col-9"></div>
             <div class="col-3">
-              <button type="submit" id="submit" class="btn btn-default">SUBMIT</button>
+              <button type="submit" @click="onSubmit" id="submit" class="btn btn-default">SUBMIT</button>
             </div>
           </div>
         </form>
@@ -125,7 +125,8 @@ export default {
       formData.append('email', this.email)
       formData.append('summary', this.summary)
       formData.append('site', this.site)
-      axios.post('https://guarded-ravine-42139.herokuapp.com/partner-form', formData)
+      alert('submitting')
+      axios.post('http://localhost:5000/partner-form', formData)
         .then(res => {
           this.submitted = true
           if (res.error) {

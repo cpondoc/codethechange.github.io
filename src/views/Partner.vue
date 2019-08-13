@@ -74,7 +74,12 @@
         </div>
         <div class="row">
           <div class="col-12 paragraph">
-            You must be a nonprofit or low-resourced social venture that needs volunteer support for an impactful computer science project.
+            You must be a nonprofit or low-resourced social venture that
+            needs volunteer support for an impactful computer science
+            project. For details on how we evaluate projects, see our
+            <router-link class="small-link-text" to="/partner_criteria">
+              partner criteria
+            </router-link>.
           </div>
         </div>
         <br />

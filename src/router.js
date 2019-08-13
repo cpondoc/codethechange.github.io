@@ -6,6 +6,7 @@ import Partner from './views/Partner.vue'
 import Projects from './views/Projects.vue'
 import Join from './views/Join.vue'
 import ProjectProfile from './views/ProjectProfile.vue'
+import PartnerCriteria from './views/PartnerCriteria.vue'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/profile',
       name: 'profile',
       component: ProjectProfile
+    },
+    {
+      path: '/partner_criteria',
+      name: 'partner_criteria',
+      component: PartnerCriteria
     }
   ]
 })

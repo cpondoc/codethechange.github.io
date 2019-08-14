@@ -12,6 +12,13 @@
         <!-- Line breaks in the markdown are treated literally -->
         <vue-markdown>
 
+In brief, we look for projects that
+
+* will be good learning experiences for contributors and
+* where our contributions will have a meaningful, positive impact on other people.
+
+Below are the criteria we look for in projects in more detail. This is hardly exhaustive, but we hope it helps illustrate our goals.
+
 # Absolutely Necessary
 
 These are non-negotiable. Without exception, each partner and project must clearly meet each of these criteria.

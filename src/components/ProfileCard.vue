@@ -31,6 +31,9 @@ export default {
         image = linkedin
       } else if (link === 'email') {
         image = email
+        if (!this.links[link].startsWith('mailto:')) {
+          this.links[link] = 'mailto:' + this.links[link]
+        }
       }
       socials.push({ link: this.links[link], image: image })
     }

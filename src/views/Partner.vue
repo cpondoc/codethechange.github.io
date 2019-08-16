@@ -128,7 +128,7 @@ export default {
       formData.append('email', this.email)
       formData.append('summary', this.summary)
       formData.append('site', this.site)
-      axios.post('http://localhost:5000/partner-form', formData) // guarded-ravine-42139.herokuapp.com
+      axios.post('https://guarded-ravine-42139.herokuapp.com/partner-form', formData)
         .then(res => {
           this.submitted = true
           console.log(res)

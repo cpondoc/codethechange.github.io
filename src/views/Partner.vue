@@ -63,7 +63,7 @@
           <div class="form-group row">
             <div class="col-9"></div>
             <div class="col-3">
-              <button type="submit" id="submit" class="btn btn-default">SUBMIT</button>
+              <button type="submit" @click="onSubmit" id="submit" class="btn btn-default">SUBMIT</button>
             </div>
           </div>
         </form>

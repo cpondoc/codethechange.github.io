@@ -108,6 +108,7 @@ export default {
       summary: null,
       email: null,
       site: null,
+      submitting: false,
       submitted: false,
       finishedMessage: ''
     }
@@ -124,34 +125,37 @@ export default {
       }
     },
     onSubmit () {
-      alert('hi')
-      const formData = new FormData()
-      if (this.file) {
-        formData.append('proposal', this.file, this.filename)
-      }
-      formData.append('name', this.name)
-      formData.append('email', this.email)
-      formData.append('summary', this.summary)
-      formData.append('site', this.site)
-      axios.post('https://guarded-ravine-42139.herokuapp.com/partner-form', formData)
-        .then(res => {
-          this.submitted = true
-          console.log(res)
-          if (res.error) {
-            this.finishedTitle = 'Form Submission Error. '
-            this.finishedMessage = 'Unfortunately, we\'ve encountered some server error. Please email drewgreg [at] stanford [dot] edu with your form contents.'
-          } else {
-            this.finishedTitle = 'Form Submitted!'
-            this.finishedMessage = 'Thank you for reaching out. We will get back to you if we think your project is a good fit.'
-          }
-        })
-        .error(err => {
-          if (err) {
+      if (!this.submitting) {
+        this.submitting = true
+        const formData = new FormData()
+        if (this.file) {
+          formData.append('proposal', this.file, this.filename)
+        }
+        formData.append('name', this.name)
+        formData.append('email', this.email)
+        formData.append('summary', this.summary)
+        formData.append('site', this.site)
+        axios.post('https://guarded-ravine-42139.herokuapp.com/partner-form', formData)
+          .then(res => {
             this.submitted = true
-            this.finishedTitle = 'Form Submission Error. '
-            this.finishedMessage = 'Unfortunately, we\'ve encountered some server error. Please email drewgreg [at] stanford [dot] edu with your form contents.'
-          }
-        })
+            this.submitting = false
+            if (res.error) {
+              this.finishedTitle = 'Form Submission Error. '
+              this.finishedMessage = 'Unfortunately, we\'ve encountered some server error. Please email drewgreg [at] stanford [dot] edu with your form contents.'
+            } else {
+              this.finishedTitle = 'Form Submitted!'
+              this.finishedMessage = 'Thank you for reaching out. We will get back to you if we think your project is a good fit.'
+            }
+          })
+          .error(err => {
+            if (err) {
+              this.submitted = true
+              this.submitting = false
+              this.finishedTitle = 'Form Submission Error. '
+              this.finishedMessage = 'Unfortunately, we\'ve encountered some server error. Please email drewgreg [at] stanford [dot] edu with your form contents.'
+            }
+          })
+        }
     }
   },
   name: 'Partner',

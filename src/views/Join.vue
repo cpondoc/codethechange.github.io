@@ -48,7 +48,7 @@
     </div>
 
     <div class = "cta">
-        <h1> Not ready to join yet? Sign up for our mailing list!</h1>
+        <h1> Want to stay in the loop? Sign up for our mailing list!</h1>
         <div class = "cta-button" id ="footer-cta">
              <a
                href="https://mailman.stanford.edu/mailman/listinfo/codethechange_general"

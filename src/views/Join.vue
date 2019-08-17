@@ -5,7 +5,9 @@
         <div class = "header-group">
             <h1 class = "header-title">Change the world and build projects with us.</h1>
             <div class = "cta-button">
-                <a href="https://codethechange.typeform.com/to/w7qJSt" target="_blank"><h3> APPLY </h3></a>
+                <a href="https://codethechange.typeform.com/to/w7qJSt"
+                  target="_blank"
+                ><h3> JOIN </h3></a>
                 <div id = "button-arrow">  </div>
             </div>
         </div>
@@ -46,9 +48,12 @@
     </div>
 
     <div class = "cta">
-        <h1> Ready to jump in?  Apply today. </h1>
+        <h1> Not ready to join yet? Sign up for our mailing list!</h1>
         <div class = "cta-button" id ="footer-cta">
-             <a href="https://codethechange.typeform.com/to/w7qJSt" target="_blank"><h3> Apply </h3></a>
+             <a
+               href="https://mailman.stanford.edu/mailman/listinfo/codethechange_general"
+               target="_blank"
+             ><h3> Sign Up </h3></a>
         </div>
     </div>
 </div>

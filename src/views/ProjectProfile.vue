@@ -120,12 +120,6 @@ export default {
   text-align: center;
 }
 
-#narrative {
-    a {
-        color: blue;
-    }
-}
-
 #error404 {
     width: 100vw;
     text-align:center;

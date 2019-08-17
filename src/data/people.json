@@ -101,16 +101,6 @@
         "name": "Dylan Grosz",
         "role": "Developer"
     },
-    "ericfrankel": {
-        "imageSrc": "./assets/0.jpeg",
-        "links": {
-            "email": "ericsf@stanford.edu",
-            "github": "https://github.com/esfrankel",
-            "linkedin": "https://www.linkedin.com/in/eric-frankel/"
-        },
-        "name": "Eric Frankel",
-        "role": "Design"
-    },
     "ericlou": {
         "imageSrc": "./assets/eric_lou_photo.jpg",
         "links": {
@@ -119,6 +109,16 @@
         },
         "name": "Eric Lou",
         "role": "Team Lead"
+    },
+    "ericzhou": {
+        "imageSrc": "./assets/eric_zhou.jpg",
+        "links": {
+            "email": "ericzhou@stanford.edu",
+            "github": "https://github.com/ericzhou27",
+            "linkedin": "www.linkedin.com/in/ericzhou27"
+        },
+        "name": "Eric Zhou",
+        "role": "Developer"
     },
     "farzaankaiyom": {
         "imageSrc": "./assets/farzaan_photo.jpg",

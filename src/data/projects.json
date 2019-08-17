@@ -116,10 +116,38 @@
     },
     {
         "name": "UNICEF Magic Box",
-        "summary": "We are helping develop a tool to better visualize migration patterns for disaster response scenarios.",
+        "featured": true,
+        "year": "2019",
+        "summary": "We are helping develop a tool to, by processing data on human migration patterns, help NGOs and governments respond to disasters.",
+        "organization": "We were privileged to collaborate with UNICEF's MagicBox team, who provided invaluable guidance and let us contribute to their life-changing work.",
+        "bullets": [
+            "UNICEF receives data on how people move between cell towers, but to better plan disaster responses, NGOs and governments need data on how people move between political regions like provinces.",
+            "We built a data-processing tool that estimates human migration between political regions.",
+            "We emphasized clean code, thorough documentation, and rigorous testing to help our partners at UNICEF pick up where we left off.",
+            "An eye toward efficiency let us perform our computations reasonably quickly."
+        ],
         "background": "./assets/UNICEF.jpg",
+        "narrative": "<h3>Organization Description</h3><p><b>We developed a data processing tool that will help UNICEF monitor global human migration patterns. This will help NGOs and governments distribute aid to those migrant populations that need it most.</b></p><p>UNICEF receives anonymized and aggregated data describing daily movements of cell phones between cell towers. (Note that the data only count how many cell phones transitioned from one cell tower to another each day, so we cannot track individual phones.) Our tool uses maps and cell tower positions to estimate how many people move between any two political regions (e.g. provinces) each day.</p><p>To perform this estimation, we convert the provided migration data into a matrix. Then, we compute matrices that describe the fraction of each cell tower's range that is within each political region and that describe the fraction of each political region that is covered by each cell tower's range. Multiplying these three matrices yields the migration data between political regions. Efficiency was paramount since countries can have thousands of political regions. For example, the United States has over three thousand counties (Source: <a href=\"https://www.usgs.gov/faqs/how-many-counties-are-there-united-states\">USGS</a>). We relied on matrices in part because we optimized matrix operations using <a href=\"https://www.numpy.org/\">numpy</a>. We used an <a href=\"https://en.wikipedia.org/wiki/R-tree\">RTree</a>, a geospatial data structure, to efficiently calculate the overlaps between polygons. This efficiency came from the RTree telling us which polygons had overlapping bounding boxes, drastically reducing the number of polygons we needed to consider. Combined, these optimizations let us perform our computations in a reasonable amount of time.</p><p>To make it easy for UNICEF to pick up our work once we finished, we emphasized having comprehensive documentation and unit tests as much as correctness. We also isolated the code that performs generally useful operations (e.g. computing polygon overlap) from the code that loads the data from files. This makes it easy to change the format of the data files--you only have to modify the isolated function that handles that particular file.</p><p>If you want to check out our work, take a look at our GitHub repository <a href=\"https://github.com/codethechange/mobility_pipeline\">here</a>. We love contributions, so please open an issue with ideas for improvement or create a pull request to suggest changes to our code or documentation!</p>",
         "team": ["andyjin","chris","justintinker", "kevintran", "samsilverstein"],
-        "wip": true
+        "wip": false,
+        "assets": [
+            {
+                "src": "./assets/unicef_profile/voronoi.png",
+                "caption": "The ranges of (simulated) cell towers in Brazil, overlayed with the cell tower locations."
+            },
+            {
+                "src": "./assets/unicef_profile/overlap.png",
+                "caption": "The range of one cell tower (in gray) and the political regions it overlaps."
+            },
+            {
+                "src": "./assets/unicef_profile/docs.png",
+                "caption": "A screenshot from our documentation on readthedocs."
+            },
+            {
+                "src": "./assets/unicef_profile/tests.png",
+                "caption": "A screenshot of our unit tests running on Travis-CI."
+            }
+        ]
     },
     {
         "name": "Karuna",

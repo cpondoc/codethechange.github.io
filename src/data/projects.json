@@ -94,10 +94,19 @@
     },
     {
         "name": "Catrobat",
+        "featured": false,
         "background": "./assets/catrobat.jpg",
+        "year": 2019,
         "summary": "Our Android app helps allow users on the Catrobat app to be able to collaborate on projects.",
         "team": ["ayushsingla", "han", "trinitydonohugh"], 
         "description": "<h3>Organization Description</h3><p>Catrobat is an organisation that has built the free educational app PocketCode for children and teenagers to create and play. Their app allows users anywhere in the world to be able to build their own games, interactive music videos, and animations on their mobile phone, allowing more people in the world to be able to learn to code for free.</p><h3>Our Role</h3><p>At the Catrobat Team, we are working on their Android app to add a merge functionality so that users who want to collaborate on one project can merge their different versions of the project to create into one.</p>",
+        "organization": "The Austrian non-profit Catrobat develops the free/libre open source app PocketCode, which teaches computational thinking skills.",
+        "icon": null,
+        "bullets": [
+            "PocketCode is available on Android and iOS, and it has hundreds of thousands of users.",
+            "We worked to develop a first iteration of a merge feature that lets users combine their features.",
+            "Catrobat follows an agile, test-driven software development philosophy, giving contributors experience with popular software development practices."
+        ],
         "wip": true
     },
     {

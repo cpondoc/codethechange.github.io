@@ -84,12 +84,12 @@
         "past_members": [
             "drew", "chris"
         ],
-        "description": "<h3>Organization Description</h3><p>Millions of people live, work, and play outside of their hometowns, provinces, states, and countries. CultureMesh LLC builds networks to match these real-world dynamics and knit the diverse fabrics of our world together. CultureMesh is a public benefit corporation that has its own website and Android app. There have been about 1000 users over CultureMesh’s lifetime, and we hope to grow this user base in a more iterative, data-driven way. To learn more about CultureMesh, be sure to check out its <a href=\"https://www.culturemesh.com\">website</a>.<p>Under the current design, CutlureMesh users join forums called \"Networks\" that consist of people who currently live in a given location (i.e. Palo Alto) and are from another location (i.e. France). Networks can also consist of people living in a location who speak a certain language (i.e. French). In these networks, people can create posts or events.</p></p><h3>Our Role</h3><p>Since CultureMesh is very small, CultureMesh currently depends on our Stanford Code the Change chapter to maintain the codebase. CultureMesh has an existing website, as well as Facebook Free Basics and Android apps (that Code the Change created last year), so this year’s focus will be on refining all three to better serve user needs. We will be iterating on the existing products based on user feedback as the platform expands. The website is currently written with a PHP frontend and backend, and the Android app is written in Java with a Flask backend. The Facebook Free Basics app is written in Flask. We are currently considering development on all these fronts.</p><h3>Past Work</h3><h4>Android Application</h4><p>The Android application was natively developed in Android Studio. It current supports exploring popular locations for networks, creating posts, commenting on posts, creating events, and joining/leaving events. You can check out the <a href=\"https://play.google.com/store/apps/details?id=com.culturemesh.android\">Google Play Store Listing</a> and our <a href=\"https://github.com/culturemesh/CultureMeshAndroid\">codebase</a>.</p><h4>FFB</h4><p>The Facebook Free Basics Application allows users with low-resourced mobile phones to still interact with CultureMesh. Like the Google AMP project, the application cannot use any Javascript. You can check out the <a href=\"https://github.com/alanefl/culturemeshFFB\"> codebase.</a></p><h4>Back-End API</h4>The API was written in Flask and is hosted on the same Bluehost server as the website. You can check out the <a href=\"https://github.com/alanefl/culturemesh-api\"> codebase</a>.",
         "bullets": [
             "We created an Android app, which lets Android users easily form and join communities on CultureMesh.",
             "To serve those users around the world who access the internet using Facebook Free Basics (FFB), we created a webapp for the FFB platform using Python Flask.",
             "These two apps are served by a common server API, also written in Flask."
         ],
+        "narrative": "<h3>Organization Description</h3><p>Millions of people live, work, and play outside of their hometowns, provinces, states, and countries. CultureMesh LLC builds networks to match these real-world dynamics and knit the diverse fabrics of our world together. CultureMesh is a public benefit corporation that has its own website and Android app. There have been about 1000 users over CultureMesh’s lifetime, and we hope to grow this user base in a more iterative, data-driven way. To learn more about CultureMesh, be sure to check out its <a href=\"https://www.culturemesh.com\">website</a>.<p>Under the current design, CutlureMesh users join forums called \"Networks\" that consist of people who currently live in a given location (i.e. Palo Alto) and are from another location (i.e. France). Networks can also consist of people living in a location who speak a certain language (i.e. French). In these networks, people can create posts or events.</p></p><h3>Our Role</h3><p>Since CultureMesh is very small, CultureMesh currently depends on our Stanford Code the Change chapter to maintain the codebase. CultureMesh has an existing website, as well as Facebook Free Basics and Android apps (that Code the Change created last year), so this year’s focus will be on refining all three to better serve user needs. We will be iterating on the existing products based on user feedback as the platform expands. The website is currently written with a PHP frontend and backend, and the Android app is written in Java with a Flask backend. The Facebook Free Basics app is written in Flask. We are currently considering development on all these fronts.</p><h3>Past Work</h3><h4>Android Application</h4><p>The Android application was natively developed in Android Studio. It current supports exploring popular locations for networks, creating posts, commenting on posts, creating events, and joining/leaving events. You can check out the <a href=\"https://play.google.com/store/apps/details?id=com.culturemesh.android\">Google Play Store Listing</a> and our <a href=\"https://github.com/culturemesh/CultureMeshAndroid\">codebase</a>.</p><h4>FFB</h4><p>The Facebook Free Basics Application allows users with low-resourced mobile phones to still interact with CultureMesh. Like the Google AMP project, the application cannot use any Javascript. You can check out the <a href=\"https://github.com/alanefl/culturemeshFFB\"> codebase.</a></p><h4>Back-End API</h4>The API was written in Flask and is hosted on the same Bluehost server as the website. You can check out the <a href=\"https://github.com/alanefl/culturemesh-api\"> codebase</a>.",
         "wip":true
     },
     {
@@ -98,38 +98,54 @@
         "background": "./assets/catrobat.jpg",
         "year": 2019,
         "summary": "Our Android app helps allow users on the Catrobat app to be able to collaborate on projects.",
-        "team": ["ayushsingla", "han", "trinitydonohugh"], 
-        "description": "<h3>Organization Description</h3><p>Catrobat is an organisation that has built the free educational app PocketCode for children and teenagers to create and play. Their app allows users anywhere in the world to be able to build their own games, interactive music videos, and animations on their mobile phone, allowing more people in the world to be able to learn to code for free.</p><h3>Our Role</h3><p>At the Catrobat Team, we are working on their Android app to add a merge functionality so that users who want to collaborate on one project can merge their different versions of the project to create into one.</p>",
         "organization": "The Austrian non-profit Catrobat develops the free/libre open source app PocketCode, which teaches computational thinking skills.",
         "icon": null,
+        "team": ["ayushsingla", "han", "trinitydonohugh"],
         "bullets": [
             "PocketCode is available on Android and iOS, and it has hundreds of thousands of users.",
             "We worked to develop a first iteration of a merge feature that lets users combine their features.",
             "Catrobat follows an agile, test-driven software development philosophy, giving contributors experience with popular software development practices."
         ],
+        "narrative": "<h3>Organization Description</h3><p>Catrobat is an organisation that has built the free educational app PocketCode for children and teenagers to create and play. Their app allows users anywhere in the world to be able to build their own games, interactive music videos, and animations on their mobile phone, allowing more people in the world to be able to learn to code for free.</p><h3>Our Role</h3><p>At the Catrobat Team, we are working on their Android app to add a merge functionality so that users who want to collaborate on one project can merge their different versions of the project to create into one.</p>",
         "wip": true
     },
     {
         "name": "Konexio",
-        "summary": "We are developing an application that assists refugees living in France by connecting them to mentors.",
+        "featured": false,
         "background": "./assets/konexio.jpg",
+        "year": 2019,
+        "summary": "We are developing an application that assists refugees living in France by connecting them to mentors.",
+        "organization": null,
+        "icon": null,
+        "narrative": null,
         "team": ["alexhurtado","amitagondi", "anthonyperez","farzaankaiyom","isabelgallegos","joannajo","tylerhong"],
+        "bullets": null,
         "wip": true
     },
     {
         "name" : "Mannabase",
+        "featured": false,
         "background": "./assets/mannabaselogo.png",
+        "year": 2019,
         "summary": "We aim to help anyone receive a basic income through Mannabase's cryptocurrency.",
-        "description": "<h3>Organization Description</h3><p>Mannabase is an online platform for the world’s first Universal Basic Income cryptocurrency. Manna is distributed by the People’s Currency Foundation as a basic human right that every person in the world is eligible to receive, for free. Founded in 2015, Manna has achieved milestones in the cryptocurrency movement, as the first blockchain-based currency to be created and distributed by a tax-exempt nonprofit organization, and the first digital currency to implement a Universal Basic Income as its primary method of distribution. It currently distributes Manna weekly to about 100,000 users.</p><h3>Our Role</h3><p>We will facilitate Manna recipients to redistribute their own Manna to other Manna users in need. This will be called the “Targeted Direct Giving” Platform. In addition, we will be improving the login requirements to help ensure dedicated, valid, and human users are receiving Manna.</p>",
+        "organization": null,
+        "icon": null,
+        "narrative": "<h3>Organization Description</h3><p>Mannabase is an online platform for the world’s first Universal Basic Income cryptocurrency. Manna is distributed by the People’s Currency Foundation as a basic human right that every person in the world is eligible to receive, for free. Founded in 2015, Manna has achieved milestones in the cryptocurrency movement, as the first blockchain-based currency to be created and distributed by a tax-exempt nonprofit organization, and the first digital currency to implement a Universal Basic Income as its primary method of distribution. It currently distributes Manna weekly to about 100,000 users.</p><h3>Our Role</h3><p>We will facilitate Manna recipients to redistribute their own Manna to other Manna users in need. This will be called the “Targeted Direct Giving” Platform. In addition, we will be improving the login requirements to help ensure dedicated, valid, and human users are receiving Manna.</p>",
         "team": ["drew", "jasonzhao", "kendrickshen", "madelineliao",  "minamahmood"],
+        "bullets": null,
         "wip": true
     },
     {
         "name": "Oppia",
-        "summary": "We enhance the online learning experiences of users with limited access to education.",
+        "featured": false,
         "background": "./assets/oppia_logo.png",
-        "description": "<h3> Organization Description </h3><p> Oppia brings online education to users throughout the world by providing an interactive environment for users to engage with various topics ranging from beginners math to electromagnetism. With features like text-to-speech, and translations to mixed languages such as between English and Hindi (Hindlish), Oppia ensures that the lesson effectively communicates with the user. Oppia also makes it easy for anyone to create interactive lessons. In order to provide better feedback when the user enters an incorrect answer, volunteers of Oppia spend time understanding why someone would choose that wrong answer and they edit the lesson so future users will not make the same mistake, creating a better lesson overall.<br/></p><h3> Our Role </h3><p> On the Oppia Team, we are working on 3 projects (Python and AngularJS) that have high impact on not just the user, but also the volunteers that Oppia works with. <br/>The first project is \"Giving Users Control of their Data\". We work on implementing a feature for users to adjust their account data, or delete their account, if desired. The second project is \"Artist Dashboard\". We work on developing a simple interface for the artists of Oppia to see specific diagrams in lessons that still need to be drawn. The third project is \"Lesson Improvements\". We work on providing an interface that allows lesson creators to easily visualize the most common wrong answers.</p>",
+        "year": 2019,
+        "summary": "We enhance the online learning experiences of users with limited access to education.",
+        "organization": null,
+        "icon": null,
+        "narrative": "<h3> Organization Description </h3><p> Oppia brings online education to users throughout the world by providing an interactive environment for users to engage with various topics ranging from beginners math to electromagnetism. With features like text-to-speech, and translations to mixed languages such as between English and Hindi (Hindlish), Oppia ensures that the lesson effectively communicates with the user. Oppia also makes it easy for anyone to create interactive lessons. In order to provide better feedback when the user enters an incorrect answer, volunteers of Oppia spend time understanding why someone would choose that wrong answer and they edit the lesson so future users will not make the same mistake, creating a better lesson overall.<br/></p><h3> Our Role </h3><p> On the Oppia Team, we are working on 3 projects (Python and AngularJS) that have high impact on not just the user, but also the volunteers that Oppia works with. <br/>The first project is \"Giving Users Control of their Data\". We work on implementing a feature for users to adjust their account data, or delete their account, if desired. The second project is \"Artist Dashboard\". We work on developing a simple interface for the artists of Oppia to see specific diagrams in lessons that still need to be drawn. The third project is \"Lesson Improvements\". We work on providing an interface that allows lesson creators to easily visualize the most common wrong answers.</p>",
         "team": ["austinryanchow", "ericlou", "hectoramador", "luisulloa", "shawnzhang", "gracehu"],
+        "bullets": null,
         "wip": true        
     },
     {
@@ -170,6 +186,7 @@
     {
         "name": "Karuna",
         "summary": "",
+        "year": 2019,
         "team": ["charlespan", "jacksonparell", "sammymohammed", "sidhikabalachandar","tylerhong"],
         "wip": false
     }

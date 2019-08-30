@@ -33,6 +33,10 @@
         <div class="case-card-text">
           <h5>{{ project.name }}</h5>
           <p>{{ project.summary }}</p>
+          <h6 class="link-case">
+            <a @click="goToProfile(project.name)" id="link-1"
+               class="hvr-bounce-in">READ MORE</a>
+          </h6>
         </div>
       </div>
     </div>

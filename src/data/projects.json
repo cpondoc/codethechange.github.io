@@ -69,8 +69,12 @@
     },
     {
         "name": "CultureMesh",
+        "featured": false,
         "background": "./assets/culturemesh_logo.jpg",
+        "year": 2019,
         "summary":"Our Android and FFB apps help CultureMesh foster cultural communities for migrating populations.",
+        "organization": "CultureMesh builds communities among migrating populations, knitting the diverse fabrics of our world together.",
+        "icon": null,
         "team": [
             "dylancunningham","dylangrosz",
             "jimmyle",
@@ -81,6 +85,11 @@
             "drew", "chris"
         ],
         "description": "<h3>Organization Description</h3><p>Millions of people live, work, and play outside of their hometowns, provinces, states, and countries. CultureMesh LLC builds networks to match these real-world dynamics and knit the diverse fabrics of our world together. CultureMesh is a public benefit corporation that has its own website and Android app. There have been about 1000 users over CultureMesh’s lifetime, and we hope to grow this user base in a more iterative, data-driven way. To learn more about CultureMesh, be sure to check out its <a href=\"https://www.culturemesh.com\">website</a>.<p>Under the current design, CutlureMesh users join forums called \"Networks\" that consist of people who currently live in a given location (i.e. Palo Alto) and are from another location (i.e. France). Networks can also consist of people living in a location who speak a certain language (i.e. French). In these networks, people can create posts or events.</p></p><h3>Our Role</h3><p>Since CultureMesh is very small, CultureMesh currently depends on our Stanford Code the Change chapter to maintain the codebase. CultureMesh has an existing website, as well as Facebook Free Basics and Android apps (that Code the Change created last year), so this year’s focus will be on refining all three to better serve user needs. We will be iterating on the existing products based on user feedback as the platform expands. The website is currently written with a PHP frontend and backend, and the Android app is written in Java with a Flask backend. The Facebook Free Basics app is written in Flask. We are currently considering development on all these fronts.</p><h3>Past Work</h3><h4>Android Application</h4><p>The Android application was natively developed in Android Studio. It current supports exploring popular locations for networks, creating posts, commenting on posts, creating events, and joining/leaving events. You can check out the <a href=\"https://play.google.com/store/apps/details?id=com.culturemesh.android\">Google Play Store Listing</a> and our <a href=\"https://github.com/culturemesh/CultureMeshAndroid\">codebase</a>.</p><h4>FFB</h4><p>The Facebook Free Basics Application allows users with low-resourced mobile phones to still interact with CultureMesh. Like the Google AMP project, the application cannot use any Javascript. You can check out the <a href=\"https://github.com/alanefl/culturemeshFFB\"> codebase.</a></p><h4>Back-End API</h4>The API was written in Flask and is hosted on the same Bluehost server as the website. You can check out the <a href=\"https://github.com/alanefl/culturemesh-api\"> codebase</a>.",
+        "bullets": [
+            "We created an Android app, which lets Android users easily form and join communities on CultureMesh.",
+            "To serve those users around the world who access the internet using Facebook Free Basics (FFB), we created a webapp for the FFB platform using Python Flask.",
+            "These two apps are served by a common server API, also written in Flask."
+        ],
         "wip":true
     },
     {

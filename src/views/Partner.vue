@@ -77,7 +77,8 @@
             You must be a nonprofit or low-resourced social venture that
             needs volunteer support for an impactful computer science
             project. For details on how we evaluate projects, see our
-            <router-link class="small-link-text" to="/partner_criteria">
+            <router-link class="small-link-text color-change"
+                         to="/partner_criteria">
               partner criteria
             </router-link>.
           </div>
@@ -178,6 +179,14 @@ export default {
   letter-spacing: normal;
   color: #ffffff;
 
+}
+
+.color-change {
+  color: #ffffff;
+  &:hover {
+    text-decoration: inherit;
+    color: $accent-light;
+  }
 }
 
 .container{

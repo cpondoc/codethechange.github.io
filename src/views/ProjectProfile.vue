@@ -82,13 +82,15 @@ export default {
 
 #button-container {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
 #margins {
+  box-sizing:border-box;
   padding: 100px;
-  padding-left: 20vw;
-    padding-right: 20vw;
+  padding-left: 10%;
+  padding-right: 10%;
 
 }
 

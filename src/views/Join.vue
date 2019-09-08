@@ -78,9 +78,7 @@ a {
 
 .header-container{
   width: 100%;
-  height: 55vh;
   background-color: $secondary-light;
-
 }
 
 .header-group{
@@ -88,8 +86,7 @@ a {
   padding-left: 10em;
   padding-right: 10em;
   padding-top: 8em;
-  padding-bottom: 10em;
-
+  padding-bottom: 5em;
 }
 
 .header-title{

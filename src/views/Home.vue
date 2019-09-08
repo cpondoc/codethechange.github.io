@@ -1,25 +1,20 @@
 <template>
   <div class="container" id="home-content">
-    <div class="row" id="intro">
-      <div class="col-lg-5" id="text">
-        <br />
-        <h1 id="hook">Code from day one, with impact.</h1>
-        <hr id="line" />
-        <p id="subtitle">Welcome to a passionate club of engineers and makers.</p>
-        <a href="#" v-scroll-to="{
-          el: '.projects',
-          duration: 500,
-          easing: 'linear',
-          offset: -80,
-          force: true,
-          cancelable: true,
-          x: false,
-          y: true
-        }" id="view-text">View our work</a>
-      </div>
-      <div class="col-lg-7" id="stanford-wrapper">
-        <img id="stanford" src="@/assets/img/stanford@2x.png" />
-      </div>
+    <div id="intro">
+      <h1 id="hook">Code from day one, with impact.</h1>
+      <hr id="line" />
+      <p id="subtitle">Welcome to a passionate club of engineers and makers.</p>
+      <a href="#" v-scroll-to="{
+        el: '.projects',
+        duration: 500,
+        easing: 'linear',
+        offset: -80,
+        force: true,
+        cancelable: true,
+        x: false,
+        y: true
+      }" id="view-text">View our work</a>
+      <img id="stanford" src="@/assets/img/stanford@2x.png" />
     </div>
     <div v-for="project in caseStudies" :key="project.name" class="row projects">
       <div class="col-lg-5">
@@ -87,60 +82,87 @@ export default {
 }
 
 #intro {
+  display: grid;
+  grid-template-columns: [text] 1fr [stanford] 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". ."
+    "hook stanford"
+    "line stanford"
+    "subtitle stanford"
+    "view-text stanford";
   margin-top: 5em;
   margin-bottom: 4em;
+
   @media only screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "."
+      "hook"
+      "stanford"
+      "subtitle"
+      "view-text";
     margin-top: 0;
     margin-bottom: 1em;
-  }
-  #text {
-    #hook {
-      font-family: Comfortaa;
-      font-size: 3.6em;
-      font-weight: bold;
-      line-height: 9vh;
-      color: white;
-      width: 24vw;
-      @media only screen and (max-width: 700px) {
-        font-size: 2em;
-        line-height: inherit;
-      }
-    }
-
-    #line {
-      margin-top: 3vh;
-      margin-bottom: 3vh;
-      width: 50%;
-      height: 2px;
-      background-color: $home-accent;
-      margin-left: 0px;
-    }
-
-    #subtitle {
-      font-family: 'Open Sans';
-      font-size: 1.5em;
-      color: white;
-      margin-bottom: 2em;
-    }
-
-    #view-text {
-      font-family: Comfortaa;
-      font-size: 24px;
-      font-weight: bold;
-      color: $home-accent;
-    }
+    text-align: center;
   }
 
-  #stanford-wrapper {
-    text-align: right;
-    #stanford {
-      max-width: 30em;
-    }
+  #hook {
+    grid-area: hook;
+    font-family: Comfortaa;
+    font-size: 3.6em;
+    font-weight: bold;
+    line-height: 9vh;
+    color: white;
+    text-align: inherit;
+
     @media only screen and (max-width: 700px) {
-      text-align: center;
-      #stanford {
-        max-width: 10em;
-      }
+      font-size: 2em;
+      line-height: inherit;
+    }
+  }
+
+  #line {
+    grid-area: line;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 50%;
+    height: 2px;
+    background-color: $home-accent;
+    margin-left: 0px;
+
+    @media only screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  #subtitle {
+    grid-area: subtitle;
+    font-family: 'Open Sans';
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 2em;
+    text-align: inherit;
+  }
+
+  #view-text {
+    grid-area: view-text;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-weight: bold;
+    color: $home-accent;
+    text-align: inherit;
+  }
+
+  #stanford {
+    grid-area: stanford;
+    justify-self: center;
+    max-width: 30em;
+
+    @media only screen and (max-width: 700px) {
+      max-width: 15em;
     }
   }
 }

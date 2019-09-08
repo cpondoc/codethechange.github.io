@@ -64,12 +64,13 @@ export default {
 @import '../theme.scss';
 
 .container {
+  box-sizing:border-box;
   padding: 0;
-  margin-left: 60px;
-  margin-right: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
   @media only screen and (max-width: 700px) {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   > * {
     margin: 0;

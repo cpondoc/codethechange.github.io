@@ -155,8 +155,7 @@ export default {
 @import '../theme.scss';
 
 .header {
-    width: 373px;
-    padding-left: 8vw;
+  padding-left: 8vw;
 
   font-family: Comfortaa;
   font-size: 28px;

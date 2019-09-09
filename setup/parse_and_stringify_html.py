@@ -15,13 +15,18 @@ soup = None
 with open(args.html_file) as fd:
     soup = BeautifulSoup(fd, features="html.parser")
 projets_json = {}
-html_str = str(soup.html.body.find(id='narrative')).replace('\n','')[20:-6] # cut out div tags
-print(html_str)
-exit(0)
+# Get the HTML content inside the 'narrative' div
+html_str = str(soup.html.body.find(id='narrative')).replace('\n','')[20:-6] 
 
 with open('../src/data/projects.json', 'r') as fd:
     projects_json = json.load(fd)
-with open('../src/data/projects.json', 'w') as fd:
+
+try:
     project = next(p for p in projects_json if p['name'] == args.project_name)
+except StopIteration:
+    raise Exception('Make sure that there is a JSON object with "name": "{}" in projects.json'.format(args.project_name))
+
+with open('../src/data/projects.json', 'w') as fd:
+
     project['narrative'] = html_str
     json.dump(projects_json, fd, sort_keys=True, indent=4)

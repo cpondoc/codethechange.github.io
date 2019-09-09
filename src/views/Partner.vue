@@ -154,20 +154,6 @@ export default {
 <style lang="scss" scoped>
 @import '../theme.scss';
 
-.header {
-  padding-left: 8vw;
-
-  font-family: Comfortaa;
-  font-size: 28px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.06;
-  letter-spacing: normal;
-  color: #ffffff;
-
-}
-
 .color-change {
   color: #ffffff;
   &:hover {
@@ -316,7 +302,6 @@ input[type="text"]:focus, textarea:focus {
 
 #hook {
   grid-area: hook;
-  //height: 38px;
   font-family: Comfortaa;
   font-size: 36px;
   font-weight: bold;
@@ -327,12 +312,19 @@ input[type="text"]:focus, textarea:focus {
   letter-spacing: normal;
   color: #ffffff;
   padding-bottom: 10%;
+  @media only screen and (max-width: 700px) {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 24px;
+    line-height: 50px;
+  }
 }
 
 .paragraph {
   font-family: 'Open Sans';
   font-size: 21px;
-    padding-left: 8vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
 
   font-weight: normal;
   font-style: normal;
@@ -341,6 +333,32 @@ input[type="text"]:focus, textarea:focus {
   letter-spacing: normal;
   color: #919191;
   text-align: left;
-  padding-right: 100px;
+  @media only screen and (max-width: 700px) {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+    font-size: 21px;
+    line-height: 45px;
+  }
+}
+
+.header {
+  padding-left: 8vw;
+  padding-right: 8vw;
+
+  font-family: Comfortaa;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  color: #ffffff;
+  @media only screen and (max-width: 700px) {
+    padding-bottom: 5vw;
+    text-align: center;
+    font-size: 21px;
+    line-height: 38px;
+  }
 }
 </style>

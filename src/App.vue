@@ -176,6 +176,7 @@ body {
 
 #footer {
   display: flex;
+  flex-flow: row wrap;
   padding-left: 60px;
   @media only screen and (max-width: 700px) {
     padding-left: 20px;

@@ -1,102 +1,89 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1 id="hook"> Talk to us about building impactful software together.</h1>
+    <h1 id="hook"> Talk to us about building impactful software together.</h1>
+    <div class="" id="form">
+      <div v-if="submitted" class="row">
+        <div class="col-12">
+          <h1> {{ finishedTitle }} </h1>
+        </div>
       </div>
-    </div>
-    <br />
-    <br />
-    <div class="row">
-      <div class="col-7" id="form">
-        <div v-if="submitted" class="row">
-          <div class="col-12">
-            <h1> {{ finishedTitle }} </h1>
+      <div v-if="submitted" class="row">
+        <div class="col-12">
+          <h4> {{ finishedMessage }} </h4>
+        </div>
+      </div>
+      <div v-if="submitted" class="row">
+        <div class="col-12">
+          <button id="submit" @click="submitted = false" class="btn btn-default"> RETRY </button>
+        </div>
+      </div>
+      <form v-if="!submitted" @submit.prevent="onSubmit" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="name" class="col-form-label">Your name</label>
+          <div class="col-form-input">
+            <input type="text" v-model="name" class="form-control input" name="name" placeholder="John Smith">
           </div>
         </div>
-        <div v-if="submitted" class="row">
-          <div class="col-12">
-            <h4> {{ finishedMessage }} </h4>
+        <div class="form-group">
+          <label for="email" class="col-form-label">Your email</label>
+          <div class="col-form-input">
+            <input type="text" v-model="email" class="form-control input" name="email" placeholder="name@example.com">
           </div>
         </div>
-        <div v-if="submitted" class="row">
-          <div class="col-12">
-            <button id="submit" @click="submitted = false" class="btn btn-default"> RETRY </button>
+        <div class="form-group">
+          <label for="name" class="col-form-label">Organization site</label>
+          <div class="col-form-input">
+            <input type="text" v-model="site" class="form-control input" name="site" placeholder="https://yoururl.com">
           </div>
         </div>
-        <form v-if="!submitted" @submit.prevent="onSubmit" enctype="multipart/form-data">
-          <div class="form-group row">
-            <label for="name" class="col-4 col-form-label">Your name</label>
-            <div class="col-8">
-              <input type="text" v-model="name" class="form-control input" name="name" placeholder="John Smith">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="email" class="col-4 col-form-label">Your email</label>
-            <div class="col-8">
-              <input type="text" v-model="email" class="form-control input" name="email" placeholder="name@example.com">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="name" class="col-4 col-form-label">Organization site</label>
-            <div class="col-8">
-              <input type="text" v-model="site" class="form-control input" name="site" placeholder="https://yoururl.com">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="name" class="col-4 col-form-label">Proposal upload</label>
-            <div class="col-4">
-              <label class="btn upload-button">
-                {{ filename }} <input type="file" @change="fileUpload" name="proposal" style="display: none;">
-              </label>
-            </div>
-            <div class="col-4" id="optional">
+        <div class="form-group">
+          <label for="name" class="col-form-label">Proposal upload</label>
+          <div class="col-form-input proposal-upload-row">
+            <label class="btn upload-button">
+              {{ filename }} <input type="file" @change="fileUpload" name="proposal" style="display: none;">
+            </label>
+            <div class="" id="optional">
               *Optional
             </div>
           </div>
-          <div class="form-group row">
-            <label for="name" class="col-4 col-form-label">Project summary</label>
-            <div class="col-8">
-              <textarea id="summary-text" v-model="summary" class="form-control input" name="summary" placeholder="Describe the project here." cols="40" rows="7"></textarea>
-            </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-9"></div>
-            <div class="col-3">
-              <button type="submit" @click="onSubmit" id="submit" class="btn btn-default">SUBMIT</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-5">
-        <div class="row">
-          <div class="header col-12">Eligibility</div>
         </div>
-        <div class="row">
-          <div class="col-12 paragraph">
-            You must be a nonprofit or low-resourced social venture that
-            needs volunteer support for an impactful computer science
-            project. For details on how we evaluate projects, see our
-            <router-link class="small-link-text color-change"
-                         to="/partner_criteria">
-              partner criteria
-            </router-link>.
+        <div class="form-group">
+          <label for="name" class="col-form-label">Project summary</label>
+          <div class="col-form-input">
+            <textarea id="summary-text" v-model="summary" class="form-control input" name="summary" placeholder="Describe the project here." cols="40" rows="7"></textarea>
           </div>
         </div>
-        <br />
-        <br />
-        <div class="row">
-          <div class="header col-12">What we offer</div>
-        </div>
-        <div class="row">
-          <div class="col-12 paragraph">
-            Technical leadership and support from Stanford student volunteers dedicating 5 to 10 hours per week on the project free of cost.
+        <div class="form-group">
+          <div class="">
+            <button type="submit" @click="onSubmit" id="submit" class="btn btn-default">SUBMIT</button>
           </div>
         </div>
+      </form>
+    </div>
+
+    <div class="eligibility">
+      <div class="header">Eligibility</div>
+      <div class="paragraph">
+        You must be a nonprofit or low-resourced social venture that
+        needs volunteer support for an impactful computer science
+        project. For details on how we evaluate projects, see our
+        <router-link class="small-link-text color-change"
+                     to="/partner_criteria">
+          partner criteria
+        </router-link>.
       </div>
     </div>
+
+    <div class="what-we-offer">
+      <div class="header">What we offer</div>
+      <div class="paragraph">
+        Technical leadership and support from Stanford student volunteers dedicating 5 to 10 hours per week on the project free of cost.
+      </div>
+    </div>
+
   </div>
 </template>
+
 <script>
 import axios from 'axios'
 
@@ -156,7 +143,7 @@ export default {
               this.finishedMessage = 'Unfortunately, we\'ve encountered some server error. Please email drewgreg [at] stanford [dot] edu with your form contents.'
             }
           })
-        }
+      }
     }
   },
   name: 'Partner',
@@ -166,6 +153,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../theme.scss';
+
 .header {
     width: 373px;
     padding-left: 8vw;
@@ -189,8 +177,33 @@ export default {
   }
 }
 
-.container{
- margin-top: 10vh;
+.container {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "hook hook"
+    "form eligibility"
+    "form what-we-offer";
+
+  @media only screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hook"
+      "eligibility"
+      "what-we-offer"
+      "form";
+  }
+}
+
+.eligibility {
+  grid-area: eligibility;
+  padding-bottom: 10%;
+}
+
+.what-we-offer {
+  grid-area: what-we-offer;
+  padding-bottom: 10%;
 }
 
 #summary-text {
@@ -212,8 +225,68 @@ export default {
   background-color: $take-action;
 }
 
+.form-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  line-height: 45px;
+}
+
+.col-form-label {
+  box-sizing: border-box;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  width: 200px;
+  font-family: Comfortaa;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  display: inline-block;
+}
+
+.col-form-input {
+  flex: 1 200px;
+}
+
+input[type="text"], textarea, .form-control {
+  background-color: rgba(0,0,0,0) !important;;
+  color: $text-color !important;;
+  outline: none !important;;
+  font-size: 15px !important;;
+  font-weight: normal !important;;
+  font-style: normal !important;;
+  font-stretch: normal !important;;
+  line-height: 1 !important;;
+  letter-spacing: normal !important;;
+  text-align: center;
+}
+
+input[type="text"]:focus, textarea:focus {
+  color: $text-color !important;
+  border-color: $text-color !important;
+  box-shadow: 0 0 10px $text-color !important;
+  background-color: rgba(0,0,0,0) !important;
+}
+
+#form {
+  grid-area: form;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 25px 0 rgba(41, 41, 41, 0.5);
+  background-color: #292929;
+}
+
+.proposal-upload-row {
+  display: flex;
+}
+
 .upload-button, input[type=file] {
-  width: 100%;
+  flex: 1 100px;
   height: 38px;
   text-align: right;
   filter: alpha(opacity=0);
@@ -229,51 +302,8 @@ export default {
   color: #ffffff;
 }
 
-.form-group {
-  line-height: 45px;
-}
-
-input[type="text"], textarea, .form-control {
-  background-color: rgba(0,0,0,0) !important;;
-  color: $text-color !important;;
-  outline: none !important;;
-  font-size: 15px !important;;
-  font-weight: normal !important;;
-  font-style: normal !important;;
-  font-stretch: normal !important;;
-  line-height: 1 !important;;
-  letter-spacing: normal !important;;
-  text-align: center
-}
-
-label#col-form-label {
-  width: 197px;
-  font-family: Comfortaa;
-  font-size: 15px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
-
-input[type="text"]:focus, textarea:focus {
-  color: $text-color !important;
-  border-color: $text-color !important;
-  box-shadow: 0 0 10px $text-color !important;
-  background-color: rgba(0,0,0,0) !important;
-}
-
-#form {
-  border-radius: 8px;
-  padding: 40px;
-  box-shadow: 0 4px 25px 0 rgba(41, 41, 41, 0.5);
-  background-color: #292929;
-}
-
 #optional {
+  flex: 1 80px;
   font-family: 'Open Sans';
   height: 45px;
   font-size: 16px;
@@ -284,8 +314,10 @@ input[type="text"]:focus, textarea:focus {
   text-align: center;
   color: #c8c8c8;
 }
+
 #hook {
-  height: 38px;
+  grid-area: hook;
+  //height: 38px;
   font-family: Comfortaa;
   font-size: 36px;
   font-weight: bold;
@@ -295,6 +327,7 @@ input[type="text"]:focus, textarea:focus {
   line-height: 1.06;
   letter-spacing: normal;
   color: #ffffff;
+  padding-bottom: 10%;
 }
 
 .paragraph {

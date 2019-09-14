@@ -2,7 +2,7 @@
   <div id="app">
     <div :class="{ 'res': res }" id="nav-bar">
       <router-link id="logo" to="/" @click.native="toggleRes(false)">
-        <img src="@/assets/img/logo@2x.png"/>
+        <img src="@/assets/img/wordmark.png"/>
       </router-link>
       <div id="links">
         <span class="nav-links">
@@ -104,7 +104,7 @@ body {
   z-index: 5;
   background-color: $main-dark;
   padding: 25px 60px;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 900px) {
     padding: 15px 20px;
   }
   display: flex;
@@ -133,7 +133,7 @@ body {
   #res-icon {
     display: none;
   }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 900px) {
     .nav-links {
       display: none;
     }

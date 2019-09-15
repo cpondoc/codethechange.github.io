@@ -115,6 +115,9 @@ body {
     margin-right: auto;
     img {
       max-height: 2.1em;
+      @media only screen and (max-width: 900px) {
+        max-height: 1.5em;
+      }
     }
   }
   #links {

@@ -155,7 +155,7 @@ export default {
               this.finishedMessage = 'Unfortunately, we\'ve encountered some server error. Please email drewgreg [at] stanford [dot] edu with your form contents.'
             }
           })
-        }
+      }
     }
   },
   name: 'Partner',

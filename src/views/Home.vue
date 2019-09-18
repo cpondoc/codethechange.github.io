@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="home-content">
+  <div class="app-container" id="home-content">
     <div id="intro">
       <h1 id="hook">Code from day one, with impact.</h1>
       <hr id="line" />
@@ -63,7 +63,7 @@ export default {
 <style scoped lang="scss">
 @import '../theme.scss';
 
-.container {
+.app-container {
   box-sizing:border-box;
   padding: 0;
   padding-left: 60px;

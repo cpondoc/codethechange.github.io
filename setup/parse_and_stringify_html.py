@@ -3,8 +3,9 @@ This file is designed to simplify the process of adding a project narrative to p
 It will take in an HTML file and various project image content, and then add it to the filesystem.
 """
 from bs4 import BeautifulSoup
-import json
 import pprint
+import json
+import setup.load_write_projects
 pp = pprint.PrettyPrinter(indent=4)
 import argparse
 parser = argparse.ArgumentParser(description='Add a project to projects.json')
@@ -14,7 +15,7 @@ args = parser.parse_args()
 soup = None
 with open(args.html_file) as fd:
     soup = BeautifulSoup(fd, features="html.parser")
-projets_json = {}
+projects_json = []
 # Get the HTML content inside the 'narrative' div
 html_str = str(soup.html.body.find(id='narrative')).replace('\n','')[20:-6] 
 

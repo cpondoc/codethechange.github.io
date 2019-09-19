@@ -15,5 +15,10 @@ parser.add_argument('project_name', type=str, help="project name field as specif
 parser.add_argument('image_file', type=str, help='path to the image file')
 parser.add_argument('caption', type=str, help='caption to the image')
 args = parser.parse_args()
+print('STILL IN DEVELOPMENT')
+exit(0)
+'''
+TODO: STILL IN PROGRESS
+'''
 shutil.move(args.image_file, '../public/assets/{}/'.format(args.project_name))
 

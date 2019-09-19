@@ -17,10 +17,6 @@ with open(args.html_file) as fd:
 projects_json = load_write_projects.load_projects()
 # Get the HTML content inside the 'narrative' div
 html_str = str(soup.html.body.find(id='narrative')).replace('\n','')[20:-6] 
-
-try:
-    project = next(p for p in projects_json if p['name'] == args.project_name)
-except StopIteration:
-    raise Exception('Make sure that there is a JSON object with "name": "{}" in projects.json'.format(args.project_name))
+project = load_write_projects.get_project(projects_json, args.project_name)
 project['narrative'] = html_str
 load_write_projects.update_projects(projects_json)

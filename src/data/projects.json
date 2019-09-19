@@ -142,12 +142,15 @@
     },
     {
         "background": "./assets/mannabaselogo.png",
-        "bullets": null,
+        "bullets": [
+            "We have begun fleshing out more profile functionality in hopes of creating a UBI allocation portfolio.",
+            "We want to improve the process of verifying unique recipients for the UBI."
+        ],
         "featured": false,
         "icon": null,
         "name": "Mannabase",
-        "narrative": "<h3>Organization Description</h3><p>Mannabase is an online platform for the world\u2019s first Universal Basic Income cryptocurrency. Manna is distributed by the People\u2019s Currency Foundation as a basic human right that every person in the world is eligible to receive, for free. Founded in 2015, Manna has achieved milestones in the cryptocurrency movement, as the first blockchain-based currency to be created and distributed by a tax-exempt nonprofit organization, and the first digital currency to implement a Universal Basic Income as its primary method of distribution. It currently distributes Manna weekly to about 100,000 users.</p><h3>Our Role</h3><p>We will facilitate Manna recipients to redistribute their own Manna to other Manna users in need. This will be called the \u201cTargeted Direct Giving\u201d Platform. In addition, we will be improving the login requirements to help ensure dedicated, valid, and human users are receiving Manna.</p>",
-        "organization": null,
+        "narrative": "",
+        "organization": "Hedge for Humanity",
         "summary": "We aim to help anyone receive a basic income through Mannabase's cryptocurrency.",
         "team": [
             "drew",
@@ -163,7 +166,7 @@
         "background": "./assets/oppia_logo.png",
         "bullets": [
             "We helped Oppia users be able to manage their own data.",
-            "We improved the development setup experience for future Oppia contributors across the glboe."
+            "We improved the development setup experience for future Oppia contributors across the globe."
         ],
         "featured": true,
         "icon": null,

@@ -5,8 +5,8 @@
         <div class="header-group">
             <h1 class="header-title">Change the world and build projects with us.</h1>
             <div class="cta-button">
-                <a href="https://codethechange.typeform.com/to/w7qJSt"
-                  target="_blank"
+                <a href="https://codethechange.typeform.com/to/UZmRwu"
+                   target="_blank"
                 ><h3> JOIN </h3></a>
                 <div id="button-arrow">  </div>
             </div>
@@ -48,7 +48,6 @@
         </div>
     </div>
 </div>
-
 </template>
 
 <style lang="scss" scoped>

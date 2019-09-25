@@ -7,6 +7,7 @@ import Projects from './views/Projects.vue'
 import Join from './views/Join.vue'
 import ProjectProfile from './views/ProjectProfile.vue'
 import PartnerCriteria from './views/PartnerCriteria.vue'
+import WaysToContribute from './views/WaysToContribute.vue'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/partner_criteria',
       name: 'partner_criteria',
       component: PartnerCriteria
+    },
+    {
+      path: '/ways_to_contribute',
+      name: 'ways_to_contribute',
+      component: WaysToContribute
     }
   ]
 })

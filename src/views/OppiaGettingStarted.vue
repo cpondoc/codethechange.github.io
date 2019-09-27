@@ -90,7 +90,7 @@ export default {
   },
   methods: {
   },
-  name: 'ProjectCriteria',
+  name: 'OppiaGettingStarted',
   components: {
     VueMarkdown
   }

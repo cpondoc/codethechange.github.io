@@ -45,7 +45,7 @@ export default {
       }
     }
     return {
-      leadership: [ people['drew'], people['yuguan'], people['han'], people['samgorman'], people['kevintran'], people['samsilverstein'] ],
+      leadership: [people['drew'], people['chris'], people['anthonyperez'], people['samsilverstein'], people['farzaankaiyom'], people['samgorman']],
       projectTeams: projectTeams,
       colors: colors
     }

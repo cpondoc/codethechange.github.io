@@ -109,9 +109,7 @@
         "organization": "The Austrian non-profit Catrobat develops the free/libre open source app PocketCode, which teaches computational thinking skills.",
         "summary": "Our Android app helps allow users on the Catrobat app to be able to collaborate on projects.",
         "team": [
-            "ayushsingla",
-            "han",
-            "trinitydonohugh"
+            "han"
         ],
         "wip": true,
         "year": 2019
@@ -129,13 +127,7 @@
         "organization": "Konexio offers job and tech literary training to poor communities in France, including migrants and refugees through courses and personalized guidance.",
         "summary": "We are developing an application that assists refugees living in France by connecting them to mentors.",
         "team": [
-            "alexhurtado",
-            "amitagondi",
-            "anthonyperez",
-            "farzaankaiyom",
-            "isabelgallegos",
-            "joannajo",
-            "tylerhong"
+            "farzaankaiyom"
         ],
         "wip": true,
         "year": 2019
@@ -163,11 +155,7 @@
         "organization": "Hedge for Humanity",
         "summary": "We aim to help anyone receive a basic income via a cryptocurrency.",
         "team": [
-            "drew",
-            "jasonzhao",
-            "kendrickshen",
-            "madelineliao",
-            "minamahmood"
+            "drew"
         ],
         "wip": true,
         "year": 2019
@@ -185,12 +173,7 @@
         "organization": "Oppia is an online education platform that serves almost 430,000 students worldwide. ",
         "summary": "We enhance the online learning experiences of users with limited access to education.",
         "team": [
-            "austinryanchow",
-            "ericlou",
-            "hectoramador",
-            "luisulloa",
-            "shawnzhang",
-            "gracehu"
+            "chris"
         ],
         "wip": true,
         "year": 2019

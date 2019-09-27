@@ -35,7 +35,7 @@
             "github": "https://github.com/anthonyaperez"
         },
         "name": "Anthony Perez",
-        "role": "Team Lead"
+        "role": "Financial Officer/Design Lead"
     },
     "austinryanchow": {
         "imageSrc": "./assets/austinchow.jpg",
@@ -71,7 +71,7 @@
         "imageSrc": "./assets/chris_photo.jpg",
         "links": {},
         "name": "Chris Skalnik",
-        "role": "Team Lead"
+        "role": "Co-President/Team Lead"
     },
     "drew": {
         "imageSrc": "./assets/drew_photo.jpg",
@@ -128,7 +128,7 @@
             "linkedin": "https://www.linkedin.com/in/farzaankaiyom/"
         },
         "name": "Farzaan Kaiyom",
-        "role": "Team Lead"
+        "role": "Social Coordinator/Team Lead"
     },
     "gracehu": {
         "imageSrc": "./assets/grace_hu_photo.jpg",
@@ -304,7 +304,7 @@
             "linkedin": "https://www.linkedin.com/in/gormansam/"
         },
         "name": "Sam Gorman",
-        "role": "Lead Designer"
+        "role": "Design Lead"
     },
     "sammymohammed": {
         "imageSrc": "./assets/sammy_mohammed.jpg",
@@ -324,7 +324,7 @@
             "linkedin": "www.linkedin.com/in/samantha-silverstein-701b5b15a"
         },
         "name": "Sam Silverstein",
-        "role": "Developer/Service Coordinator"
+        "role": "Service Coordinator"
     },
     "shawnzhang": {
         "imageSrc": "./assets/shawn_zhang_photo.jpg",

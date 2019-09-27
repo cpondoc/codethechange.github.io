@@ -8,6 +8,7 @@ import Join from './views/Join.vue'
 import ProjectProfile from './views/ProjectProfile.vue'
 import PartnerCriteria from './views/PartnerCriteria.vue'
 import WaysToContribute from './views/WaysToContribute.vue'
+import OppiaGettingStarted from './views/OppiaGettingStarted.vue'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/ways_to_contribute',
       name: 'ways_to_contribute',
       component: WaysToContribute
+    },
+    {
+      path: '/oppia/getting_started',
+      name: 'oppia_getting_started',
+      component: OppiaGettingStarted
     }
   ]
 })

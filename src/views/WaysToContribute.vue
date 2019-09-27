@@ -52,7 +52,7 @@ export default {
   },
   methods: {
   },
-  name: 'ProjectCriteria',
+  name: 'WaysToContribute',
   components: {
     VueMarkdown
   }

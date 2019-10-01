@@ -10,7 +10,7 @@ Next, automatically get the correct environment by running `pipenv shell` within
 All the project UI is loaded from one JSON array: `src/data/projects.json`.
 For each project is a JSON objcet with the following structure:
 - background: The main iconography for the project. It should be a file path tp an image within the `public/assets` folder.
-- bullets: A JSON string array containing that summarizes the work in a couple bullet points. This will be displayed in the profile listing in the top card.
+- bullets: A JSON string array that summarizes the work in a couple bullet points. This will be displayed in the profile listing in the top card.
 - featured: a boolean that determines whether this project will be displayed.
 - name: A string representing the project name (i.e. "Oppia")- 
 - narrative: Raw, unstyled HTML that will be the primary content of the project listing. To be elaborated in the [Narrative](#Narrative) section.

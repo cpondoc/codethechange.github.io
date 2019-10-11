@@ -23,7 +23,7 @@
     <div class="intro" id="current-intro">
       <h1 id="hook">Current projects</h1>
       <p class ='hook-sub'>
-        Here are our current projects for the 2018-19 academic year.
+        Here are our current projects for the 2019-20 academic year.
       </p>
     </div>
     <div class="row" id="current-projects">

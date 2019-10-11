@@ -18,7 +18,7 @@ For each project is a JSON objcet with the following structure:
 - summary: 1 sentence description that will be displayed on the content cards.
 - team: a list of references to team members to be displayed on the people page.
 - wip: a boolean representing whether the project is in progress.
-- year: the year the project began.
+- year: the the latest year the project was running.
 
 ## The Cumbersome Fields
 Most of these fields will be easies to directly modify in the JSON. Some fields, however, are too cumbersome to modify directly: `narrative`, and `assets`. Here is how to modify them.
@@ -31,7 +31,7 @@ cd setup
 pipenv shell
 python parse_and_stringify_html.py [name] [path to html file]
 ```
-The `[name]` field should correspond to the same field in the JSON object described above.
+The `[name]` field should correspond to the same `name` field in the project JSON object (described above).
 
 ### Assets
 Local images will be added at the bottom of the project listing. Add the imagea follows:

@@ -35,7 +35,8 @@
             "github": "https://github.com/anthonyaperez"
         },
         "name": "Anthony Perez",
-        "role": "Team Lead"
+        "leadership": true,
+        "role": "Financial Officer/Design Lead"
     },
     "austinryanchow": {
         "imageSrc": "./assets/austinchow.jpg",
@@ -70,10 +71,12 @@
     "chris": {
         "imageSrc": "./assets/chris_photo.jpg",
         "links": {},
+        "leadership": true,
         "name": "Chris Skalnik",
-        "role": "Team Lead"
+        "role": "Co-President/Team Lead"
     },
     "drew": {
+        "leadership": true,
         "imageSrc": "./assets/drew_photo.jpg",
         "links": {
             "email": "mailto:drewgreg@stanford.edu",
@@ -122,13 +125,14 @@
     },
     "farzaankaiyom": {
         "imageSrc": "./assets/farzaan_photo.jpg",
+        "leadership": true,
         "links": {
             "email": "fkaiyom@gmail.com",
             "github": "https://github.com/farzaank",
             "linkedin": "https://www.linkedin.com/in/farzaankaiyom/"
         },
         "name": "Farzaan Kaiyom",
-        "role": "Team Lead"
+        "role": "Social Coordinator/Team Lead"
     },
     "gracehu": {
         "imageSrc": "./assets/grace_hu_photo.jpg",
@@ -303,8 +307,9 @@
             "github": "https://github.com/samjgorman/",
             "linkedin": "https://www.linkedin.com/in/gormansam/"
         },
+        "leadership": true,
         "name": "Sam Gorman",
-        "role": "Lead Designer"
+        "role": "Design Lead"
     },
     "sammymohammed": {
         "imageSrc": "./assets/sammy_mohammed.jpg",
@@ -323,8 +328,9 @@
             "github": "https://github.com/ssilverst",
             "linkedin": "www.linkedin.com/in/samantha-silverstein-701b5b15a"
         },
+        "leadership": true,
         "name": "Sam Silverstein",
-        "role": "Developer/Service Coordinator"
+        "role": "Service Coordinator"
     },
     "shawnzhang": {
         "imageSrc": "./assets/shawn_zhang_photo.jpg",

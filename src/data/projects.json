@@ -1,158 +1,250 @@
 [
     {
-        "name": "U.S. Copyright Office",
-        "featured": true,
+        "assets": [
+            {
+                "caption": "Home Page with Search Bar.",
+                "src": "./assets/usco-home-search.png"
+            },
+            {
+                "caption": "License Creation Page.",
+                "src": "./assets/usco-lic-cre.png"
+            },
+            {
+                "caption": "License Search Page.",
+                "src": "./assets/usco-search.png"
+            },
+            {
+                "caption": "User Creation Page.",
+                "src": "./assets/usco-user-cre.png"
+            }
+        ],
         "background": "./assets/copyright-office.svg",
-        "year": 2016,
-        "summary": "We prototyped an image licensing application to address the needs of photographers.",
-        "organization": "This project was a collaboration with a 2-quarter practicum course in the Stanford Law School (“LAW 414O: Policy Practicum: Copyright Licensing”) and the US Copyright Office.",
         "bullets": [
             "We collaborated for 2 quarters with Stanford Law School instructors and students to iterate on website design and functionality to address the licensing needs of photographers.",
             "We built a prototype website using a Python / Flask / PostgreSQL backend hosted on Heroku and AWS S3.",
-            "We submitted the website as part of a photo licensing recommendation report to the U.S. Copyright Office, titled “A Low-Cost Digital Licensing Platform for Photographs: Documentation for a Prototype.”"
+            "We submitted the website as part of a photo licensing recommendation report to the U.S. Copyright Office, titled \u201cA Low-Cost Digital Licensing Platform for Photographs: Documentation for a Prototype.\u201d"
         ],
-        "narrative":"<p>This collaboration started when <a href=\"https://law.stanford.edu/directory/luciana-herman/\">Luci Herman</a>, Program Director for the Law and Policy Lab at the Stanford Law School, reached out to <a href=\"https://www.linkedin.com/in/andrew-suciu-57989571/\">Andrew Suciu</a>, then president of Stanford Code the Change, to find a team of computer science students to design a prototype website as part of a Law School practicum course. Law students in the course, taught by Professor <a href=\"https://law.stanford.edu/directory/paul-goldstein/\">Paul Goldstein</a> and renowned expert on international copyright law, wanted to reduce rampant theft of copyrighted photos online (e.g. from Google Images) and introduce a new platform to enable frictionless licenses between users and owners of copyrighted photos and images. Code the Change was challenged with prototyping such a platform that would specifically address the needs of so-called “long-tail” users, such as independent or community organizations that publish a low volume of photos online.</p><p>Over the course of two quarters, a team of five Code the Change students led by Christopher Yeh developed a prototype website to demonstrate the photo licensing concepts developed in the Stanford Law School practicum. The website included a user system to record transaction history, integration with Stripe’s API for processing payments for photo licenses, and a search system for finding uploaded photos. The features can be seen in the screenshots below and explored live at <a href=\"https://copyright-license.herokuapp.com/\">https://copyright-license.herokuapp.com/</a></p><p>Because the website was only intended as a prototype and not a production server, the team decided to use free tools. The team chose to host the website on Heroku with uploaded images stored in an Amazon AWS S3 bucket. Data about the images and photo licenses were stored in a PostgreSQL database, also hosted by Heroku. The web server written in Python using the Flask library, including the Flask-Login extension for managing user logins. Finally, we used the Masonry.js javascript grid layout library in the front-end to display images in a responsive, tiled format. While some members of the team had some experience building websites (e.g. at the level of CS 142), almost everyone was learning how to use these technologies on-the-spot.</p><p>At the end of the two quarters, the team was proud to present its work to the Stanford Law School practicum course (LAW 414O), and the website was submitted to the U.S. Copyright Office in a report titled titled <a href=\"https://law.stanford.edu/publications/a-low-cost-digital-licensing-platform-for-photographs-documentation-for-a-prototype/\">“A Low-Cost Digital Licensing Platform for Photographs: Documentation for a Prototype”</a>. The team is especially grateful for Luci Herman and Professor Paul Goldstein from the Stanford Law School for this incredible learning opportunity to build and design a website for a good cause.</p>",
-        "assets": [
-            {
-                "src": "./assets/usco-home-search.png",
-                "caption": "Home Page with Search Bar."
-            },
-            {
-                "src": "./assets/usco-lic-cre.png",
-                "caption": "License Creation Page."
-            },
-            {
-                "src": "./assets/usco-search.png",
-                "caption": "License Search Page."
-            },
-            {
-                "src": "./assets/usco-user-cre.png",
-                "caption": "User Creation Page."
-            }
-        ]
+        "featured": true,
+        "name": "U.S. Copyright Office",
+        "narrative": "<p>This collaboration started when <a href=\"https://law.stanford.edu/directory/luciana-herman/\">Luci Herman</a>, Program Director for the Law and Policy Lab at the Stanford Law School, reached out to <a href=\"https://www.linkedin.com/in/andrew-suciu-57989571/\">Andrew Suciu</a>, then president of Stanford Code the Change, to find a team of computer science students to design a prototype website as part of a Law School practicum course. Law students in the course, taught by Professor <a href=\"https://law.stanford.edu/directory/paul-goldstein/\">Paul Goldstein</a> and renowned expert on international copyright law, wanted to reduce rampant theft of copyrighted photos online (e.g. from Google Images) and introduce a new platform to enable frictionless licenses between users and owners of copyrighted photos and images. Code the Change was challenged with prototyping such a platform that would specifically address the needs of so-called \u201clong-tail\u201d users, such as independent or community organizations that publish a low volume of photos online.</p><p>Over the course of two quarters, a team of five Code the Change students led by Christopher Yeh developed a prototype website to demonstrate the photo licensing concepts developed in the Stanford Law School practicum. The website included a user system to record transaction history, integration with Stripe\u2019s API for processing payments for photo licenses, and a search system for finding uploaded photos. The features can be seen in the screenshots below and explored live at <a href=\"https://copyright-license.herokuapp.com/\">https://copyright-license.herokuapp.com/</a></p><p>Because the website was only intended as a prototype and not a production server, the team decided to use free tools. The team chose to host the website on Heroku with uploaded images stored in an Amazon AWS S3 bucket. Data about the images and photo licenses were stored in a PostgreSQL database, also hosted by Heroku. The web server written in Python using the Flask library, including the Flask-Login extension for managing user logins. Finally, we used the Masonry.js javascript grid layout library in the front-end to display images in a responsive, tiled format. While some members of the team had some experience building websites (e.g. at the level of CS 142), almost everyone was learning how to use these technologies on-the-spot.</p><p>At the end of the two quarters, the team was proud to present its work to the Stanford Law School practicum course (LAW 414O), and the website was submitted to the U.S. Copyright Office in a report titled titled <a href=\"https://law.stanford.edu/publications/a-low-cost-digital-licensing-platform-for-photographs-documentation-for-a-prototype/\">\u201cA Low-Cost Digital Licensing Platform for Photographs: Documentation for a Prototype\u201d</a>. The team is especially grateful for Luci Herman and Professor Paul Goldstein from the Stanford Law School for this incredible learning opportunity to build and design a website for a good cause.</p>",
+        "organization": "This project was a collaboration with a 2-quarter practicum course in the Stanford Law School (\u201cLAW 414O: Policy Practicum: Copyright Licensing\u201d) and the US Copyright Office.",
+        "summary": "We prototyped an image licensing application to address the needs of photographers.",
+        "year": 2016
     },
     {
-        "name": "Project Homeless Connect",
-        "featured": true,
+        "assets": [
+            {
+                "caption": "Our check-in platform.",
+                "src": "./assets/phc-checkin.png"
+            },
+            {
+                "caption": "Our admin platform.",
+                "src": "./assets/phc-admin.png"
+            },
+            {
+                "caption": "More of our check-in platform.",
+                "src": "./assets/phc-checkin2.png"
+            },
+            {
+                "caption": "PHC's trademark van!",
+                "src": "./assets/phc_van.jpg"
+            },
+            {
+                "caption": "Elliott and Han at the PHC one-stop shop event.",
+                "src": "./assets/elliott_han.jpg"
+            }
+        ],
         "background": "./assets/phc_logo.jpg",
-        "year": 2018,
-        "summary": "We helped Project Homeless Connect streamline their registration process.",
-        "organization": "Project Homeless Connect collaborates with the community to provide services to people experiencing, or are at the risk of experiencing homelessness.",
-        "icon": "./assets/phc-title.png",
         "bullets": [
             "We aided PHC in their quarterly service events by helping them adapt their schema of data storage.",
             "We built an admin platform for changing data schema with a GUI, using React, Postgres, and Node.js."
         ],
-        "narrative": "<p>Our team working with Project Homeless Connect started out with members having a wide range of ability in our skillsets regarding web application development. However, we were able to quickly adapt to each of our weaknesses and strengths to work on appropriate tasks to make meaningful contributions over the course of the year. Each member worked on frontend, backend, and/or design based on their interests and skills.</p><p>We first started out with learning the fundamental technologies, including but not limited to React, Redux and Salesforce, which are the building blocks of the web application we are maintaining for Project Homeless Connect. Prior to each Project Homeless Connect’s one-stop shop event, we would adapt the schema of the data storage regarding the services the organization provides. During this time, we have to change the frontend code to include additional services or remove unnecessary ones, and also update the corresponding data fields in Salesforce. After the necessary changes, we first test our changes on a sandbox/development version before moving over our code changes to production. We were fortunate enough to be invited over to the 69th iteration of Project Homeless Connect one-stop shop event and were blessed to see our app being used in the hands of the volunteers checking in and checking out 1000+ homeless accessing services from haircuts to medical vaccinations.</p><p>Realizing that the task to provide the necessary changes to the data schema is extremely manual and requires a bit of technical expertise, we then moved over to building an admin platform to do the necessary changes before each of their one-stop shop event without needing any coding experience.</p>",
-        "assets": [
-            {
-                "src": "./assets/phc-checkin.png",
-                "caption": "Our check-in platform."
-            },
-            {
-                "src": "./assets/phc-admin.png",
-                "caption": "Our admin platform."
-            },
-            {
-                "src": "./assets/phc-checkin2.png",
-                "caption": "More of our check-in platform."
-            },
-            {
-                "src": "./assets/phc_van.jpg",
-                "caption" : "PHC's trademark van!"
-            },
-            {
-                "src": "./assets/elliott_han.jpg",
-                "caption": "Elliott and Han at the PHC one-stop shop event."
-            }
-        ]
+        "featured": true,
+        "icon": "./assets/phc-title.png",
+        "name": "Project Homeless Connect",
+        "narrative": "<p>Our team working with Project Homeless Connect started out with members having a wide range of ability in our skillsets regarding web application development. However, we were able to quickly adapt to each of our weaknesses and strengths to work on appropriate tasks to make meaningful contributions over the course of the year. Each member worked on frontend, backend, and/or design based on their interests and skills.</p><p>We first started out with learning the fundamental technologies, including but not limited to React, Redux and Salesforce, which are the building blocks of the web application we are maintaining for Project Homeless Connect. Prior to each Project Homeless Connect\u2019s one-stop shop event, we would adapt the schema of the data storage regarding the services the organization provides. During this time, we have to change the frontend code to include additional services or remove unnecessary ones, and also update the corresponding data fields in Salesforce. After the necessary changes, we first test our changes on a sandbox/development version before moving over our code changes to production. We were fortunate enough to be invited over to the 69th iteration of Project Homeless Connect one-stop shop event and were blessed to see our app being used in the hands of the volunteers checking in and checking out 1000+ homeless accessing services from haircuts to medical vaccinations.</p><p>Realizing that the task to provide the necessary changes to the data schema is extremely manual and requires a bit of technical expertise, we then moved over to building an admin platform to do the necessary changes before each of their one-stop shop event without needing any coding experience.</p>",
+        "organization": "Project Homeless Connect collaborates with the community to provide services to people experiencing, or are at the risk of experiencing homelessness.",
+        "summary": "We helped Project Homeless Connect streamline their registration process.",
+        "year": 2018
     },
     {
-        "name": "CultureMesh",
         "background": "./assets/culturemesh_logo.jpg",
-        "summary":"Our Android and FFB apps help CultureMesh foster cultural communities for migrating populations.",
+        "bullets": [
+            "We created an Android app, which lets Android users easily form and join communities on CultureMesh.",
+            "To serve those users around the world who access the internet using Facebook Free Basics (FFB), we created a webapp for the FFB platform using Python Flask.",
+            "These two apps are served by a common server API, also written in Flask."
+        ],
+        "featured": false,
+        "icon": null,
+        "name": "CultureMesh",
+        "narrative": "<h3>Organization Description</h3><p>Millions of people live, work, and play outside of their hometowns, provinces, states, and countries. CultureMesh LLC builds networks to match these real-world dynamics and knit the diverse fabrics of our world together. CultureMesh is a public benefit corporation that has its own website and Android app. There have been about 1000 users over CultureMesh\u2019s lifetime, and we hope to grow this user base in a more iterative, data-driven way. To learn more about CultureMesh, be sure to check out its <a href=\"https://www.culturemesh.com\">website</a>.<p>Under the current design, CutlureMesh users join forums called \"Networks\" that consist of people who currently live in a given location (i.e. Palo Alto) and are from another location (i.e. France). Networks can also consist of people living in a location who speak a certain language (i.e. French). In these networks, people can create posts or events.</p></p><h3>Our Role</h3><p>Since CultureMesh is very small, CultureMesh currently depends on our Stanford Code the Change chapter to maintain the codebase. CultureMesh has an existing website, as well as Facebook Free Basics and Android apps (that Code the Change created last year), so this year\u2019s focus will be on refining all three to better serve user needs. We will be iterating on the existing products based on user feedback as the platform expands. The website is currently written with a PHP frontend and backend, and the Android app is written in Java with a Flask backend. The Facebook Free Basics app is written in Flask. We are currently considering development on all these fronts.</p><h3>Past Work</h3><h4>Android Application</h4><p>The Android application was natively developed in Android Studio. It current supports exploring popular locations for networks, creating posts, commenting on posts, creating events, and joining/leaving events. You can check out the <a href=\"https://play.google.com/store/apps/details?id=com.culturemesh.android\">Google Play Store Listing</a> and our <a href=\"https://github.com/culturemesh/CultureMeshAndroid\">codebase</a>.</p><h4>FFB</h4><p>The Facebook Free Basics Application allows users with low-resourced mobile phones to still interact with CultureMesh. Like the Google AMP project, the application cannot use any Javascript. You can check out the <a href=\"https://github.com/alanefl/culturemeshFFB\"> codebase.</a></p><h4>Back-End API</h4>The API was written in Flask and is hosted on the same Bluehost server as the website. You can check out the <a href=\"https://github.com/alanefl/culturemesh-api\"> codebase</a>.",
+        "organization": "CultureMesh builds communities among migrating populations, knitting the diverse fabrics of our world together.",
+        "past_members": [
+            "drew",
+            "chris"
+        ],
+        "summary": "Our Android and FFB apps help CultureMesh foster cultural communities for migrating populations.",
         "team": [
-            "dylancunningham","dylangrosz",
+            "dylancunningham",
+            "dylangrosz",
             "jimmyle",
-            "harisowrirajan","kailiwang", 
+            "harisowrirajan",
+            "kailiwang",
             "raymondyao"
         ],
-        "past_members": [
-            "drew", "chris"
-        ],
-        "description": "<h3>Organization Description</h3><p>Millions of people live, work, and play outside of their hometowns, provinces, states, and countries. CultureMesh LLC builds networks to match these real-world dynamics and knit the diverse fabrics of our world together. CultureMesh is a public benefit corporation that has its own website and Android app. There have been about 1000 users over CultureMesh’s lifetime, and we hope to grow this user base in a more iterative, data-driven way. To learn more about CultureMesh, be sure to check out its <a href=\"https://www.culturemesh.com\">website</a>.<p>Under the current design, CutlureMesh users join forums called \"Networks\" that consist of people who currently live in a given location (i.e. Palo Alto) and are from another location (i.e. France). Networks can also consist of people living in a location who speak a certain language (i.e. French). In these networks, people can create posts or events.</p></p><h3>Our Role</h3><p>Since CultureMesh is very small, CultureMesh currently depends on our Stanford Code the Change chapter to maintain the codebase. CultureMesh has an existing website, as well as Facebook Free Basics and Android apps (that Code the Change created last year), so this year’s focus will be on refining all three to better serve user needs. We will be iterating on the existing products based on user feedback as the platform expands. The website is currently written with a PHP frontend and backend, and the Android app is written in Java with a Flask backend. The Facebook Free Basics app is written in Flask. We are currently considering development on all these fronts.</p><h3>Past Work</h3><h4>Android Application</h4><p>The Android application was natively developed in Android Studio. It current supports exploring popular locations for networks, creating posts, commenting on posts, creating events, and joining/leaving events. You can check out the <a href=\"https://play.google.com/store/apps/details?id=com.culturemesh.android\">Google Play Store Listing</a> and our <a href=\"https://github.com/culturemesh/CultureMeshAndroid\">codebase</a>.</p><h4>FFB</h4><p>The Facebook Free Basics Application allows users with low-resourced mobile phones to still interact with CultureMesh. Like the Google AMP project, the application cannot use any Javascript. You can check out the <a href=\"https://github.com/alanefl/culturemeshFFB\"> codebase.</a></p><h4>Back-End API</h4>The API was written in Flask and is hosted on the same Bluehost server as the website. You can check out the <a href=\"https://github.com/alanefl/culturemesh-api\"> codebase</a>.",
-        "wip":true
+        "wip": false,
+        "year": 2019
     },
     {
-        "name": "Catrobat",
         "background": "./assets/catrobat.jpg",
+        "bullets": [
+            "PocketCode is available on Android and iOS, and it has hundreds of thousands of users.",
+            "We worked to develop a first iteration of a merge feature that lets users combine their features.",
+            "Catrobat follows an agile, test-driven software development philosophy, giving contributors experience with popular software development practices."
+        ],
+        "featured": false,
+        "icon": null,
+        "name": "Catrobat",
+        "narrative": "<p>Over the past year, our Code the change team worked on resolving bugs in Catrobat\u2019s Android app and led the project for creating the first iteration of the merge feature (think of git merge) to allow multiple people building the same project on Pocket Code to merge their individual features. We made changes to the UI to enable the merge feature and also initial backend changes to merge simple projects. </p><p>This year, we will continue building this merge feature to merge more complex projects and further build backend APIs. </p>",
+        "organization": "The Austrian non-profit Catrobat develops the free/libre open source app PocketCode, which teaches computational thinking skills.",
         "summary": "Our Android app helps allow users on the Catrobat app to be able to collaborate on projects.",
-        "team": ["ayushsingla", "han", "trinitydonohugh"], 
-        "description": "<h3>Organization Description</h3><p>Catrobat is an organisation that has built the free educational app PocketCode for children and teenagers to create and play. Their app allows users anywhere in the world to be able to build their own games, interactive music videos, and animations on their mobile phone, allowing more people in the world to be able to learn to code for free.</p><h3>Our Role</h3><p>At the Catrobat Team, we are working on their Android app to add a merge functionality so that users who want to collaborate on one project can merge their different versions of the project to create into one.</p>",
-        "wip": true
+        "team": [
+            "han"
+        ],
+        "wip": true,
+        "year": 2019
     },
     {
-        "name": "Konexio",
-        "summary": "We are developing an application that assists refugees living in France by connecting them to mentors.",
         "background": "./assets/konexio.jpg",
-        "team": ["alexhurtado","amitagondi", "anthonyperez","farzaankaiyom","isabelgallegos","joannajo","tylerhong"],
-        "wip": true
+        "bullets": [
+            "We created a matching platform for a non-profit called Konexio that matches refugees with local mentors to gain meaningful connections and learn vocational skills.",
+            "We developed a matching algorithm along with a full-stack web application using MongoDB, Express.js, React, and Node.js."
+        ],
+        "featured": false,
+        "icon": null,
+        "name": "Konexio",
+        "narrative": "<p>In January 2019, our development team worked on an existing codebase that only had three simple HTML pages                    that were loosely integrated with Mongoose.js and MongoDB for the matching application. However, our needs                     for the application warranted a complete overhaul of the codebase, which led us to implement the MERN Stack                    soon after. With our application running on MongoDB, Express.js, React, and Node.js, we were able to create                    a streamlined, user-friendly web service capable of matching mentors to mentees based on their common                     characteristics. In the process, each of our team members developed first-hand experience with design,                     front-end, and back-end development.            </p><p>                Initially, our focus was on designing the UI by creating wireframes for each page layout. Once we were comfortable with the direction of the user experience, our next duty was to translate that easy-to-digest UI into front-end code using React, Redux Forms, and Bootstrap. This process took several months given that much of our target demographic, migrants and refugees, have limited experience with computers. While working on the front-end, our team was also building a robust matching algorithm in JavaScript that is not only capable of providing great matches, but also good at handling edge cases (i.e. if no matches are found). Once a match was made, the largest task on the front-end was ensuring that this information was displayed concisely to the mentor and mentee. Meanwhile, some of our team started focusing more on the back-end/server-side aspect of the application, which mainly consisted of handling HTTP requests that could match users together and display the resulting information to the client. Although none of us had any form of training in backend development, we were able to learn using web resources and tinkering how to make our application to work properly. Although this was a time consuming and stressful process, it ultimately taught us a lot and led us to create a usable and secure web app            </p><p>                Within seven months of starting the project, we had a working beta build that was ready for production.                 After thoroughly testing the build from the front-end to back-end, we are ready to deploy the application to Heroku,                which is when the Konexio team in Paris will utilize our web app in order to amplify the social impact they are creating                for underserved communities in France.            </p>",
+        "organization": "Konexio offers job and tech literary training to poor communities in France, including migrants and refugees through courses and personalized guidance.",
+        "summary": "We are developing an application that assists refugees living in France by connecting them to mentors.",
+        "team": [
+            "farzaankaiyom"
+        ],
+        "wip": true,
+        "year": 2019
     },
     {
-        "name" : "Mannabase",
-        "background": "./assets/mannabaselogo.png",
-        "summary": "We aim to help anyone receive a basic income through Mannabase's cryptocurrency.",
-        "description": "<h3>Organization Description</h3><p>Mannabase is an online platform for the world’s first Universal Basic Income cryptocurrency. Manna is distributed by the People’s Currency Foundation as a basic human right that every person in the world is eligible to receive, for free. Founded in 2015, Manna has achieved milestones in the cryptocurrency movement, as the first blockchain-based currency to be created and distributed by a tax-exempt nonprofit organization, and the first digital currency to implement a Universal Basic Income as its primary method of distribution. It currently distributes Manna weekly to about 100,000 users.</p><h3>Our Role</h3><p>We will facilitate Manna recipients to redistribute their own Manna to other Manna users in need. This will be called the “Targeted Direct Giving” Platform. In addition, we will be improving the login requirements to help ensure dedicated, valid, and human users are receiving Manna.</p>",
-        "team": ["drew", "jasonzhao", "kendrickshen", "madelineliao",  "minamahmood"],
-        "wip": true
+        "assets": [
+            {
+                "caption": "TFA support on the settings page we built.",
+                "src": "./assets/mannabase_tfa.png"
+            },
+            {
+                "caption": "Our revamped dashboard and search profile functionality (still under review).",
+                "src": "./assets/mannabase_dashboard.png"
+            }
+        ],
+        "background": "./assets/h4h_logo.png",
+        "bullets": [
+            "We have begun fleshing out more profile functionality in hopes of creating a UBI allocation portfolio.",
+            "We want to improve the process of verifying unique recipients for the UBI."
+        ],
+        "featured": false,
+        "icon": null,
+        "name": "Hedge For Humanity",
+        "narrative": "<h3>Organization Description</h3><p>                Mannabase is an online platform for the world's first Universal Basic Income cryptocurrency.                Manna is distributed by the nonprofit Hedge 4 Humanity as a basic human right that every person in the world is eligible to receive, for free.                Founded in 2015, Manna has achieved milestones in the cryptocurrency movement, as the first blockchain-based currency to be created and distributed by a tax-exempt nonprofit organization, and the first digital currency to implement a Universal Basic Income as its primary method of distribution.                It currently distributes Manna weekly to about 100,000 users. The website is written in Vue.js with a Node.js server backend.            </p><br/><h3><b>The 2018-19 Year</b></h3><p>                To warm up to the codebase, we added two-factor authentication to <a href=\"https://www.mannabase.com/\">mannabase.com</a> as an added optional securiy measure.                We also added a settings page to allow the user to change their email, name, and password.            </p><p>                We aim for users to build a targeted direct giving portfolio so that users who want to participate in the UBI                but want to provide to others can allocate their weekly Manna to other causes and users of their choice.                We began by fleshing out a new dashboard page, profile pages for users, the ability to search for users, to add them as \"connections\",                and a new \"Wallet\" page that displays the user's transaction history in a more readable way. This work is currently under review.            </p><br/><h3><b>The 2019-20 Year</b></h3>            This year, Mannabase has become one branch of several in the parent nonprofit, Hedge 4 Humanity. We will be tackling several            initiatives:            <br/><br/><h4>BrightID</h4><p>                A global UBI can attract many spam accounts. This makes verifying the uniqueness of individual accounts                of utmost importance. Currently, users upon signup will be asked to send photos of their face and government id,                which is manually reviewed by Mannabase staff. This process does not scale well.            </p><p>                At the heart of this problem lies the challenge of validating unique identity.                How can one distinguish real accounts from fake ones? One approach is analyze connections between accounts                in a graph setting, much like how PageRank is used to validate the relevance/trustworthiness of web pages.                <a href=\"https://brightid.org\">BrightID</a> aims to do this with a mobile app for people to form connections with people they trust.                This app will contact a peer-to-peer network that will return scores that represent an individual account's trustworthiness.                These scores can then port to arbitrary applications.            </p>            Members of the Hedge 4 Humanity Team will be able to tackle a variety of different areas for BrightID, including:            <ul><li>The ability for a user to recover their connections if they lose their device.</li><li>The ability to flag users for removal from a group.</li><li>Peer-to-peer consensus functionaltiy between server nodes for the connection DB.</li><li>Anti-sybil algorithms and upgrading BrightID's security.</li></ul><br/><h4>Dollar For Everyone</h4><p>                Mannabase's Manna currency is quite speculative. Although its value may increase someday,                 we hope to also use a cryptocurrency at the moment with a more stable currency. That currency                 is DAI, which is a stable coin. It also has great infrastructure for <a href=\"https://xdai.io/\">burner wallets</a>                 that will allow users who are new to the cryptocurrency world easily participate and receive currency.                 The Dollar4Everyone project will be another UBI with this stablecoin, which can use BrightID to verify uniqueness                 of users. Members have the opporunity to also be intimately involved in building this project from scratch.            </p><br/><h4>Hedge 4 Humanity Website</h4><p>                Hedge 4 Humanity will be making a new website explaining the organization's structure and allowing for easy donation.                It will likely be partially implemented in Wordpress. There is already a developer working on this project, but members                can also help with this development as well.            </p>",
+        "organization": "Hedge for Humanity",
+        "summary": "We aim to help anyone receive a basic income via a cryptocurrency.",
+        "team": [
+            "drew"
+        ],
+        "wip": true,
+        "year": 2019
     },
     {
-        "name": "Oppia",
-        "summary": "We enhance the online learning experiences of users with limited access to education.",
         "background": "./assets/oppia_logo.png",
-        "description": "<h3> Organization Description </h3><p> Oppia brings online education to users throughout the world by providing an interactive environment for users to engage with various topics ranging from beginners math to electromagnetism. With features like text-to-speech, and translations to mixed languages such as between English and Hindi (Hindlish), Oppia ensures that the lesson effectively communicates with the user. Oppia also makes it easy for anyone to create interactive lessons. In order to provide better feedback when the user enters an incorrect answer, volunteers of Oppia spend time understanding why someone would choose that wrong answer and they edit the lesson so future users will not make the same mistake, creating a better lesson overall.<br/></p><h3> Our Role </h3><p> On the Oppia Team, we are working on 3 projects (Python and AngularJS) that have high impact on not just the user, but also the volunteers that Oppia works with. <br/>The first project is \"Giving Users Control of their Data\". We work on implementing a feature for users to adjust their account data, or delete their account, if desired. The second project is \"Artist Dashboard\". We work on developing a simple interface for the artists of Oppia to see specific diagrams in lessons that still need to be drawn. The third project is \"Lesson Improvements\". We work on providing an interface that allows lesson creators to easily visualize the most common wrong answers.</p>",
-        "team": ["austinryanchow", "ericlou", "hectoramador", "luisulloa", "shawnzhang", "gracehu"],
-        "wip": true        
+        "bullets": [
+            "We helped Oppia users be able to manage their own data.",
+            "We improved the development setup experience for future Oppia contributors across the globe."
+        ],
+        "featured": true,
+        "icon": null,
+        "name": "Oppia",
+        "narrative": "<p>Unlike other education platforms, Oppia is heavily volunteer-based, from the people who create the lessons to the developers who build new features. Because of this, it is structured as a strong network of opensource developers, artists, teachers, and students. From day 1, as a part of the Oppia team, you will be welcomed by an onboarding team at Oppia, which will help you through an initial starter project.            </p><p>                In previous years, students who worked with Oppia have developed new features like a Takeout feature which allows users to manage and delete their own data and a Docker container to allow Oppia's Windows developers to have the same convenience as Linux/Mac developers. As an opensource developer for Oppia, you will be interacting with developers who have the same motivations as you all across the world, from India to Malaysia to the US.            </p><p>                Based on AngularJS and Python, Oppia is constantly improving its platform through direct feedback from the students, teachers, and volunteers. Examples of future projects that you can work on include creating features to advance the lesson creating process, developing Oppia's Android application, and improving the lesson feedback pipeline from the user to the teacher.</p>",
+        "organization": "Oppia is an online education platform that serves almost 430,000 students worldwide. ",
+        "summary": "We enhance the online learning experiences of users with limited access to education.",
+        "team": [
+            "chris"
+        ],
+        "wip": true,
+        "year": 2019
     },
     {
-        "name": "UNICEF Magic Box",
-        "featured": true,
-        "year": "2019",
-        "summary": "We are helping develop a tool to, by processing data on human migration patterns, help NGOs and governments respond to disasters.",
-        "organization": "We were privileged to collaborate with UNICEF's MagicBox team, who provided invaluable guidance and let us contribute to their life-changing work.",
+        "assets": [
+            {
+                "caption": "The ranges of (simulated) cell towers in Brazil, overlayed with the cell tower locations.",
+                "src": "./assets/unicef_profile/voronoi.png"
+            },
+            {
+                "caption": "The range of one cell tower (in gray) and the political regions it overlaps.",
+                "src": "./assets/unicef_profile/overlap.png"
+            },
+            {
+                "caption": "A screenshot from our documentation on readthedocs.",
+                "src": "./assets/unicef_profile/docs.png"
+            },
+            {
+                "caption": "A screenshot of our unit tests running on Travis-CI.",
+                "src": "./assets/unicef_profile/tests.png"
+            }
+        ],
+        "background": "./assets/UNICEF.jpg",
         "bullets": [
             "UNICEF receives data on how people move between cell towers, but to better plan disaster responses, NGOs and governments need data on how people move between political regions like provinces.",
             "We built a data-processing tool that estimates human migration between political regions.",
             "We emphasized clean code, thorough documentation, and rigorous testing to help our partners at UNICEF pick up where we left off.",
             "An eye toward efficiency let us perform our computations reasonably quickly."
         ],
-        "background": "./assets/UNICEF.jpg",
+        "featured": true,
+        "name": "UNICEF Magic Box",
         "narrative": "<h3>Organization Description</h3><p><b>We developed a data processing tool that will help UNICEF monitor global human migration patterns. This will help NGOs and governments distribute aid to those migrant populations that need it most.</b></p><p>UNICEF receives anonymized and aggregated data describing daily movements of cell phones between cell towers. (Note that the data only count how many cell phones transitioned from one cell tower to another each day, so we cannot track individual phones.) Our tool uses maps and cell tower positions to estimate how many people move between any two political regions (e.g. provinces) each day.</p><p>To perform this estimation, we convert the provided migration data into a matrix. Then, we compute matrices that describe the fraction of each cell tower's range that is within each political region and that describe the fraction of each political region that is covered by each cell tower's range. Multiplying these three matrices yields the migration data between political regions. Efficiency was paramount since countries can have thousands of political regions. For example, the United States has over three thousand counties (Source: <a href=\"https://www.usgs.gov/faqs/how-many-counties-are-there-united-states\">USGS</a>). We relied on matrices in part because we optimized matrix operations using <a href=\"https://www.numpy.org/\">numpy</a>. We used an <a href=\"https://en.wikipedia.org/wiki/R-tree\">RTree</a>, a geospatial data structure, to efficiently calculate the overlaps between polygons. This efficiency came from the RTree telling us which polygons had overlapping bounding boxes, drastically reducing the number of polygons we needed to consider. Combined, these optimizations let us perform our computations in a reasonable amount of time.</p><p>To make it easy for UNICEF to pick up our work once we finished, we emphasized having comprehensive documentation and unit tests as much as correctness. We also isolated the code that performs generally useful operations (e.g. computing polygon overlap) from the code that loads the data from files. This makes it easy to change the format of the data files--you only have to modify the isolated function that handles that particular file.</p><p>If you want to check out our work, take a look at our GitHub repository <a href=\"https://github.com/codethechange/mobility_pipeline\">here</a>. We love contributions, so please open an issue with ideas for improvement or create a pull request to suggest changes to our code or documentation!</p>",
-        "team": ["andyjin","chris","justintinker", "kevintran", "samsilverstein"],
+        "organization": "We were privileged to collaborate with UNICEF's MagicBox team, who provided invaluable guidance and let us contribute to their life-changing work.",
+        "summary": "We helped develop a tool to, by processing data on human migration patterns, help NGOs and governments respond to disasters.",
+        "team": [
+            "andyjin",
+            "chris",
+            "justintinker",
+            "kevintran",
+            "samsilverstein"
+        ],
         "wip": false,
-        "assets": [
-            {
-                "src": "./assets/unicef_profile/voronoi.png",
-                "caption": "The ranges of (simulated) cell towers in Brazil, overlayed with the cell tower locations."
-            },
-            {
-                "src": "./assets/unicef_profile/overlap.png",
-                "caption": "The range of one cell tower (in gray) and the political regions it overlaps."
-            },
-            {
-                "src": "./assets/unicef_profile/docs.png",
-                "caption": "A screenshot from our documentation on readthedocs."
-            },
-            {
-                "src": "./assets/unicef_profile/tests.png",
-                "caption": "A screenshot of our unit tests running on Travis-CI."
-            }
-        ]
+        "year": "2019"
     },
     {
-        "name": "Karuna",
-        "summary": "",
-        "team": ["charlespan", "jacksonparell", "sammymohammed", "sidhikabalachandar","tylerhong"],
-        "wip": false
+        "assets": [
+            {
+                "caption": "Tarjimly allows people in need of translation services to connect within minutes.",
+                "src": "./assets/tarjimly_aidworker.png"
+            },
+            {
+                "caption": "A current prototype of the filtering system for Tarjimly.",
+                "src": "./assets/tarjimly_filter.png"
+            }
+        ],
+        "background": "./assets/tarjimly_logo.png",
+        "bullets": [
+            "We have started building a filtering system for people seeking specific criteria for translators.",
+            "We plan on improving how refugees are matched with translators by analyzing key data patterns."
+        ],
+        "featured": false,
+        "icon": null,
+        "name": "Tarjimly",
+        "narrative": "<p>        We are currently building a filtering system for Tarjimly so that users within the app        can search for translators with specific criteria such as medical/legal expertise and religious        preferences. Implementing this filtering system enables refugees and aid workers to bypass the        vocational and cultural barriers that arise with traditional language translation.      </p><p>        Once the filtering system is in place, we are planning to improve the current algorithm in order        to improve wait times and provide a more accurate match between users and translators. With a        combination of data visualization and machine learning, we hope to make the matching process as        robust and efficient as possible.      </p>",
+        "organization": "Tarjimly",
+        "summary": "Tarjimly provides humanitarian assistance to refugees struggling with language barriers by connecting them with live translators.",
+        "team": [
+            "anthonyperez"
+        ],
+        "wip": true,
+        "year": 2019
     }
 ]

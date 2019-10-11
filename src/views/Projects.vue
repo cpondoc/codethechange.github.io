@@ -23,7 +23,7 @@
     <div class="intro" id="current-intro">
       <h1 id="hook">Current projects</h1>
       <p class ='hook-sub'>
-        Here are our current projects for the 2018-19 academic year.
+        Here are our current projects for the 2019-20 academic year.
       </p>
     </div>
     <div class="row" id="current-projects">
@@ -33,6 +33,10 @@
         <div class="case-card-text">
           <h5>{{ project.name }}</h5>
           <p>{{ project.summary }}</p>
+          <h6 class="link-case">
+            <a @click="goToProfile(project.name)" id="link-1"
+               class="hvr-bounce-in">READ MORE</a>
+          </h6>
         </div>
       </div>
     </div>
@@ -40,7 +44,6 @@
 </template>
 
 <script>
-// import ProjectCard from '@/components/ProjectCard.vue'
 import projects from '@/data/projects.json'
 import themeColors from '@/data/colors.json'
 

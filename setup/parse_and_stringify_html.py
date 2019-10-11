@@ -14,7 +14,9 @@ with open(args.html_file) as fd:
     soup = BeautifulSoup(fd, features="html.parser")
 projects_json = load_write_projects.load_projects()
 # Get the HTML content inside the 'narrative' div
-html_str = str(soup.html.body.find(id='narrative')).replace('\n','')[20:-6] 
+DIV_HTML_CHAR_PREFIX_LENGTH = 20
+DIV_HTML_CHAR_SUFFIX_LENGTH = 6
+html_str = str(soup.html.body.find(id='narrative')).replace('\n','')[DIV_HTML_CHAR_PREFIX_LENGTH:-DIV_HTML_CHAR_SUFFIX_LENGTH] 
 project = load_write_projects.get_project(projects_json, args.project_name)
 project['narrative'] = html_str
 load_write_projects.update_projects(projects_json)

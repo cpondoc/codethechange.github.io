@@ -44,8 +44,15 @@ export default {
         projectTeams.push(project)
       }
     }
+    let leadership = []
+    for (let person in people) {
+      if (people[person].leadership) {
+        leadership.push(people[person])
+      }
+    }
+    debugger
     return {
-      leadership: [people['drew'], people['chris'], people['anthonyperez'], people['samsilverstein'], people['farzaankaiyom'], people['samgorman']],
+      leadership: leadership,
       projectTeams: projectTeams,
       colors: colors
     }

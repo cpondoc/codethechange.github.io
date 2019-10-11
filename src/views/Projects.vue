@@ -44,7 +44,6 @@
 </template>
 
 <script>
-// import ProjectCard from '@/components/ProjectCard.vue'
 import projects from '@/data/projects.json'
 import themeColors from '@/data/colors.json'
 

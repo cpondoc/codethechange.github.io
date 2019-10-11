@@ -218,5 +218,33 @@
         ],
         "wip": false,
         "year": "2019"
+    },
+    {
+        "assets": [
+            {
+                "caption": "Tarjimly allows people in need of translation services to connect within minutes.",
+                "src": "./assets/tarjimly_aidworker.png"
+            },
+            {
+                "caption": "A current prototype of the filtering system for Tarjimly.",
+                "src": "./assets/tarjimly_filter.png"
+            }
+        ],
+        "background": "./assets/tarjimly_logo.png",
+        "bullets": [
+            "We have started building a filtering system for people seeking specific criteria for translators.",
+            "We plan on improving how refugees are matched with translators by analyzing key data patterns."
+        ],
+        "featured": false,
+        "icon": null,
+        "name": "Tarjimly",
+        "narrative": "<p>        We are currently building a filtering system for Tarjimly so that users within the app        can search for translators with specific criteria such as medical/legal expertise and religious        preferences. Implementing this filtering system enables refugees and aid workers to bypass the        vocational and cultural barriers that arise with traditional language translation.      </p><p>        Once the filtering system is in place, we are planning to improve the current algorithm in order        to improve wait times and provide a more accurate match between users and translators. With a        combination of data visualization and machine learning, we hope to make the matching process as        robust and efficient as possible.      </p>",
+        "organization": "Tarjimly",
+        "summary": "Tarjimly provides humanitarian assistance to refugees struggling with language barriers by connecting them with live translators.",
+        "team": [
+            "anthony"
+        ],
+        "wip": true,
+        "year": 2019
     }
 ]

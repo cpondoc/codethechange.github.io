@@ -282,6 +282,16 @@
         "name": "Mina Mahmood",
         "role": "Developer"
     },
+    "nadintamer": {
+        "imageSrc": "./assets/nadin_tamer_photo.JPG",
+        "links": {
+            "email": "nadint@stanford.edu",
+            "github": "https://github.com/nadintamer",
+            "linkedin": "https://www.linkedin.com/in/nadintamer"
+        },
+        "name": "Nadin Tamer",
+        "role": "Developer"
+    },
     "raymondyao": {
         "imageSrc": "./assets/raymond_yao_photo.jpg",
         "links": {

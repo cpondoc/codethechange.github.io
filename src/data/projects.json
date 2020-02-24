@@ -99,15 +99,15 @@
         "background": "./assets/catrobat.jpg",
         "bullets": [
             "PocketCode is available on Android and iOS, and it has hundreds of thousands of users.",
-            "We worked to develop a first iteration of a merge feature that lets users combine their features.",
+            "We worked to develop a first iteration of a merge feature that lets multiple users collaborating on a single project combine their features.",
             "Catrobat follows an agile, test-driven software development philosophy, giving contributors experience with popular software development practices."
         ],
         "featured": false,
         "icon": null,
         "name": "Catrobat",
-        "narrative": "<p>Over the past year, our Code the change team worked on resolving bugs in Catrobat\u2019s Android app and led the project for creating the first iteration of the merge feature (think of git merge) to allow multiple people building the same project on Pocket Code to merge their individual features. We made changes to the UI to enable the merge feature and also initial backend changes to merge simple projects. </p><p>This year, we will continue building this merge feature to merge more complex projects and further build backend APIs. </p>",
+        "narrative": "<p>Our Code the change team worked on resolving bugs and adding ad-hoc features in Catrobat\u2019s Android app. A couple of examples of bug fixes/feature introductions include resolving overflow errors to fixing the UI for outputting certain properties of a project created by the user. All of these changes involve first building robust tests and then implementing the feature to check that the tests are then passing. </p><p> We also then led the project for creating the first iteration of the merge feature (think of git merge) to allow multiple users building the same project on Pocket Code to merge their individual scenes. We made changes to the UI to enable the merge feature and also initial backend changes to merge simple projects. </p><p>We have also built backend APIs for this initial merge feature, some of which are under review by the Catrobat organization. </p>",
         "organization": "The Austrian non-profit Catrobat develops the free/libre open source app PocketCode, which teaches computational thinking skills.",
-        "summary": "Our Android app helps allow users on the Catrobat app to be able to collaborate on projects.",
+        "summary": "Our feature (in-progress) for the Android app, Pocket Code, helps allow users on the Catrobat app to be able to collaborate on projects.",
         "team": [
             "han"
         ],

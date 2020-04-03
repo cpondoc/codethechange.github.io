@@ -7,9 +7,9 @@
         and impact groups. Here's two of our favorites.
       </p>
     </div>
-    <div class="row" id="case-studies">
+    <div class="row" id="case-studies" ref="caseStudies">
       <div v-for="project in caseStudies" :key="project.name" class="col-sm card case-card">
-        <div class="case-card-text">
+        <div class="case-card-text" :style="{ height: summaryHeight }">
           <h6>{{ project.name }}</h6>
           <p>{{ project.summary }}</p>
         </div>
@@ -65,19 +65,22 @@ export default {
     return {
       currentProjects: currentProjects,
       caseStudies: caseStudies,
-      themeColors: themeColors
+      themeColors: themeColors,
+      summaryHeight: '20px'
     }
   },
-  computed: {
+  mounted () {
+    // Max the project case study summary card text's all be the same height
+    // so that the images, text, and "read case" button vertically align
+    this.summaryHeight = Math.max(...Array.from(this.$refs.caseStudies.children)
+      .map((child) => child.firstChild.scrollHeight)) + 'px'
   },
   methods: {
     goToProfile (name) {
       this.$router.push({ path: 'profile', query: { name: name } })
     }
   },
-  name: 'Projects',
-  components: {
-  }
+  name: 'Projects'
 }
 </script>
 
@@ -154,12 +157,12 @@ h6{
   }
 }
 
-.case-card-text {
-  padding: 1em;
-}
-
 .case-card {
   background-color: #292929;
+  min-width: 200px;
+  .case-card-text {
+    padding: 1em;
+  }
   .link-case {
     text-align: right;
     margin: 0.7em;

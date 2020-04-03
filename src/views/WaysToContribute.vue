@@ -10,7 +10,7 @@
     <div id="white">
       <div id="content">
         <!-- Line breaks in the markdown are treated literally -->
-        <vue-markdown>
+        <VueShowdown markdown="
 # Contribute Independently
 
 We welcome independent contributions, whether you are exploring a project through starter issues or have too tight a schedule to contribute regularly. There are no pre-requisites for this kind of contribution.
@@ -34,30 +34,11 @@ Good team leads are indispensible to the success of our projects. If you're inte
 # Lead the Club
 
 If you are interested in being a club officer, let us know! We hold elections each spring. Our officers select team leads and support teams by acquiring funding, finding partners, marketing projects, and much more.
-        </vue-markdown>
-
+        "/>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-import VueMarkdown from 'vue-markdown'
-
-export default {
-  data: function () {
-    return {}
-  },
-  computed: {
-  },
-  methods: {
-  },
-  name: 'WaysToContribute',
-  components: {
-    VueMarkdown
-  }
-}
-</script>
 
 <style lang="scss" scoped>
 @import '../theme.scss';

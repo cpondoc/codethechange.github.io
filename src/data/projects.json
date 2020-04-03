@@ -112,7 +112,7 @@
             "We worked to develop a first iteration of a merge feature that lets multiple users collaborating on a single project combine their features.",
             "Catrobat follows an agile, test-driven software development philosophy, giving contributors experience with popular software development practices."
         ],
-        "featured": false,
+        "featured": true,
         "icon": null,
         "name": "Catrobat",
         "narrative": "<p>Our Code the Change team worked on resolving bugs and adding ad-hoc features in Catrobat\u2019s Android app. A couple of examples of bug fixes/feature introductions include resolving overflow errors to fixing the UI for outputting certain properties of a project created by the user. All of these changes involve first building robust tests and then implementing the feature to check that the tests are then passing. </p><p> We also then led the project for creating the first iteration of the merge feature (think of git merge) to allow multiple users building the same project on Pocket Code to merge their individual scenes. We made changes to the UI to enable the merge feature and also initial backend changes to merge simple projects. </p><p>We have also built backend APIs for this initial merge feature, some of which are under review by the Catrobat organization. </p>",

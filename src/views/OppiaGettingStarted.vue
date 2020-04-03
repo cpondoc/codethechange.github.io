@@ -9,7 +9,8 @@
     <div id="white">
       <div id="content">
         <!-- Line breaks in the markdown are treated literally -->
-        <vue-markdown>
+        <VueShowdown
+          markdown="
 This guide is for Stanford students who want to contribute code to [Oppia](https://www.github.com/oppia/oppia) through Stanford Code the Change. If you are looking to contribute to Oppia on your own, see Oppia's [contribution guide](https://github.com/oppia/oppia/wiki). If you are interested in contributing something other than code, please reach out to our [team leadership](http://codethechange.stanford.edu/#/people).
 
 # Help Us Get to Know You
@@ -72,30 +73,11 @@ Backend (python) and developer tooling (bash) projects are available, but there 
 
 At this point, you should be able to run the Oppia site locally on your computer, and you should have a basic understanding of Git, HTML, and AngularJS. For starter issues, check out [our trello](https://trello.com/b/ScAy6Mu5/oppia). Let us know what you'd like to work on, and we'll reserve that issue for you. If nothing there strikes your fancy, take a look at the pinned issues at the top of the [Oppia issues page](https://github.com/oppia/oppia/issues).
 
-        </vue-markdown>
-
+        "/>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-import VueMarkdown from 'vue-markdown'
-
-export default {
-  data: function () {
-    return {}
-  },
-  computed: {
-  },
-  methods: {
-  },
-  name: 'OppiaGettingStarted',
-  components: {
-    VueMarkdown
-  }
-}
-</script>
 
 <style lang="scss" scoped>
 @import '../theme.scss';

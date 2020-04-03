@@ -1,5 +1,5 @@
 module.exports = {
-  baseUrl: '/',
+  publicPath: '/',
   configureWebpack: {
     // other webpack options to merge in ...
   },

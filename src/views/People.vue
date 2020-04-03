@@ -50,7 +50,6 @@ export default {
         leadership.push(people[person])
       }
     }
-    debugger
     return {
       leadership: leadership,
       projectTeams: projectTeams,

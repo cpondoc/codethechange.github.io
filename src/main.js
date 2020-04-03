@@ -3,6 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import VueScrollTo from 'vue-scrollto'
+import VueShowdown from 'vue-showdown'
+
+Vue.use(VueShowdown, {
+  flavor: 'github'
+})
 
 Vue.config.productionTip = false
 Vue.use(VueScrollTo)

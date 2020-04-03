@@ -10,8 +10,8 @@
     <div id="white">
       <div id="content">
         <!-- Line breaks in the markdown are treated literally -->
-        <vue-markdown>
-
+        <VueShowdown
+          markdown="
 In brief, we look for projects that
 
 * will be good learning experiences for contributors and
@@ -90,30 +90,11 @@ These are great to have, but not needed for the project to be a good one.
 * We love it when partners are be willing to mentor contributors, for example through code reviews.
 
 * It’s great when the project is open to and welcoming of new contributors from the open source community.
-        </vue-markdown>
-
+"/>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-import VueMarkdown from 'vue-markdown'
-
-export default {
-  data: function () {
-    return {}
-  },
-  computed: {
-  },
-  methods: {
-  },
-  name: 'ProjectCriteria',
-  components: {
-    VueMarkdown
-  }
-}
-</script>
 
 <style lang="scss" scoped>
 @import '../theme.scss';

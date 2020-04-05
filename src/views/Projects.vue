@@ -4,7 +4,7 @@
       <h1 id="hook">Case Studies</h1>
       <p class = 'hook-sub'>
         Since 2014, we've helped create software for 15+ nonprofits <br />
-        and impact groups. Here's two of our favorites.
+        and impact groups. Here are some of our favorites.
       </p>
     </div>
     <div class="row" id="case-studies" ref="caseStudies">

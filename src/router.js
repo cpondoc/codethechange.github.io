@@ -5,6 +5,7 @@ import People from './views/People.vue'
 import Partner from './views/Partner.vue'
 import Projects from './views/Projects.vue'
 import Join from './views/Join.vue'
+import Culture from './views/Culture.vue'
 import ProjectProfile from './views/ProjectProfile.vue'
 import PartnerCriteria from './views/PartnerCriteria.vue'
 import WaysToContribute from './views/WaysToContribute.vue'
@@ -43,6 +44,11 @@ export default new Router({
       path: '/profile',
       name: 'profile',
       component: ProjectProfile
+    },
+    {
+      path: '/culture',
+      name: 'culture',
+      component: Culture
     },
     {
       path: '/partner_criteria',

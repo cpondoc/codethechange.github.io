@@ -7,6 +7,7 @@
       <div id="links">
         <span class="nav-links">
           <router-link class="link-text nav-text color-change" to="/people" @click.native="toggleRes(false)">people</router-link>
+          <router-link class="link-text nav-text color-change" to="/culture" @click.native="toggleRes(false)">culture</router-link>
           <router-link class="link-text nav-text color-change" to="/projects" @click.native="toggleRes(false)">projects</router-link>
           <router-link class="link-text nav-text color-change" to="/partner" @click.native="toggleRes(false)">partner</router-link>
           <router-link class="link-text color-change" to="/join" id="join-link" @click.native="toggleRes(false)">join</router-link>

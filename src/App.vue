@@ -25,6 +25,8 @@
         <hr />
         <router-link class="small-link-text color-change" to="/people">people</router-link>
         <br /> <br />
+        <router-link class="small-link-text color-change" to="/culture">culture</router-link>
+        <br /> <br />
         <router-link class="small-link-text color-change" to="/projects">projects</router-link>
         <br /> <br />
         <router-link class="small-link-text color-change" to="/join" id="join-small-link">join</router-link>

@@ -3,7 +3,7 @@
     <div class="intro">
       <h1 id="hook">Culture at CtC</h1>
       <p class = 'hook-sub'>
-        Code the Change is about more than just technical work—we strive continuously to incorporate our core values in our club culture.
+        Code the Change is about more than just technical work—we strive continuously to embody our core values in everything you do.
       </p>
     </div>
     <div id="white">
@@ -29,14 +29,14 @@ We commit to upholding the letter and spirit of these values both as individuals
 
 ## Humility
 
-- We forge reciprocal relationships with our partners. We help and learn from each other in a bilateral exchange, not a unilateral movement of aid from us to them.
+- We forge reciprocal relationships with our partners. We and our partners help and learn from each other in a bilateral exchange, not a unilateral movement of aid from us to them.
 - We are fallible, and in fact we will surely make mistakes. We create a space with safeguards and a culture that makes those mistakes okay.
 - We recognize that we need each other’s help, so we ask for help and encourage each other to do likewise.
 
 ## Positive Impact
 
 - We commit to ensuring our work has a positive impact for people who need it.
-- We are mindful of the impact our work has, and we accept responsibility for that impact, both good and bad.
+- We are mindful of the impact our work has, and we accept responsibility for that impact, both good and bad, intentional and unintentional.
 
 ## Accountability
 
@@ -52,7 +52,7 @@ We commit to upholding the letter and spirit of these values both as individuals
 
 # Addressing Failures and Improving our Culture
 
-We are always striving to improve our culture, and suggestions from you about how we can improve or areas where we are failing are important to us. Similarly, we want to hear about any concerns you have regarding actions or situations that contravene the spirit of these values. Please direct these suggestions and concerns to any of the following:
+We are always striving to improve our culture, and suggestions from you about how we can improve or areas where we are failing are important to us. Similarly, we want to hear about any concerns you have regarding actions or situations that contravene these values. Please direct these suggestions and concerns to any of the following:
 - Club Leadership: Contact information at https://codethechange.stanford.edu
 - The Haas Center: haascenter@stanford.edu
 - Stanford’s Office of Community Standards: community-standards@stanford.edu

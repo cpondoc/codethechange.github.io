@@ -8,5 +8,12 @@ module.exports = {
     host: '0.0.0.0',
     hot: true,
     disableHostCheck: true
+  },
+  chainWebpack: config => {
+    config.module
+      .rule('html')
+      .test(/\.html$/)
+      .use('html-loader')
+      .loader('html-loader')
   }
 }

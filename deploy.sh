@@ -1,5 +1,11 @@
 #!/usr/bin/env sh
 
+# Build static HTML for the guides pages
+(
+    cd guides;
+    make html
+)
+
 # abort on errors
 set -e
 

@@ -46,6 +46,9 @@ export default {
         caseStudies.push(x)
       }
     }
+    caseStudies.sort(function (a, b) {
+      return b - a
+    })
     return {
       caseStudies: caseStudies,
       baseUrl: process.env.BASE_URL,

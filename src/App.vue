@@ -37,7 +37,7 @@
       </div>
     </div>
     <div id="info">
-      <h6> Stanford Code the Change ©️2019 </h6>
+      <h6> ©️2020 Stanford Code the Change </h6>
     </div>
   </div>
 </template>

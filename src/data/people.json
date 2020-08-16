@@ -70,7 +70,11 @@
     },
     "chris": {
         "imageSrc": "./assets/chris_photo.jpg",
-        "links": {},
+        "links": {
+            "email": "chrisskalnik@stanford.edu",
+            "github": "https://github.com/U8NWXD",
+            "linkedin": "https://www.linkedin.com/in/christopher-skalnik"
+        },
         "leadership": true,
         "name": "Chris Skalnik",
         "role": "Co-President/Team Lead"
@@ -125,14 +129,13 @@
     },
     "farzaankaiyom": {
         "imageSrc": "./assets/farzaan_photo.jpg",
-        "leadership": true,
         "links": {
             "email": "fkaiyom@gmail.com",
             "github": "https://github.com/farzaank",
             "linkedin": "https://www.linkedin.com/in/farzaankaiyom/"
         },
         "name": "Farzaan Kaiyom",
-        "role": "Social Coordinator/Team Lead"
+        "role": "Team Lead"
     },
     "gracehu": {
         "imageSrc": "./assets/grace_hu_photo.jpg",
@@ -290,7 +293,8 @@
             "linkedin": "https://www.linkedin.com/in/nadintamer"
         },
         "name": "Nadin Tamer",
-        "role": "Developer"
+        "leadership": true,
+        "role": "Social Coordinator/Developer"
     },
     "raymondyao": {
         "imageSrc": "./assets/raymond_yao_photo.jpg",
@@ -317,7 +321,6 @@
             "github": "https://github.com/samjgorman/",
             "linkedin": "https://www.linkedin.com/in/gormansam/"
         },
-        "leadership": true,
         "name": "Sam Gorman",
         "role": "Design Lead"
     },

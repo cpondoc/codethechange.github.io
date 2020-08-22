@@ -47,7 +47,7 @@ export default {
       }
     }
     caseStudies.sort(function (a, b) {
-      return b - a
+      return b.year - a.year
     })
     return {
       caseStudies: caseStudies,

@@ -23,7 +23,7 @@ We commit to upholding the letter and spirit of these values both as individuals
 ## Community
 
 - We respect, value, support, and cherish each other.
-- We welcome members of all backgrounds and abilities, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation (The Contributor Covenant). We have no tolerance for discrimination on the basis of these characteristics, and we accept the responsibility to prevent harassment, abuse, and intimidation of any kind within our organization.
+- We welcome members of all backgrounds and abilities, regardless of race, ethnicity, gender identity, sexual orientation, religion, body size, visible or invisible disability, socio-economic status, nationality, personal appearance, or level of experience. We have no tolerance for discrimination on the basis of these characteristics, and we accept the responsibility to prevent harassment, abuse, and intimidation of any kind within our organization.
 - We cultivate empathy and kindness for each other, our partners, and the broader community.
 - We are honest and forthright with each other, our partners, and all others with whom we interact. We strive to operate transparently wherever possible.
 
@@ -47,7 +47,7 @@ We commit to upholding the letter and spirit of these values both as individuals
 ## Self-Care
 
 - We understand that we cannot effectively work with our partners unless we also care for each other and ourselves.
-- We make time to care for each other.
+- We make time to care for each other and ourselves.
 - We recognize that we all need to practice self-care, so we encourage and support each other in practicing it.
 
 # Addressing Failures and Improving our Culture
@@ -63,6 +63,15 @@ If you report to club leadership, we promise that we will do the following:
 - If you like, we will include you as much as possible in our work to respond to your report. In some cases we may not be able to share the details of our response with you, but we will share what we can.
 
 For example, if you are concerned that one of our projects may harm someone, please let us know. Such a harm runs contrary to our *Positive Impact* value, and we will take corrective action. Similarly, we don’t want anyone to feel excluded from our community, as exclusion runs contrary to our *Community* value, so we work to make our community welcoming for everyone. If you have a suggestion for how we can do so better, we would love to hear it!
+
+# Inspiration
+
+We were inspired by a number of amazing organizations & sources while putting together this page, including:
+- [GitHub’s Code of Conduct Guide](https://opensource.guide/code-of-conduct/)
+- [Contributor Covenant](https://www.contributor-covenant.org)
+- [Cal Blueprint’s Values](https://calblueprint.org/about)
+- [The Fundamental Standard](https://communitystandards.stanford.edu/policies-and-guidance/fundamental-standard)
+- [Principles of Ethical and Effective Service](https://haas.stanford.edu/about/about-our-work/principles-ethical-and-effective-service)
         "/>
       </div>
     </div>

@@ -14,7 +14,6 @@
     "bootstrap": "^4.2.1",
     "core-js": "^3.6.4",
     "css-loader": "*",
-    "html-loader": "^1.1.0",
     "jquery": "^3.5.0",
     "moment": "^2.23.0",
     "node-sass": "^4.11.0",

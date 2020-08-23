@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Guides from './views/Guides.vue'
 import Home from './views/Home.vue'
 import People from './views/People.vue'
 import Partner from './views/Partner.vue'
@@ -21,11 +20,6 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
-    },
-    {
-      path: '/guides',
-      name: 'guides',
-      component: Guides
     },
     {
       path: '/partner',

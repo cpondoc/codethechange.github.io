@@ -24,7 +24,7 @@
       <div class="link-list">
         <p class="link-header">for students</p>
         <hr />
-        <router-link class="link-text color-change" to="/guides" id="join-link" @click.native="toggleRes(false)">guides</router-link>
+        <a href="/guides" class="link-text nav-text color-change">guides</a>
         <br /> <br />
         <router-link class="small-link-text color-change" to="/people">people</router-link>
         <br /> <br />

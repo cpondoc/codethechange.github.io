@@ -3,7 +3,7 @@
     <div class="intro">
       <h1 id="hook">Culture at CtC</h1>
       <p class = 'hook-sub'>
-        Code the Change is about more than just technical work—we strive continuously to embody our core values in everything you do.
+        Code the Change is about more than just technical work—we strive continuously to embody our core values in everything we do.
       </p>
     </div>
     <div id="white">

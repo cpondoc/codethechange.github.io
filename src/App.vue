@@ -6,6 +6,7 @@
       </router-link>
       <div id="links">
         <span class="nav-links">
+          <a href="/guides" class="link-text nav-text color-change">guides</a>
           <router-link class="link-text nav-text color-change" to="/people" @click.native="toggleRes(false)">people</router-link>
           <router-link class="link-text nav-text color-change" to="/culture" @click.native="toggleRes(false)">culture</router-link>
           <router-link class="link-text nav-text color-change" to="/projects" @click.native="toggleRes(false)">projects</router-link>
@@ -23,6 +24,8 @@
       <div class="link-list">
         <p class="link-header">for students</p>
         <hr />
+        <a href="/guides" class="link-text nav-text color-change">guides</a>
+        <br /> <br />
         <router-link class="small-link-text color-change" to="/people">people</router-link>
         <br /> <br />
         <router-link class="small-link-text color-change" to="/culture">culture</router-link>

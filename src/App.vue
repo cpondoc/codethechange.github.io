@@ -41,6 +41,14 @@
         <router-link class="small-link-text color-change" to="/partner">partner</router-link>
         <br /> <br />
       </div>
+      <div class="link-list">
+        <p class="link-header">social media</p>
+        <hr />
+        <a href="https://www.facebook.com/codethechange" class="small-link-text color-change">facebook</a>
+        <br /> <br />
+        <a href="https://www.instagram.com/stanfordctc" class="small-link-text color-change">instagram</a>
+        <br /> <br />
+      </div>
     </div>
     <div id="info">
       <h6> ©️2020 Stanford Code the Change </h6>

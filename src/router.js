@@ -11,6 +11,7 @@ import ProjectProfile from './views/ProjectProfile.vue'
 import PartnerCriteria from './views/PartnerCriteria.vue'
 import WaysToContribute from './views/WaysToContribute.vue'
 import OppiaGettingStarted from './views/OppiaGettingStarted.vue'
+import StartTheChange from './views/StartTheChange.vue'
 
 Vue.use(Router)
 
@@ -65,6 +66,11 @@ export default new Router({
       path: '/oppia/getting_started',
       name: 'oppia_getting_started',
       component: OppiaGettingStarted
+    },
+    {
+      path: '/start',
+      name: 'start',
+      component: StartTheChange
     }
   ]
 })

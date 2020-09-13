@@ -59,7 +59,7 @@ Great job so far! If you want to render your progress at this point, feel free t
 <Square value={square} onClick={() => onClick()} />
 ```
 
-![A screen with a single 'X' at the center top.](/public/assets/starter/progress_single_x.png)
+<img src='./assets/starter/progress_single_x.png' alt='A screen with a single X at the center top.' width='500em'>
 
 ## Setting Up the Board
 
@@ -69,7 +69,7 @@ Now that we have the ability to render squares via the `Square` component, our n
     * You may have noticed that we’re using the `fr` unit in `grid-template`. This is a unit that enables us to create elements of equal size, so `repeat(3, 1fr)` creates three elements that each take up a third of the available space.
 * Within `components/Board.js`, pass two parameters within your `Square` component, `squares` and `onClick` (sound familiar? We did something similar in `Square.js.`). Assume that `squares` is an array that contains nine square values ordered by their position on the board. `onClick` will be the function that determines what your program should do when a square is clicked.  We will implement this `onClick` function when setting up the `Game` component, but for now, assume that it accepts one parameter, `i`–the index of the square (see figure below).
 
-  ![A 3-by-3 grid, with each square numbered 0-8 in row-major order.](/public/assets/starter/board_indices.png)
+  <img src='./assets/starter/board_indices.png' alt='A 3-by-3 grid, with each square numbered 0-8 in row-major order.' width='500em'>
 
 * Within the same file, replace the empty tag (``<></>``) with a `div` tag using `board` as a `className` attribute. Within the body of this tag, render an array of `Square` components, each with their own unique key attribute corresponding to their index `i`, in addition to the value and `onClick` attributes. (**Hint**: to create this array, consider using the `map()` method outlined [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).)
     * To get you started, your div should come in the form
@@ -80,7 +80,7 @@ Now that we have the ability to render squares via the `Square` component, our n
 
 Almost there! Once again, if you would like to visually track your progress at this point, add a `Board` component in the return block of `components/Game.js`.
 
-![Screen with a 3-by-3 grid.](/public/assets/starter/progress_grid.png)
+<img src='./assets/starter/progress_grid.png' alt='Screen with a 3-by-3 grid.' width='500em'>
 
 ## Setting up the Game
 
@@ -136,7 +136,7 @@ As part of our program’s functionality, we need to have functions that enable 
     * **Note**: To layout your elements in an easy and dynamic way, consider using Flexbox. It is a powerful CSS layout tool that enables you to position and format your elements without explicitly defining their positioning. In the `info-wrapper` class above, we used space-between to create a gap between the `<div>` and `<h3>` elements.  You can also find an example of Flexbox being used in the starter code.
 * Now that you have rendered the components, you should see a functional tic-tac-toe game on the page. For guidance on how this should look, refer to the GIF below.
 
-![A tic-tac-toe game being played.](/public/assets/starter/progress_functional_game.gif)
+<img src='./assets/starter/progress_functional_game.gif' alt='A tic-tac-toe game being played.' width='500em'>
 
 ## Conclusion
 
@@ -186,7 +186,7 @@ Welcome to the design track! Given how important design is to user experience an
           }
           ```
 
-![White tic-tac-toe game on blue background being played.](/public/assets/starter/progress_ui_track_complete.gif
+<img alt='White tic-tac-toe game on blue background being played.' src='./assets/starter/progress_ui_track_complete.gif' width='500em'>
 
 Great job! If you’d like, feel free to play around more with the design aspect of this project. As mentioned previously, there are several other considerations when designing software, including aspects like dark mode support, accessibility, or mobile responsive design!
 
@@ -208,7 +208,7 @@ Welcome to the functionality track! The term ‘functionality’ can mean a lot 
 
 Nice work! We hope you enjoyed implementing this advanced tic-tac-toe functionality. If you’re even more keen on improving your game, consider adding in features like computer AI, past game history, or quantum tic-tac-toe!
 
-![A tic-tac-toe game being played that tracks history.](/public/assets/starter/progress_func_track_complete.gif)
+<img alt='A tic-tac-toe game being played that tracks history.' src='./assets/starter/progress_func_track_complete.gif' width='500em'>
         "/>
       </div>
     </div>

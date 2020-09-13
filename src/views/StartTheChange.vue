@@ -239,7 +239,7 @@ Nice work! We hope you enjoyed implementing this advanced tic-tac-toe functional
     padding: 60px;
     max-width: 900px;
     color: #5e5e5e;
-    font-family: 'Open Sans';
+    font-family: 'Comfortaa';
     font-size: 1em;
     font-style: normal;
     font-stretch: normal;

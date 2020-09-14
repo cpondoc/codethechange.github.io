@@ -102,7 +102,7 @@ We were inspired by a number of amazing organizations & sources while putting to
     padding: 60px;
     max-width: 900px;
     color: #5e5e5e;
-    font-family: 'Open Sans';
+    font-family: 'Comfortaa';
     font-size: 1em;
     font-style: normal;
     font-stretch: normal;

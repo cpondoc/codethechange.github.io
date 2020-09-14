@@ -120,7 +120,7 @@ These are great to have, but not needed for the project to be a good one.
     padding: 60px;
     max-width: 900px;
     color: #5e5e5e;
-    font-family: 'Open Sans';
+    font-family: 'Comfortaa';
     font-size: 1em;
     font-style: normal;
     font-stretch: normal;

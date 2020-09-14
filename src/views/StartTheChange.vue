@@ -14,6 +14,26 @@
 
 Welcome to the 2020 Code the Change onboarding process! As part of your first task, you will create a simple tic-tac-toe game in a JavaScript-supported browser. We won’t require you to use a specific framework, but the following guide will strongly emphasize the use of React with Hooks.
 
+Please join the `#start-the-change` channel on Slack. Here you'll be able to ask questions about the project, get help, and see other members' questions. We encourage you to answer questions in that channel too!
+
+## Our Goals
+
+We hope that creating this game helps introduce you to what Code the Change is all about, starts to build your familiarity with web development, and gives you practice with troubleshooting. We also hope that you'll have fun building it! We also look forward to seeing what you create. At the end of your project, you will show us what you built to give us a better understanding of what your background and interests are.
+
+Now, we want to be very clear that this starter project is not a coding challenge like those used by companies to screen job applicants. **Your performance on the starter project does not affect whether you can join Code the Change or what opportunities are available to you.** This project is about you learning and us getting to know you, not us evaluating you.
+
+## Project Specification
+
+At the end of this project, you should have a functioning, browser-based tic-tac-toe game that lets two players place their markers in turn. Note that the players can be on the same browser session so that your game can run as a static site. Once a player wins, the game should say so. For example:
+
+<img src='./assets/starter/progress_functional_game.gif' alt='A tic-tac-toe game being played.' width='500em'>
+
+In addition, we strongly encourage you to expand on this core game with a more aesthetically appealing interface or additional functionality. This guide provides one example of each.
+
+The rest of this guide walks you through one way of building this game, which you are welcome to follow. However, we encourage you to experiment and surprise us with what you come up with! Code the Change involves a lot of self-directed problem solving and creativity, so you'll get a better picture of what Code the Change is all about if you deviate from this guide a little and explore on your own.
+
+Once you're done with your app, you will upload your code to GitHub and deploy your game to the web. More detailed instructions are at the end of this guide. Once you finish, reach out to the club leaders so we can help find a project that matches your interests and experience.
+
 ## What is React?
 
 React is a powerful and versatile JavaScript framework created by Facebook that enables developers to build their user interface and functionality as reusable components. In our case, we will build a tic-tac-toe game using 3 components: one for the squares, one for the board, and another for the complete game logic.
@@ -209,6 +229,70 @@ Welcome to the functionality track! The term ‘functionality’ can mean a lot 
 Nice work! We hope you enjoyed implementing this advanced tic-tac-toe functionality. If you’re even more keen on improving your game, consider adding in features like computer AI, past game history, or quantum tic-tac-toe!
 
 <img alt='A tic-tac-toe game being played that tracks history.' src='./assets/starter/progress_func_track_complete.gif' width='500em'>
+
+# Deploying Your Code
+
+**Warning:** These instructions are a work in progress, but hopefully they point you in the right direction.
+
+## Upload to GitHub
+
+If you haven't already, create a GitHub account. Then create a new, public repository for your project code and upload your code by running:
+
+```console
+git add -A
+git commit -m 'completed project'
+git push <your repository URL ending in .git> master:master
+```
+
+Having your code on GitHub will make it easy for you to share your work.
+
+## Deploy to Stanford AFS
+
+As Stanford students, you have access to [AFS server space](https://uit.stanford.edu/service/afs). Try logging in over SSH to the `cardinal` machines:
+
+```console
+$ ssh <your sunet>@cardinal.stanford.edu
+The authenticity of host 'cardinal.stanford.edu (<yours might differ>)' can't be established.
+ED25519 key fingerprint is SHA256:0NpYmboT5OLGlIzXIoE0/Gp6Wkg6CG6NwibnXk9lrBA.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'cardinal.stanford.edu,171.67.24.75' (ED25519) to the list of known hosts.
+<your sunet>@cardinal.stanford.edu's password: <type your password here. nothing will show up>
+Duo two-factor login for <your sunet>
+
+Enter a passcode or select one of the following options:
+
+ 1. <depends on your account>
+ <...>
+
+Success. Logging you in...
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 5.3.0-62-generic x86_64)
+
+Stanford Research Computing Center (https://srcc.stanford.edu) -------
+
+<...>
+
+<your sunet>@cardinal<machine number>:~$
+```
+
+If you look in your current directory by running `ls`, you should see a `WWW` folder. Anything you put in that folder will be visible on the web at `https://stanford.edu/~<your sunet>`. Go ahead and try by creating a test file there:
+
+```console
+echo 'test' > WWW/index.html
+```
+
+Now at `https://stanford.edu/~<you sunet>` you should see a page that says `test`!
+
+Now we need to upload your game to your WWW folder. We first build the site:
+
+```console
+yarn build
+```
+
+This generates the site files in `./build`. We can upload them to Stanford AFS like this:
+
+```console
+scp -r 'build/*' <your sunet>@cardinal.stanford.edu:~/WWW/
+```
         "/>
       </div>
     </div>

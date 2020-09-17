@@ -139,7 +139,7 @@
         "team": [
             "farzaankaiyom"
         ],
-        "wip": true,
+        "wip": false,
         "year": 2019
     },
     {
@@ -167,7 +167,7 @@
         "team": [
             "drew"
         ],
-        "wip": true,
+        "wip": false,
         "year": 2019
     },
     {
@@ -184,7 +184,7 @@
         "organization": "Oppia is an online education platform that serves almost 430,000 students worldwide. ",
         "summary": "We support high-quality online learning experiences for students with limited access to formal education.",
         "team": [
-            "chris", "nadintamer"
+            "chris", "nadintamer", "drew", "anthonyperez"
         ],
         "wip": true,
         "year": 2020
@@ -255,7 +255,7 @@
         "team": [
             "anthonyperez"
         ],
-        "wip": true,
+        "wip": false,
         "year": 2019
     }
 ]

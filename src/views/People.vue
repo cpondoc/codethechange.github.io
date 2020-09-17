@@ -34,7 +34,7 @@ export default {
     let i = 0
     const projectTeams = []
     for (let project of projects) {
-      if (project.wip) {
+      if (project.wip && project.team.length > 0) {
         let teamPeople = []
         for (let person of project.team) {
           teamPeople.push(people[person])

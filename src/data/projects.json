@@ -184,7 +184,8 @@
         "organization": "Oppia is an online education platform that serves almost 430,000 students worldwide. ",
         "summary": "We support high-quality online learning experiences for students with limited access to formal education.",
         "team": [
-            "chris", "nadintamer"
+            "chris",
+            "nadintamer"
         ],
         "wip": true,
         "year": 2020
@@ -237,25 +238,23 @@
                 "src": "./assets/tarjimly_aidworker.png"
             },
             {
-                "caption": "A current prototype of the filtering system for Tarjimly.",
+                "caption": "The available filters for Tarjimly’s iOS and Android app.",
                 "src": "./assets/tarjimly_filter.png"
             }
         ],
         "background": "./assets/tarjimly_logo.png",
         "bullets": [
-            "We have started building a filtering system for people seeking specific criteria for translators.",
-            "We plan on improving how refugees are matched with translators by analyzing key data patterns."
+            "Tarjimly is a mobile app built with React Native that provides humanitarian assistance to refugees struggling with language barriers by connecting them with live translators."
         ],
-        "featured": false,
-        "icon": null,
+        "featured": true,
         "name": "Tarjimly",
-        "narrative": "<p>        We are currently building a filtering system for Tarjimly so that users within the app        can search for translators with specific criteria such as medical/legal expertise and religious        preferences. Implementing this filtering system enables refugees and aid workers to bypass the        vocational and cultural barriers that arise with traditional language translation.      </p><p>        Once the filtering system is in place, we are planning to improve the current algorithm in order        to improve wait times and provide a more accurate match between users and translators. With a        combination of data visualization and machine learning, we hope to make the matching process as        robust and efficient as possible.      </p>",
+        "narrative": "<p>        During the 2019-2020 school year, we built a filtering system for Tarjimly so that users within the app can        search for translators with specific criteria such as professional expertise, phone interpretation, document        translation, and demographic preferences. These filters enable refugees and aid workers to bypass the vocational        and cultural barriers that arise with traditional language translation.      </p><p>        For the front-end work, we used React Native and Redux in order to populate the UI and maintain the application\u2019s        state when users select certain filters. When a user selects the \u201cFilters\u201d button before searching for translators,        they are introduced to a pop-up modal that shows them a list of two types of filters: \u201chard\u201d filters and \u201csoft\u201d        filters. Hard filters (e.g. medical or legal translating) are mandatory constraints that are guaranteed to be met        when connecting with a translator, while soft filters (e.g. urgent translator, translator from my organization)        are satisfied given certain constraints such as the number of translators available, the number of other soft        filters satisfied, etc.      </p><p>        Once we enabled the ability to select filters on the front-end, the next step was to create a REST API endpoint        that parses and sends these filters (in addition to other data) to the server for processing. From here, the final        step to select a sufficient number of filtered translators was to build a Python + Django microservice to fetch        translators from the database, algorithmically filter out the ineligible translators based on various parameters,        and then return the remaining translators back to the server. At this point, the final step entailed sending a        response back to the front-end, where the user could finally be matched with a translator based on the filters.      </p><p>        Overall, this was an excellent opportunity for us to learn about full-stack engineering, product planning (both        design-wise and algorithmically), and teamwork. Our Tarjimly project provided the right balance between having a        robust support structure and allowing for creative freedom. If this kind of project seems interesting to you, there        are several ongoing projects that we think you\u2019d like!      </p>",
         "organization": "Tarjimly",
         "summary": "Tarjimly provides humanitarian assistance to refugees struggling with language barriers by connecting them with live translators.",
         "team": [
             "anthonyperez"
         ],
-        "wip": true,
-        "year": 2019
+        "wip": false,
+        "year": "2020"
     }
 ]

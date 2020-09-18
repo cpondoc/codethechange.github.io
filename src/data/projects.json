@@ -182,7 +182,10 @@
         "organization": "Oppia is an online education platform that serves almost 430,000 students worldwide. ",
         "summary": "We support high-quality online learning experiences for students with limited access to formal education.",
         "team": [
-            "chris", "nadintamer", "drew", "anthonyperez"
+            "chris",
+            "nadintamer",
+            "drew",
+            "anthonyperez"
         ],
         "wip": true,
         "year": 2020
@@ -235,7 +238,7 @@
                 "src": "./assets/tarjimly_aidworker.png"
             },
             {
-                "caption": "The available filters for Tarjimly’s iOS and Android app.",
+                "caption": "The available filters for Tarjimly\u2019s iOS and Android app.",
                 "src": "./assets/tarjimly_filter.png"
             }
         ],
@@ -252,6 +255,27 @@
             "anthonyperez"
         ],
         "wip": false,
+        "year": "2020"
+    },
+    {
+        "assets": [
+            {
+                "caption": "A current snapshot of HospitalRun's hospital information system.",
+                "src": "./assets/hospitalrun_dashboard.jpg"
+            }
+        ],
+        "background": "./assets/hospitalrun_logo.png",
+        "bullets": [
+            "HospitalRun is free, open source software that provides hospitals and other medical care facilities in the developing world with access to offline-first electronic health records and an easy-to-use hospital information system."
+        ],
+        "featured": false,
+        "icon": null,
+        "name": "HospitalRun",
+        "narrative": "<p>        For the upcoming school year, our focus will be on getting HospitalRun\u2019s desktop and web React apps to version 2.0        (release build), which will be a significant improvement for current users compared to the beta build.      </p><p>        More on this prospective project coming soon! For additional information about HospitalRun\u2019s mission and implementation,        visit <a href=\"https://hospitalrun.io\">hospitalrun.io.</a></p>",
+        "organization": "HospitalRun",
+        "summary": "HospitalRun is free, open source software that provides hospitals and other medical care facilities in the developing world with access to offline-first electronic health records and an easy-to-use hospital information system.",
+        "team" : [],
+        "wip": true,
         "year": "2020"
     }
 ]

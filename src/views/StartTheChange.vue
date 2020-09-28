@@ -92,10 +92,7 @@ Now that we have the ability to render squares via the `Square` component, our n
   <img src='./assets/starter/board_indices.png' alt='A 3-by-3 grid, with each square numbered 0-8 in row-major order.' width='500em'>
 
 * Within the same file, replace the empty tag (``<></>``) with a `div` tag using `board` as a `className` attribute. Within the body of this tag, render an array of `Square` components, each with their own unique key attribute corresponding to their index `i`, in addition to the value and `onClick` attributes. (**Hint**: to create this array, consider using the `map()` method outlined [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).)
-    * To get you started, your div should come in the form
-      ```html
-      <div className=....>...</div>
-      ```
+    * To get you started, your div should come in the form `<div className=....>...</div>`
     * Your `onClick` attribute should come in the form `{() => onClick(i)}`, rather than `{onClick(i)}`. The main difference between these two forms is that the former is telling the `onClick` attribute to execute `onClick(i)` when the component is clicked, while the latter invokes `onClick(i)` when it is assigned to the attribute; one is treated as a function, the other is treated as an object.
 
 Almost there! Once again, if you would like to visually track your progress at this point, add a `Board` component in the return block of `components/Game.js`.

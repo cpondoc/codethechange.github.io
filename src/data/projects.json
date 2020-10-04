@@ -277,5 +277,27 @@
         "team" : [],
         "wip": true,
         "year": "2020"
+    },
+    {
+        "assets": [
+            {
+                "caption": "A screenshot from the Open Food Network user interface.",
+                "src": "./assets/openfoodnetwork/screenshot.png"
+            }
+        ],
+        "background": "./assets/openfoodnetwork/logo.png",
+        "bullets": [
+            "Open Food Network is an open source platform that brings food producers and consumers together to create more ethical supply chains.",
+            "The platform lets producers come together to create virtual farmers' markets."
+        ],
+        "features": false,
+        "icon": null,
+        "name": "Open Food Network",
+        "narrative": "Open Food Network is built with Ruby and CoffeeScript. You can see all the work they're doing on their <a href='https://github.com/openfoodfoundation/openfoodnetwork'>GitHub page</a>. We haven't chosen a particular task to work on yet, so you'll get to help guide the team's direction!",
+        "organization": "Open Food Network",
+        "summary": "Open Food Network develops an open source software platform that helps food producers and wholesalers reach customers.",
+        "team": [],
+        "wip": true,
+        "year": "2020"
     }
 ]

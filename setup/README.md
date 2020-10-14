@@ -5,7 +5,8 @@ This directory is a toolkit to easily update project and team information.
 ## Adding your profile picture
 To add a person, update `src/data/people.json` JSON object with the following fields:
 - *name_id*: a unique identifier for you (usually firstlast, no spaces)
-    - *imageSrc*: `./assets/<profie_photo.jpg>`. Make sure you put `<profie_photo.jpg>`in `dist/assets/`.
+    - *imageSrc*: `./assets/<profie_photo.jpg>`. Make sure you put `<profie_photo.jpg>`in `dist/assets/`. Also make
+    sure that the image is square and <300 KB.
     - *links*: (optional - add only what you're comfortable being public)
         - *email*: your email address
         - *github*: Github profile link

@@ -1,12 +1,27 @@
 # Stanford CTC Website Toolkit
 This directory is a toolkit to easily update project and team information.
 *NOTE:* This toolkit is designed for Unix systems.
-## Setting Up
+
+## Adding your profile picture
+To add a person, update `src/data/people.json` JSON object with the following fields:
+- *name_id*: a unique identifier for you (usually firstlast, no spaces)
+    - *imageSrc*: `./assets/<profie_photo.jpg>`. Make sure you put `<profie_photo.jpg>`in `dist/assets/`.
+    - *links*: (optional - add only what you're comfortable being public)
+        - *email*: your email address
+        - *github*: Github profile link
+        - *linkedin*: your Linkedn profile link
+    - *leadership*: false
+    - *name*: your full name, usually "First Last".
+    - *role*: Usually "Developer"
+
+Finally, go to `projects.json` and add the `name_id` in the `team` list.
+
+## Updating Project Information
 Make sure you have Python 3 and Pip installed as well as pipenv.
 Installation instructions for Python3/Pip are [here](https://pip.pypa.io/en/stable/installing/) and installation instructions for pipenv are [here](https://docs.pipenv.org/en/latest/install/#pragmatic-installation-of-pipenv).
 Next, automatically get the correct environment by running `pipenv shell` within the `setup` directory.
 
-## A Quick Overview of `projects.json`
+### A Quick Overview of `projects.json`
 All the project UI is loaded from one JSON array: `src/data/projects.json`.
 For each project is a JSON objcet with the following structure:
 - background: The main iconography for the project. It should be a file path to an image within the `public/assets` folder.
@@ -20,7 +35,7 @@ For each project is a JSON objcet with the following structure:
 - wip: a boolean representing whether the project is in progress.
 - year: the the latest year the project was running.
 
-## The Cumbersome Fields
+### The Cumbersome Fields
 Most of these fields will be easies to directly modify in the JSON. Some fields, however, are too cumbersome to modify directly: `narrative`, and `assets`. Here is how to modify them.
 
 ### Narrative

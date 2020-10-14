@@ -17,6 +17,8 @@ To add a person, update `src/data/people.json` JSON object with the following fi
 
 Finally, go to `projects.json` and add the `name_id` in the `team` list.
 
+To preview these changes, run `yarn && yarn serve`.
+
 ## Updating Project Information
 Make sure you have Python 3 and Pip installed as well as pipenv.
 Installation instructions for Python3/Pip are [here](https://pip.pypa.io/en/stable/installing/) and installation instructions for pipenv are [here](https://docs.pipenv.org/en/latest/install/#pragmatic-installation-of-pipenv).

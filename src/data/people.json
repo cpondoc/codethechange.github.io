@@ -346,7 +346,11 @@
     },
     "scottxu": {
         "imageSrc": "./assets/scott_xu.jpg",
-        "links": {},
+        "links": {
+            "email": "scottxu@stanford.edu",
+            "github": "https://github.com/zichuan-scott-xu",
+            "linkedin": "https://www.linkedin.com/in/zichuanscottxu/"
+        },
         "name": "Scott Xu",
         "role": "Developer"
     },

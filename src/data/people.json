@@ -344,6 +344,16 @@
         "name": "Sammy Mohammed",
         "role": "Developer"
     },
+    "scottxu": {
+        "imageSrc": "./assets/scott_xu.jpg",
+        "links": {
+            "email": "scottxu@stanford.edu",
+            "github": "https://github.com/zichuan-scott-xu",
+            "linkedin": "https://www.linkedin.com/in/zichuanscottxu/"
+        },
+        "name": "Scott Xu",
+        "role": "Developer"
+    },
     "samsilverstein": {
         "imageSrc": "./assets/senior4.jpeg",
         "links": {
